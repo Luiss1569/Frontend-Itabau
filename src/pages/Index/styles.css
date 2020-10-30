@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400');
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.container .content-img{
+    width: 43%;
+}
+
+.container .content-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 30px 0 30px ;
+}
+
+.container .content-itens{
+    width: 38%;
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: -70px;
+}
+
+.container .content-itens h3{
+    font-size: 50px;
+    font-family: 'Philosopher', sans-serif;
+    color: #135749;
+    margin-bottom: 0;
+}
+
+.container .content-itens label{
+    font-size: 16px;
+    font-family: 'Philosopher', sans-serif;
+    color: #38a38d;
+}
+
+.container .content-itens p{
+    margin-top: 30px;
+    font-family: 'Philosopher', sans-serif;
+    color: #135749;
+    font-style: italic;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.container .content-itens .button{
+    color: #fff;
+    background-color: #Ba3676;
+    padding: 10px 20px;
+    width: 100px;
+    font-style: bold;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+}
+
+.container .content-itens .button:hover{
+    background-color: #175519;
+    transform: translateY(-5px);
+}
+
+.margin {
+    height: 430px;
+    width: 100%;
+}
+  
+  @media only screen and (min-width: 1024px) {
+    .margin {
+      height: 430;
+    }
+  }
+  
+  /* margin on medium-sized screens */
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .margin {
+      height: 60;
+    }
+  }
+  
+  /* margin on small screens */
+  @media only screen and (max-width: 767px) {
+    .margin {
+      margin-top: 72px;
+      height: 160px;
+    }
+  }

@@ -67,7 +67,9 @@ import {
       }
     },
     appResponsive: {
-      margin: "20px 10px"
+      margin: "20px 10px",
+      visibility: "visible",
+      overflowY: "visible",
     },
     primary: {
       backgroundColor: primaryColor,
@@ -140,8 +142,6 @@ import {
       height: "100vh",
       right: "0",
       left: "auto",
-      visibility: "visible",
-      overflowY: "visible",
       borderTop: "none",
       textAlign: "left",
       paddingRight: "0px",

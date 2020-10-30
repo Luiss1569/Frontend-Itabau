@@ -115,15 +115,14 @@ export default function Header(props) {
       <Hidden mdUp implementation="js">
         <Drawer
           variant="temporary"
-          anchor={"right"}
+          anchor={"left"}
           open={mobileOpen}
           classes={{
             paper: classes.drawerPaper
           }}
           onClose={handleDrawerToggle}
         >
-          <div className={classes.appResponsive}>
-            {leftLinks}
+          <div style={{overflowY:"visible"}}> 
             {smLinks}
           </div>
         </Drawer>
