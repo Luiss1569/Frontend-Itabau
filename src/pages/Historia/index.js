@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -71,7 +71,7 @@ function Historia() {
         </div>
 
         <div className='container container-historia animated'>
-            <div className='content-itens left'>
+            <div className='content-itens left' data-about>
                 <p>A empresa ganha alguns logos ao longo do tempo, cresce paulatinamente e solidamente no
                 mercado regional, pela qualidade e pelos sabores exóticos, como abobora com coco, queijo,
                 batata doce com beterraba vegano, arroz doce, mandioca com coco vegano e entre outros tantos.

@@ -4,8 +4,6 @@ import Header from '../../components/Header'
 import Carrossel from '../../components/Carrossel'
 import Footer from '../../components/Footer'
 
-import axios from 'axios'
-
 import Lottie from 'react-lottie';
 
 import animationLocation from '../../assets/animations/location-finding.json'
@@ -154,6 +152,7 @@ function Index() {
     <div className="container container-reverse container-vid animated">
       <div className='content-img left' data-about='true'>
         <Link to=''>
+      {/* eslint-disable-next-line*/}
           <iframe src="//www.youtube.com/embed/8Yoytt2b-o0?feature=youtu.be&amp;wmode=transparent"
             allowfullscreen="" class="uk-responsive-width" width="480" height="270">
 
@@ -183,7 +182,7 @@ function Index() {
         <p>Curta e acompanhe a Itabaú nas principais redes sociais, mande seus comentários, críticas,
           sugestões, dúvidas e fique por dentro de todas as novidades. Seja muito bem vindo a nossa família.</p>
         <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'center' }}>
-          <a href='https://www.facebook.com/ItabauSorvete' target='_blank'>
+          <a href='https://www.facebook.com/ItabauSorvete'  rel="noreferrer">
             <div style={{ pointerEvents: 'none' }}>
               <Lottie options={{
                 loop: true,
@@ -197,7 +196,7 @@ function Index() {
                 width={100} />
             </div>
           </a>
-          <a href='https://www.instagram.com/itabau_sorvetes/' target='_blank'>
+          <a href='https://www.instagram.com/itabau_sorvetes/'  rel="noreferrer">
             <div style={{ pointerEvents: 'none' }}>
               <Lottie options={{
                 loop: true,

@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React from "react";
 // nodejs library that concatenates classes
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,7 +9,6 @@ import Combobox from './styles/combox'
 import List from "@material-ui/core/List";
 import Button from "@material-ui/core/Button"
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import { useLocation } from 'react-router-dom'
@@ -99,7 +98,7 @@ export default function Components() {
                     <List component="nav" aria-label="secondary mailbox folder">
                         <ListItem
                             button
-                            selected={location.pathname == '/'}
+                            selected={location.pathname === '/'}
                         >
                             <a href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
                                 <ListItemText primary="HOME" />
@@ -117,7 +116,7 @@ export default function Components() {
                                     button
                                     key={option}
                                     onClick={()=>{window.location.href = `/${optionItabau[index]}`}}
-                                    selected={location.pathname == optionItabau[index]}
+                                    selected={location.pathname === optionItabau[index]}
                                 >
                                     <Link to={`/${optionItabau[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black'}}>
                                         <ListItemText primary={option} />
@@ -136,7 +135,7 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={location.pathname == optionSorvetes[index]}
+                                    selected={location.pathname === optionSorvetes[index]}
                                 >
                                     <Link to={`/${optionSorvetes[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
@@ -146,7 +145,7 @@ export default function Components() {
                         }
                         <Divider />
 
-                        <ListItem button selected={location.pathname == 'encontrar'}>
+                        <ListItem button selected={location.pathname === 'encontrar'}>
                             <Link to='/encontrar' style={{ textDecoration: 'none', color: 'black' }}>
                                 <ListItemText primary={'ONDE ENCONTRAR'} />
                             </Link>
@@ -163,7 +162,7 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={location.pathname == optionSaibaMais[index]}
+                                    selected={location.pathname === optionSaibaMais[index]}
                                 >
                                     <Link to={`/${optionSaibaMais[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
@@ -182,7 +181,7 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={location.pathname == optionContato[index]}
+                                    selected={location.pathname === optionContato[index]}
                                 >
                                     <Link to={`/${optionContato[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />

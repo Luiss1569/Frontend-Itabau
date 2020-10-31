@@ -40,6 +40,14 @@
   flex-wrap: wrap;
 }
 
+.container-historia .galery[data-about]{
+  width: 45%;
+}
+
+.container-historia .content-itens[data-about]{
+  width: 60%;
+}
+
 .container-historia .galery .box-img{
   max-width: 20%;
 }
