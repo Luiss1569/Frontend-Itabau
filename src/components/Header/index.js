@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 // nodejs library that concatenates classes
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -14,8 +14,13 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import { useLocation } from 'react-router-dom'
 
+import Lottie from 'react-lottie';
+import iceMelting from '../../assets/animations/ice-melting.json'
+
 import stylesNavbar from "./styles/navBarStyle";
 import logo from '../../assets/img/logo-itabau.png'
+
+import './style.css'
 
 import { Link } from 'react-router-dom'
 
@@ -24,6 +29,7 @@ const useStylesNav = makeStyles(stylesNavbar);
 export default function Components() {
     const classesNav = useStylesNav(stylesNavbar)
     let location = useLocation();
+
 
     const itabau = ['Nossa Historia', 'Historia do Sorvete', 'Galeria de Fotos', 'Pesquisa de Opinião']
     const optionItabau = ['historia', 'historia-sorvete', 'galeria', 'opiniao']
@@ -43,21 +49,21 @@ export default function Components() {
                 rightLinks={
                     <List className={classesNav.list}>
                         <Link to='/' className={classesNav.listItem} style={{ marginRight: 30 }} >
-                            <Button className={classesNav.listItem} >Home</Button>
+                            <Button className={classesNav.listItem} >Inicial</Button>
                         </Link>
 
-                        <div className={classesNav.listItem }  style={{ marginRight: 30 }}>
+                        <div className={classesNav.listItem} style={{ marginRight: 30 }}>
                             <Combobox
-                                location={location} 
+                                location={location}
                                 name={'A Itabaú'}
                                 options={itabau}
                                 links={optionItabau}
                             />
                         </div>
 
-                        <div className={classesNav.listItem }  style={{ marginRight: 30 }}>
+                        <div className={classesNav.listItem} style={{ marginRight: 30 }}>
                             <Combobox
-                                location={location} 
+                                location={location}
                                 name={'Sorvetes'}
                                 options={sorvetes}
                                 links={optionSorvetes}
@@ -68,18 +74,18 @@ export default function Components() {
                             <Button className={classesNav.listItem}>Onde Encontrar</Button>
                         </Link>
 
-                        <div className={classesNav.listItem }  style={{ marginRight: 30 }}>
+                        <div className={classesNav.listItem} style={{ marginRight: 30 }}>
                             <Combobox
-                                location={location} 
+                                location={location}
                                 name={'Saiba Mais'}
                                 options={saibaMais}
                                 links={optionSaibaMais}
                             />
                         </div>
 
-                        <div className={classesNav.listItem }  style={{ marginRight: 30 }}>
+                        <div className={classesNav.listItem} style={{ marginRight: 30 }}>
                             <Combobox
-                                location={location} 
+                                location={location}
                                 name={'Contato'}
                                 options={contato}
                                 links={optionContato}
@@ -93,11 +99,11 @@ export default function Components() {
                     <List component="nav" aria-label="secondary mailbox folder">
                         <ListItem
                             button
-                            selected={ location.pathname == '/'}
+                            selected={location.pathname == '/'}
                         >
-                            <Link to={'/'} style={{ textDecoration: 'none', color: 'black' }}>
+                            <a href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
                                 <ListItemText primary="HOME" />
-                            </Link>
+                            </a>
                         </ListItem>
                         <Divider />
 
@@ -110,9 +116,9 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={ location.pathname == optionItabau[index]}
+                                    selected={location.pathname == optionItabau[index]}
                                 >
-                                    <Link to={`/${optionItabau[index]}`} style={{marginLeft: 20, textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionItabau[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>
@@ -129,9 +135,9 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={ location.pathname == optionSorvetes[index]}
+                                    selected={location.pathname == optionSorvetes[index]}
                                 >
-                                    <Link to={`/${optionSorvetes[index]}`} style={{ marginLeft: 20 ,textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionSorvetes[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>
@@ -139,7 +145,7 @@ export default function Components() {
                         }
                         <Divider />
 
-                        <ListItem button selected={ location.pathname == 'encontrar'}>
+                        <ListItem button selected={location.pathname == 'encontrar'}>
                             <Link to='/encontrar' style={{ textDecoration: 'none', color: 'black' }}>
                                 <ListItemText primary={'ONDE ENCONTRAR'} />
                             </Link>
@@ -156,9 +162,9 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={ location.pathname == optionSaibaMais[index]}
+                                    selected={location.pathname == optionSaibaMais[index]}
                                 >
-                                    <Link to={`/${optionSaibaMais[index]}`} style={{marginLeft: 20, textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionSaibaMais[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>
@@ -175,18 +181,18 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={ location.pathname == optionContato[index]}
+                                    selected={location.pathname == optionContato[index]}
                                 >
-                                    <Link to={`/${optionContato[index]}`} style={{marginLeft: 20, textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionContato[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>
                             ))
                         }
                         <Divider />
-                        <div style={{width: '100%', height: 200}}/>
-                        <div style={{width:'100%', textAlign: 'center', color:'#A9A9A9'}}>V1.0 - Itabaú</div>
-                        <div style={{width: '100%', height: 5}}/>
+                        <div style={{ width: '100%', height: 200 }} />
+                        <div style={{ width: '100%', textAlign: 'center', color: '#A9A9A9' }}>V1.0 - Itabaú</div>
+                        <div style={{ width: '100%', height: 5 }} />
                     </List>
                 }
 
@@ -201,6 +207,20 @@ export default function Components() {
             <div>
                 <img src={logo} alt='logo' style={{ position: 'fixed', zIndex: 1111, top: 1, left: '5%', width: 100 }} />
             </div>
+            <button className='floatButton' novisible='true' onClick={() => { window.scroll({ top: 0, left: 0, behavior: 'smooth' }) }}>
+                <div className={'iceAnimated'} >
+                    <Lottie options={{
+                        loop: true,
+                        autoplay: true,
+                        animationData: iceMelting,
+                        rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                        }
+                    }}
+                        height={170}
+                        width={100} />
+                </div>
+            </button>
         </div>
     );
 }

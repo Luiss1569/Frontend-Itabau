@@ -79,7 +79,7 @@ export default function MenuListComposition(props) {
                                 <ClickAwayListener onClickAway={handleClose}>
                                     <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                                         {props.options.map((option, index)=>(
-                                            <MenuItem onClick={handleClose}><Link className={classesNav.listItem} style={{textDecoration: 'none'}} to={`/${props.links[index]}`}>{option}</Link></MenuItem>
+                                            <MenuItem onClick={handleClose}><Link className={classesNav.listItem} style={{textDecoration: 'none', padding:6}} to={`/${props.links[index]}`}>{option}</Link></MenuItem>
                                         ))}
                                     </MenuList>
                                 </ClickAwayListener>

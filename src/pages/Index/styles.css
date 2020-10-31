@@ -1,96 +1,367 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400');
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400");
 
-body{
-    background-color: #fff;
+body {
+  background-color: #fff;
 }
 
-.container{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 30px;
-    margin-top: 40px;
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px;
+  margin-top: 40px;
 }
 
-.container .content-img{
-    width: 43%;
+.container .content-img {
+  width: 43%;
 }
 
-.container .content-img img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 0 30px 0 30px ;
+.container .content-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 30px 0 30px;
+  transition: 1s;
 }
 
-.container .content-itens{
-    width: 38%;
-    text-align: justify;
-    margin-left: 30px;
-    margin-top: -70px;
+.container .content-img img:hover {
+  transform: scale(1.05);
 }
 
-.container .content-itens h3{
-    font-size: 50px;
-    font-family: 'Philosopher', sans-serif;
-    color: #135749;
-    margin-bottom: 0;
+.container .content-img:hover {
+  transform: scale(0.95);
 }
 
-.container .content-itens label{
-    font-size: 16px;
-    font-family: 'Philosopher', sans-serif;
-    color: #38a38d;
+.container .content-itens {
+  width: 38%;
+  text-align: justify;
+  margin-left: 30px;
+  margin-top: -70px;
 }
 
-.container .content-itens p{
-    margin-top: 30px;
-    font-family: 'Philosopher', sans-serif;
-    color: #135749;
-    font-style: italic;
-    text-align: justify;
-    line-height: 30px;
+.container .content-itens h3 {
+  font-size: 50px;
+  font-family: "Philosopher", sans-serif;
+  color: #135749;
+  text-align: left;
+  margin-bottom: 0;
 }
 
-.container .content-itens .button{
-    color: #fff;
-    background-color: #Ba3676;
-    padding: 10px 20px;
-    width: 100px;
-    font-style: bold;
-    border-radius: 30px;
-    text-align: center;
-    transition: 1s;
+.container .content-itens label {
+  font-size: 16px;
+  font-family: "Philosopher", sans-serif;
+  color: #38a38d;
 }
 
-.container .content-itens .button:hover{
-    background-color: #175519;
-    transform: translateY(-5px);
+.container .content-itens p {
+  margin-top: 30px;
+  font-family: "Philosopher", sans-serif;
+  color: #135749;
+  font-style: italic;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.container .content-itens .button {
+  color: #fff;
+  background-color: #ba3676;
+  padding: 10px 20px;
+  width: 100px;
+  font-style: bold;
+  border-radius: 30px;
+  text-align: center;
+  transition: 1s;
+}
+
+.container .content-itens .button:hover {
+  background-color: #175519;
+  transform: translateY(-5px);
+}
+
+/* reverse */
+
+.container-reverse {
+  background-color: #f7f7f7;
+}
+
+.container-reverse .content-itens .button {
+  background-color: #175519;
+}
+
+.container-reverse .content-itens .button:hover {
+  background-color: #ba3676;
+}
+
+/* mapa */
+
+.container-map {
+  background-image: url("../../assets/img/index/mapa.jpg");
+  height: 400px;
+  flex-direction: column;
+}
+
+.container-map .content-itens {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-map .content-itens h3 {
+  font-size: 46px;
+  font-family: "Philosopher", sans-serif;
+  color: #dfcc73;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.container-map .content-itens .button {
+  background-color: #dfcc73;
+  color: #2f5d36;
+  margin-top: 40px;
+}
+
+.container-map .content-itens .button:hover {
+  background-color: #2f5d36;
+  color: #dfcc73;
+}
+
+/*ice*/
+
+.container-ice[visible] {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  float: right;
+  z-index: 1010;
+  opacity: 1;
+}
+
+.container-ice {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  float: right;
+  z-index: 1010;
+  opacity: 0;
+  transition: 2s;
+}
+
+.container-ice::before {
+  display: none;
+}
+
+.animated .right[data-about] {
+  opacity: 0;
+  display: relative;
+  transform: translateX(-25%);
+}
+
+.animated .right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s ease-in-out;
+}
+
+.animated .left[data-about] {
+  opacity: 0;
+  transform: translateX(25%);
+}
+
+.animated .left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s ease-in-out;
 }
 
 .margin {
-    height: 430px;
-    width: 100%;
+  height: 430px;
+  width: 100%;
 }
+
+/*video*/
+
+.container-vid {
+  background-color: #e0cc73;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-vid .content-img iframe {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 30px 0 30px;
+  transition: 0.5s;
+}
+
+.container-vid .content-img iframe:hover {
+  transform: none;
+}
+
+.container-vid .content-img:hover {
+  transform: none;
+}
+
+.container-vid .content-itens {
+  width: 38%;
+  text-align: justify;
+  margin-left: 30px;
+  margin-top: -70px;
+}
+.container-vid .content-itens h3 {
+  margin-bottom: 50px;
+}
+
+/*familia*/
+
+.container-familia{
+  background-image: url('../../assets//img/index/fundo-familia.jpg');
+  margin-top: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.container-familia .content-itens p{
+  margin-top: 0;
+  width: 70%;
+  font-size: 30px;
+  text-align: left;
+  border: 1px solid #2f5d36;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.container-familia .content-itens h3 strong{
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-familia .content-img img{
+  box-shadow: 10px 10px 10px 0px black;
+}
+
+.container-social{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-social .content-itens{
+  width: 65%;
+}
+
+.container-social .content-itens p, .container-social .content-itens h3{
+  text-align: center;
+}
+
+.container-social .content-itens div a{
+  transition: .5s;
+}
+
+.container-social .content-itens div a:hover{
+  transform: translateY(-5px);
   
-  @media only screen and (min-width: 1024px) {
-    .margin {
-      height: 430;
-    }
+}
+
+@media only screen and (min-width: 1024px) {
+  .margin {
+    height: 430;
   }
-  
-  /* margin on medium-sized screens */
-  @media only screen and (max-width: 1023px) and (min-width: 768px) {
-    .margin {
-      height: 60;
-    }
+}
+
+/* margin on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .margin {
+    height: 60;
   }
-  
-  /* margin on small screens */
-  @media only screen and (max-width: 767px) {
-    .margin {
-      margin-top: 72px;
-      height: 160px;
-    }
+  .container {
+    padding: 20px;
   }
+
+  .container .content-img {
+    width: 50%;
+  }
+}
+
+/* margin on small screens */
+@media only screen and (max-width: 767px) {
+  .margin {
+    margin-top: 72px;
+    height: 160px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .container-reverse {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+
+  .container .content-img {
+    width: 90%;
+  }
+
+  .container .content-itens {
+    width: 90%;
+    margin-left: 0;
+    margin-top: -20px;
+  }
+  .animated .right[data-about] {
+    opacity: 0;
+    display: relative;
+    transform: scale(1.1);
+  }
+
+  .animated .right {
+    opacity: 1;
+    transform: scale(1);
+    transition: 1s ease-in-out;
+  }
+
+  .animated .left[data-about] {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  .animated .left {
+    opacity: 1;
+    transform: scale(1);
+    transition: 1s ease-in-out;
+  }
+
+  .container-vid .content-itens  .button{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+
+  .container-vid {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .container-vid .content-itens h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .container-familia{
+    margin-top: 0;
+  }
+
+  .container-familia .content-itens p{
+   width: 75%;
+  }
+
+  .container-social{
+    padding-bottom: 50px;
+  }
+}

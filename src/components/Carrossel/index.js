@@ -20,27 +20,29 @@ export default function Parallax(props) {
 
   useEffect(() => {
     var cont = 0
-    const interval = setInterval(() => {
-      cont++
-      setChecked(false)
-      if (cont >= images.length) {
-        setImgIndex(0)
-        cont = 0
-      } else {
-        setImgIndex(imgIndex => imgIndex + 1);
-      }
-      setTimeout(()=>{
-        setChecked(true)
-      },100)
-    }, 5000);
-    return () => clearInterval(interval);
+    if(images.length > 1){
+      const interval = setInterval(() => {
+        cont++
+        setChecked(false)
+        if (cont >= images.length) {
+          setImgIndex(0)
+          cont = 0
+        } else {
+          setImgIndex(imgIndex => imgIndex + 1);
+        }
+        setTimeout(()=>{
+          setChecked(true)
+        },100)
+      }, 5000);
+      return () => clearInterval(interval);
+    }
   }, [images]);
 
 
 
   let windowScrollTop;
   if (window.innerWidth >= 768) {
-    windowScrollTop = window.pageYOffset / 3;
+    windowScrollTop = window.pageYOffset/3;
   } else {
     windowScrollTop = 0;
   }
@@ -76,7 +78,7 @@ export default function Parallax(props) {
         style={{
           ...style,
           backgroundImage: "url(" + images[imgIndex] + ")",
-          // transform: transform
+          transform: transform
         }}
       >
         {children}

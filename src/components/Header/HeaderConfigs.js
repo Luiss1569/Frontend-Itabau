@@ -31,6 +31,7 @@ export default function Header(props) {
     return function cleanup() {
       if (props.changeColorOnScroll) {
         window.removeEventListener("scroll", headerColorChange);
+        window.removeEventListener("resize", headerColorChangeWidth);
       }
     };
   });
@@ -41,7 +42,7 @@ export default function Header(props) {
   const headerColorChangeWidth = () => {
     const { color, changeColorOnScroll } = props;
     const windowWidth = window.innerWidth
-    if ( windowWidth < 720) {
+    if (windowWidth < 720) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[color]);
@@ -62,7 +63,7 @@ export default function Header(props) {
     const { color, changeColorOnScroll } = props;
     const windowsScrollTop = window.pageYOffset;
     const windowWidth = window.innerWidth
-    if (windowsScrollTop > changeColorOnScroll.height ||  windowWidth < 720) {
+    if (windowsScrollTop > changeColorOnScroll.height || windowWidth < 720) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[color]);
@@ -77,6 +78,17 @@ export default function Header(props) {
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
     }
+    document.querySelectorAll('.animated div[data-about]').forEach(div => {
+      if (div.getBoundingClientRect().top < window.innerHeight-100) {
+        div.removeAttribute('data-about')
+      }
+    });
+    if(windowWidth > document.querySelector('body').getBoundingClientRect().top + windowWidth){
+      document.querySelector('.floatButton').removeAttribute('novisible')
+    }else{
+      document.querySelector('.floatButton').setAttribute('novisible', true)
+    }
+
   };
   const { color, rightLinks, smLinks, leftLinks, brand, fixed, absolute } = props;
   const appBarClasses = classNames({
@@ -122,7 +134,7 @@ export default function Header(props) {
           }}
           onClose={handleDrawerToggle}
         >
-          <div style={{overflowY:"visible"}}> 
+          <div style={{ overflowY: "visible" }}>
             {smLinks}
           </div>
         </Drawer>
