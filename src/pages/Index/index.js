@@ -4,8 +4,7 @@ import Header from '../../components/Header'
 import Carrossel from '../../components/Carrossel'
 import Footer from '../../components/Footer'
 
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import axios from 'axios'
 
 import Lottie from 'react-lottie';
 
@@ -33,10 +32,13 @@ function Index() {
   const [iceAnimation, setIceAnimation] = useState(false)
   const [load, setLoad] = useState(true)
 
+  useEffect(()=>{
+    setTimeout(() => { setLoad(false) }, 3000)
+  })
+
   useEffect(() => {
-    window.addEventListener('load', function (event) {
-      setTimeout(()=>{setIceAnimation(true)}, 3000)
-      setTimeout(() => { setLoad(false) }, 2000)
+    window.addEventListener('load', function () {
+      setTimeout(()=>{setIceAnimation(true)}, 5000)
       try {
         document.querySelectorAll('.animated div[data-about]')[1].removeAttribute('data-about');
         document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
@@ -215,7 +217,7 @@ function Index() {
 
     <Footer />
 
-    {load ? (<div style={{position: 'absolute', backgroundColor: '#fff', top:0, bottom:0, left:0, right:0, zIndex: 2010 ,display: 'flex', flex: 1, width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+    {load ? (<div style={{position: 'fixed', backgroundColor: '#fff', top:0, bottom:0, left:0, right:0, zIndex: 2010 ,display: 'flex', flex: 1, width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
       <Lottie options={{
         loop: true,
         autoplay: true,
@@ -224,8 +226,8 @@ function Index() {
           preserveAspectRatio: 'xMidYMid slice'
         }
       }}
-        height={170}
-        width={100} />
+        height={400}
+        width={400} />
     </div>):""}
 
   </>;

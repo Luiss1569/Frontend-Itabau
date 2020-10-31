@@ -116,9 +116,10 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
+                                    onClick={()=>{window.location.href = `/${optionItabau[index]}`}}
                                     selected={location.pathname == optionItabau[index]}
                                 >
-                                    <Link to={`/${optionItabau[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionItabau[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black'}}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>

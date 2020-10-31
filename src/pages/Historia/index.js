@@ -7,10 +7,22 @@ import Carrossel from '../../components/Carrossel'
 import bg from '../../assets/img/Historia/bg.jpg'
 import rme from '../../assets/img/Historia/rme.jpg'
 
+import g1 from '../../assets/img/Historia/g1.jpg'
+import g2 from '../../assets/img/Historia/g2.jpg'
+import g3 from '../../assets/img/Historia/g3.jpg'
+import g4 from '../../assets/img/Historia/g4.jpg'
+import g5 from '../../assets/img/Historia/g5.jpg'
+import g6 from '../../assets/img/Historia/g6.jpg'
+import g7 from '../../assets/img/Historia/g7.jpg'
+import g8 from '../../assets/img/Historia/g8.jpg'
+import g9 from '../../assets/img/Historia/g9.jpg'
+import g9_2 from '../../assets/img/Historia/g9-2.jpg'
+
 import './style.css'
 
 function Historia() {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
+    const geracoes = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g9_2]
 
     return (<>
 
@@ -44,11 +56,35 @@ function Historia() {
         </div>
 
         <div className='container container-historia animated' style={{ marginTop: 0 }}>
-            <div className='content-img left' data-about>
-                <h3>1</h3>
-                <img src={rme} alt='nos' />
+            <div className='content-img  galery left' data-about>
+                {geracoes.map((image, index) => (
+                    <div className='box-img'>
+                        <img
+                            src={image}
+                            alt="..." />
+                        <div className={"content"}>
+                            <h3>{index + 1}º geração</h3>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
+
+        <div className='container container-historia animated'>
+            <div className='content-itens left'>
+                <p>A empresa ganha alguns logos ao longo do tempo, cresce paulatinamente e solidamente no
+                mercado regional, pela qualidade e pelos sabores exóticos, como abobora com coco, queijo,
+                batata doce com beterraba vegano, arroz doce, mandioca com coco vegano e entre outros tantos.
+                A empresa tem como compromisso manter a qualidade do sorvete, para fornecer um alimento
+                nutritivo. Ao fazer esta opção a empresa desenvolve e oferece a seus consumidores os
+                      sorvetes orgânicos.</p>
+            </div>
+            <div className='content-itens right' data-about style={{ marginTop: -40 }}>
+                <p>Os membros da família ainda são os maiores colaboradores da empresa.
+                    Quase no quintal da empresa está a Pedra do Baú.</p>
+            </div>
+        </div>
+
         <Footer />
     </>)
 }

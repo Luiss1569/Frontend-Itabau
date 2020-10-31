@@ -1,0 +1,124 @@
+
+.box-card {
+    margin-bottom: 10px;
+  }
+  
+  .box-card .imgBx  {
+    position: relative;
+  }
+  
+  .box-card .content {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 1;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box-card:hover .content {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    border-radius: 0 30px 0 30px ;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: #f4f4f4;
+  }
+  
+  .masonry {
+    /* Masonry container */
+    column-count: 5;
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5;
+    column-gap: 1em;
+    zoom: 1;
+    text-align: justify;
+  }
+  
+  .galery-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex: 1;
+    transition: 2s;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+  
+  .galery-container .container-img {
+    width: auto;
+    height: min-content;
+    min-width: 60%;
+    border: 2px rgba(131, 20, 235, 0.404) solid;
+    background-color: #f5f5f5;
+  }
+  
+  .galery-container .container-img .box-img .imgBx {
+    background: #000;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .galery-container .container-img .box-img .imgBx img {
+    width: 80%;
+  }
+  
+  .galery-container .container-img .box-img .content-img {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 200px;
+    background-color: #f5f5f5;
+    height: auto;
+  }
+  
+  
+  @media only screen and (min-width: 1024px) {
+    .masonry {
+      column-count: 4;
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+    }
+  }
+  
+  /* Masonry on medium-sized screens */
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+      column-count: 2;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+    }
+    .box-card {
+      display: inline-block;
+    }
+  }
+  
+  /* Masonry on small screens */
+  @media only screen and (max-width: 767px) {
+    .masonry {
+      column-count: 1;
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+    }
+    .box-card {
+      display: inline-block;
+    }
+  }
+  

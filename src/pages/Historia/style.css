@@ -6,9 +6,55 @@
   width: 90%;
 }
 
+.container-historia .content-img {
+  transition: 0.5s;
+}
+
+.galery .content-img {
+  transition: 0.5s;
+  width: 100%;
+}
+
+.container-historia .content-img:hover img {
+  transform: none;
+}
+
+.container-historia .content-img:hover {
+  transform: none;
+}
+
 .container-historia span {
   text-align: center !important;
   font-size: 16px;
   font-family: "Philosopher", sans-serif;
   color: #38a38d;
 }
+
+.container-historia .galery {
+  display: flex;
+  width: 90%;
+  flex: 1;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.container-historia .galery .box-img{
+  max-width: 20%;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .container-historia .galery .box-img{
+    max-width: 30%;
+  }
+}
+
+/* margin on small screens */
+@media only screen and (max-width: 767px) {
+  .container-historia .galery .box-img{
+    max-width: 45%;
+  }
+}
+
+
