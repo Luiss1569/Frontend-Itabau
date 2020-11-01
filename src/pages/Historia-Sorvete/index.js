@@ -74,7 +74,6 @@ function HistoriaSorvete() {
 
         </div>
 
-
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
                 <h3>Sorvete é mais que prazer</h3>

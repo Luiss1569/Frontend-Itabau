@@ -47,7 +47,7 @@ export default function Components() {
             <Header
                 rightLinks={
                     <List className={classesNav.list}>
-                        <Link to='/' className={classesNav.listItem} style={{ marginRight: 30 }} >
+                        <Link to='/home' className={classesNav.listItem} style={{ marginRight: 30 }} >
                             <Button className={classesNav.listItem} >Inicial</Button>
                         </Link>
 
@@ -100,8 +100,8 @@ export default function Components() {
                             button
                             selected={location.pathname === '/'}
                         >
-                            <a href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
-                                <ListItemText primary="HOME" />
+                            <a href={'/home'} style={{ textDecoration: 'none', color: 'black' }}>
+                                <ListItemText primary="Inicial" />
                             </a>
                         </ListItem>
                         <Divider />
@@ -116,7 +116,7 @@ export default function Components() {
                                     button
                                     key={option}
                                     onClick={()=>{window.location.href = `/${optionItabau[index]}`}}
-                                    selected={location.pathname === optionItabau[index]}
+                                    selected={location.pathname === `/${optionItabau[index]}`}
                                 >
                                     <Link to={`/${optionItabau[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black'}}>
                                         <ListItemText primary={option} />
@@ -135,7 +135,7 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={location.pathname === optionSorvetes[index]}
+                                    selected={location.pathname === `/${optionSorvetes[index]}`}
                                 >
                                     <Link to={`/${optionSorvetes[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
@@ -145,7 +145,7 @@ export default function Components() {
                         }
                         <Divider />
 
-                        <ListItem button selected={location.pathname === 'encontrar'}>
+                        <ListItem button selected={location.pathname === '/encontrar'}>
                             <Link to='/encontrar' style={{ textDecoration: 'none', color: 'black' }}>
                                 <ListItemText primary={'ONDE ENCONTRAR'} />
                             </Link>
@@ -162,7 +162,7 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={location.pathname === optionSaibaMais[index]}
+                                    selected={location.pathname === `/${optionSaibaMais[index]}`}
                                 >
                                     <Link to={`/${optionSaibaMais[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />
@@ -181,7 +181,7 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    selected={location.pathname === optionContato[index]}
+                                    selected={location.pathname === `/${optionSaibaMais[index]}`}
                                 >
                                     <Link to={`/${optionContato[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
                                         <ListItemText primary={option} />

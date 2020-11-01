@@ -14,7 +14,7 @@ function Footer() {
                 <img src={logo} alt='logo' />
             </div>
             <div className='content-itens left' data-about='true'>
-                <Link to='/' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>CASA</Link>
+                <Link to='/home' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>CASA</Link>
                 <Link to='/historia' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>A ITABAÚ</Link>
                 <Link to='/lancamentos' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>SORVETES</Link>
                 <Link to='/selos' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>SAIBA MAIS</Link>

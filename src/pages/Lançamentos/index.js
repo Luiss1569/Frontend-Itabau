@@ -29,7 +29,7 @@ function Lançamento() {
                 </p>
             </div>
             <div className='content-img right' data-about style={{ marginTop: 0}}>
-                <img src={l1} lat='img' />
+                <img src={l1} alt='img' />
             </div>
         </div>
         <Footer />

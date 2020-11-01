@@ -1,0 +1,6 @@
+.container .content-img .box-img .buttonImg{
+    transition: .5s;
+} 
+.container .content-img .box-img .buttonImg:hover{
+    transform: translateY(-10px);
+} 

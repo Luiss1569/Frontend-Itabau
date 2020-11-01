@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
+
 
 import Header from '../../components/Header'
 import Carrossel from '../../components/Carrossel'
@@ -27,15 +29,18 @@ import './styles.css';
 import { Link } from 'react-router-dom';
 
 function Index() {
-  const [iceAnimation, setIceAnimation] = useState(false)
-  const [load, setLoad] = useState(true)
+  const location = useLocation()
+  const [iceAnimation, setIceAnimation] = useState(location.pathname === '/home'?true:false)
+  const [load, setLoad] = useState(location.pathname === '/home'?false:true)
+
+  window.scrollTo(0, 0)
 
   useEffect(()=>{
     setTimeout(() => { setLoad(false) }, 3000)
+    console.log(location.pathname);
   })
 
   useEffect(() => {
-    window.addEventListener('load', function () {
       setTimeout(()=>{setIceAnimation(true)}, 5000)
       try {
         document.querySelectorAll('.animated div[data-about]')[1].removeAttribute('data-about');
@@ -48,7 +53,6 @@ function Index() {
           div.removeAttribute('visible')
         });
       }, 6000)
-    })
   })
 
   return <>
@@ -182,7 +186,7 @@ function Index() {
         <p>Curta e acompanhe a Itabaú nas principais redes sociais, mande seus comentários, críticas,
           sugestões, dúvidas e fique por dentro de todas as novidades. Seja muito bem vindo a nossa família.</p>
         <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'center' }}>
-          <a href='https://www.facebook.com/ItabauSorvete'  rel="noreferrer">
+          <a href='https://www.facebook.com/ItabauSorvete' target='_blank' rel="noreferrer">
             <div style={{ pointerEvents: 'none' }}>
               <Lottie options={{
                 loop: true,
@@ -196,7 +200,7 @@ function Index() {
                 width={100} />
             </div>
           </a>
-          <a href='https://www.instagram.com/itabau_sorvetes/'  rel="noreferrer">
+          <a href='https://www.instagram.com/itabau_sorvetes/' target='_blank' rel="noreferrer">
             <div style={{ pointerEvents: 'none' }}>
               <Lottie options={{
                 loop: true,
