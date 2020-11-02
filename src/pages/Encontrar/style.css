@@ -1,0 +1,18 @@
+.container-location {
+    flex-direction: column;
+}
+
+div[data-reach-combobox] input{
+    transition: 1s;
+    border-color: #175519 !important;
+    color: #175519;
+}
+
+div[data-reach-combobox] input:hover{
+    transform: translateY(-5px);
+    border-color: #ba3676 !important;
+}
+
+div[data-reach-combobox] input:focus{
+    outline: none;
+}

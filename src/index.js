@@ -9,6 +9,7 @@ import Historia_Sorvete from './pages/Historia-Sorvete'
 import Lancamento from './pages/Lançamentos'
 import Picoles from './pages/Picoles'
 import MassaPremium from './pages/MassaPremium'
+import Encontrar from './pages/Encontrar'
 
 var hist = createBrowserHistory();
 
@@ -22,6 +23,7 @@ ReactDOM.render(
       <Route path="/lancamentos"  component={Lancamento} />
       <Route path="/picoles"  component={Picoles} />
       <Route path="/massa"  component={MassaPremium} />
+      <Route path="/encontrar"  component={Encontrar} />
 
 
   </Router>,

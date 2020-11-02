@@ -1,0 +1,38 @@
+.container-massa {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-massa .content-itens h3{
+    text-align: left;
+}
+
+.container-massa .content-box {
+  width: 90%;
+  background-color: rgba(182, 180, 180, 0.356);
+  padding: 20px;
+  border-radius: 0 30px 30px 30px;
+}
+
+.container-massa .content-box h3 {
+  font-size: 30px;
+}
+
+.container-massa .content-itens{
+    width: fit-content;
+}
+
+.container-massa .content-itens ul li {
+  font-family: "Philosopher", sans-serif;
+  color: #135749;
+  font-style: italic;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.container-massa .content-itens h4{
+  font-family:"Philosopher", sans-serif;
+  color: #135749;
+  margin-top: 35px;
+  margin-right: 10px;
+}
