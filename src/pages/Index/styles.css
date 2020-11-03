@@ -83,6 +83,12 @@ body {
 
 .container-reverse {
   background-color: #f7f7f7;
+  flex-direction: row-reverse ;
+}
+
+.container-reverse .content-itens{
+  margin-left: -10px;
+  margin-right: 20px;
 }
 
 .container-reverse .content-itens .button {
@@ -301,7 +307,7 @@ body {
   }
 
   .container-reverse {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 10px;
   }
 

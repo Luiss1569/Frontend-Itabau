@@ -82,6 +82,10 @@ export default function Components() {
                             />
                         </div>
 
+                        <Link to='/cidade' className={classesNav.listItem} style={{ marginRight: 30 }} >
+                            <Button className={classesNav.listItem}>Nossa Cidade</Button>
+                        </Link>
+
                         <div className={classesNav.listItem} style={{ marginRight: 30 }}>
                             <Combobox
                                 location={location}
@@ -171,6 +175,12 @@ export default function Components() {
                             ))
                         }
                         <Divider />
+
+                        <ListItem button selected={location.pathname === '/cidade'}>
+                            <Link to='/cidade' style={{ textDecoration: 'none', color: 'black' }}>
+                                <ListItemText primary={'Cidade'} />
+                            </Link>
+                        </ListItem>
 
                         <ListItem>
                             <ListItemText primary="CONTATO" />

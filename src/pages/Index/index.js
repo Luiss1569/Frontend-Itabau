@@ -30,29 +30,29 @@ import { Link } from 'react-router-dom';
 
 function Index() {
   const location = useLocation()
-  const [iceAnimation, setIceAnimation] = useState(location.pathname === '/home'?true:false)
-  const [load, setLoad] = useState(location.pathname === '/home'?false:true)
+  const [iceAnimation, setIceAnimation] = useState(location.pathname === '/home' ? true : false)
+  const [load, setLoad] = useState(location.pathname === '/home' ? false : true)
 
   window.scrollTo(0, 0)
 
-  useEffect(()=>{
+  useEffect(() => {
     setTimeout(() => { setLoad(false) }, 3000)
     console.log(location.pathname);
   })
 
   useEffect(() => {
-      setTimeout(()=>{setIceAnimation(true)}, 5000)
-      try {
-        document.querySelectorAll('.animated div[data-about]')[1].removeAttribute('data-about');
-        document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
-      } catch (e) {
-        console.log(e);
-      }
-      setTimeout(function () {
-        document.querySelectorAll('.container-ice[visible]').forEach(div => {
-          div.removeAttribute('visible')
-        });
-      }, 6000)
+    setTimeout(() => { setIceAnimation(true) }, 5000)
+    try {
+      document.querySelectorAll('.animated div[data-about]')[1].removeAttribute('data-about');
+      document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+    } catch (e) {
+      console.log(e);
+    }
+    setTimeout(function () {
+      document.querySelectorAll('.container-ice[visible]').forEach(div => {
+        div.removeAttribute('visible')
+      });
+    }, 6000)
   })
 
   return <>
@@ -91,6 +91,9 @@ function Index() {
     </div>
 
     <div className=' container container-reverse animated'>
+      <div className='content-img left ' data-about='true'>
+        <img src={i2} alt='picoles sem açucar' />
+      </div>
       <div className='content-itens right' data-about='true'>
         <h3>Picolés Recheados</h3>
         <label>Aquele picolé para deixar seu dia incrível</label>
@@ -98,10 +101,6 @@ function Index() {
         artificiais, corantes e conservante, porém colocamos neles recheios magníficos, que lhe proporciona
           um sensação inesquecível, e impossível provar somente um.</p>
         <Link to={'/picoles'} style={{ textDecoration: 'none' }}><div className='button'>Ver sabores</div></Link>
-      </div>
-
-      <div className='content-img left ' data-about='true'>
-        <img src={i2} alt='picoles sem açucar' />
       </div>
     </div>
 
@@ -153,10 +152,15 @@ function Index() {
     </div>
 
 
-    <div className="container container-reverse container-vid animated">
+    <div className="container  container-vid animated">
+      <div className='content-itens right' data-about='true'>
+        <h3>Orgânico Natural e Saudável</h3>
+        <Link to={'/videos'} style={{ textDecoration: 'none' }}><div className='button'>Ver todos os vídeos</div></Link>
+      </div>
+
       <div className='content-img left' data-about='true'>
         <Link to=''>
-      {/* eslint-disable-next-line*/}
+          {/* eslint-disable-next-line*/}
           <iframe src="//www.youtube.com/embed/8Yoytt2b-o0?feature=youtu.be&amp;wmode=transparent"
             allowfullscreen="" class="uk-responsive-width" width="480" height="270">
 
@@ -164,10 +168,6 @@ function Index() {
         </Link>
       </div>
 
-      <div className='content-itens right' data-about='true'>
-        <h3>Orgânico Natural e Saudável</h3>
-        <Link to={'/videos'} style={{ textDecoration: 'none' }}><div className='button'>Ver todos os vídeos</div></Link>
-      </div>
     </div>
 
     <div className="container container-familia animated">
@@ -220,7 +220,7 @@ function Index() {
 
     <Footer />
 
-    {load ? (<div style={{position: 'fixed', backgroundColor: '#fff', top:0, bottom:0, left:0, right:0, zIndex: 2010 ,display: 'flex', flex: 1, width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+    {load ? (<div style={{ position: 'fixed', backgroundColor: '#fff', top: 0, bottom: 0, left: 0, right: 0, zIndex: 2010, display: 'flex', flex: 1, width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
       <Lottie options={{
         loop: true,
         autoplay: true,
@@ -231,7 +231,7 @@ function Index() {
       }}
         height={400}
         width={400} />
-    </div>):""}
+    </div>) : ""}
 
   </>;
 }

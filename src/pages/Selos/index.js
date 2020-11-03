@@ -11,7 +11,6 @@ import s2 from '../../assets/img/selos/s2.jpg'
 import s3 from '../../assets/img/selos/s3.jpg'
 
 import './style.css'
-import { PostAdd } from '@material-ui/icons';
 
 function Selos() {
     window.scrollTo(0, 0)

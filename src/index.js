@@ -12,6 +12,9 @@ import MassaPremium from './pages/MassaPremium'
 import Encontrar from './pages/Encontrar'
 import Receitas from './pages/Receitas'
 import Selos from './pages/Selos'
+import Frutas from './pages/Frutas'
+import Videos from './pages/Videos'
+import Ingredientes from './pages/Ingredientes'
 
 var hist = createBrowserHistory();
 
@@ -28,8 +31,10 @@ ReactDOM.render(
       <Route path="/encontrar"  component={Encontrar} />
       <Route path="/receitas"  component={Receitas} />
       <Route path="/selos"  component={Selos} />
-
-
+      <Route path="/frutas"  component={Frutas} />
+      <Route path="/videos"  component={Videos} />
+      <Route path="/ingredientes"  component={Ingredientes} />
+ 
   </Router>,
   document.getElementById("root")
 );
