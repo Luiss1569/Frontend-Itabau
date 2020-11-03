@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
+
+import Tooltip from '@material-ui/core/Tooltip';
 
 import Skeleton from '@material-ui/lab/Skeleton';
 
@@ -19,7 +21,7 @@ import { PinDropSharp } from '@material-ui/icons';
 
 function Lançamento() {
 
-    const cont = [0, 1, 2, 3, 4]
+    const cont = [0, 1, 2]
 
     const [location, setLocation] = useState('')
     const [locations, setLocations] = useState([])
@@ -41,9 +43,16 @@ function Lançamento() {
             }, 3000)
         }
         loadLocations()
+        // eslint-disable-next-line
     }, [location])
 
     const render = () => {
+
+        if (!location && locations.length === 0) {
+            return (
+                <div style={{ width: '80%', height: 300 }} />
+            )
+        }
 
         if (location && loading) {
             return (
@@ -66,20 +75,23 @@ function Lançamento() {
                             <h4>São Bento do Sapucai-SP</h4>
                         </div>
                         <div className='body'>
-                            <div className='content'>
-                                <a href=''>
-                                    <Lottie options={{
-                                        loop: true,
-                                        autoplay: true,
-                                        animationData: animationIconLocation,
-                                        rendererSettings: {
-                                            preserveAspectRatio: 'xMidYMid slice'
-                                        }
-                                    }}
-                                        height={100}
-                                        width={100} />
-                                </a>
-                            </div>
+                            <Tooltip title="Ver Rotas" aria-label="Ver Rotas">
+                                <div className='content'>
+                                    <a href={`https://www.google.com/maps/dir/?api=1&destination=-22.6858218,-45.7249803`} rel="noreferrer"
+                                        target='_blank' onmouseover="Tip('Ver Rota')" onmouseout="UnTip()">
+                                        <Lottie options={{
+                                            loop: true,
+                                            autoplay: true,
+                                            animationData: animationIconLocation,
+                                            rendererSettings: {
+                                                preserveAspectRatio: 'xMidYMid slice'
+                                            }
+                                        }}
+                                            height={100}
+                                            width={100} />
+                                    </a>
+                                </div>
+                            </Tooltip>
                             <h4>Rua: São José</h4>
                             <h4>Nº 188 - Centro</h4>
                             <h4>Tel. (35)3651-2450</h4>
@@ -130,7 +142,7 @@ function Lançamento() {
         </div>
 
         <div className='container container-location animated'>
-            <div className='content-location  galery right'>
+            <div className='content-location  galery right' >
                 {render()}
             </div>
         </div>

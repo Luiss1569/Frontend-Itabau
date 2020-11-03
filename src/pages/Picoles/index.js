@@ -71,7 +71,7 @@ function Picoles() {
 
         <div className='container container-historia animated' >
             <div className='content-itens left' data-about>
-                <a href={catalogo} target='_blank' rel="noreferrer">
+                <a href={catalogo} target='_blank' rel="noreferrer" style={{textDecoration: 'none'}}>
                     <Lottie options={{
                         loop: true,
                         autoplay: true,
@@ -82,7 +82,7 @@ function Picoles() {
                     }}
                         height={100}
                         width={100} />
-                    <p style={{ textAlign: 'center' }}>Clique aqui para baixar e imprimir a ista completa de sabores!</p>
+                    <p style={{ textAlign: 'center' }}>Clique aqui para baixar e imprimir a lista completa de sabores!</p>
                 </a>
             </div>
         </div>

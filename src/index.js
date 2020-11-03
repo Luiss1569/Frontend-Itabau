@@ -10,6 +10,8 @@ import Lancamento from './pages/Lançamentos'
 import Picoles from './pages/Picoles'
 import MassaPremium from './pages/MassaPremium'
 import Encontrar from './pages/Encontrar'
+import Receitas from './pages/Receitas'
+import Selos from './pages/Selos'
 
 var hist = createBrowserHistory();
 
@@ -24,6 +26,8 @@ ReactDOM.render(
       <Route path="/picoles"  component={Picoles} />
       <Route path="/massa"  component={MassaPremium} />
       <Route path="/encontrar"  component={Encontrar} />
+      <Route path="/receitas"  component={Receitas} />
+      <Route path="/selos"  component={Selos} />
 
 
   </Router>,

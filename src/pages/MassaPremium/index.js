@@ -4,6 +4,12 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
+import catalogo from '../../assets/img/massa/massa-premium.pdf'
+
+import Lottie from 'react-lottie';
+
+import animationPrint from '../../assets/animations/printer.json'
+
 import bg from '../../assets/img/massa/bg.jpg'
 
 import './style.css'
@@ -62,6 +68,24 @@ function MassaPremium() {
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <h4>Validade:</h4><p>1 anos após a data de fabricação.</p>
                 </div>
+            </div>
+        </div>
+
+        <div className='container container-historia animated' >
+            <div className='content-itens left' data-about>
+                <a href={catalogo} target='_blank' rel="noreferrer" style={{textDecoration: 'none'}}>
+                    <Lottie options={{
+                        loop: true,
+                        autoplay: true,
+                        animationData: animationPrint,
+                        rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                        }
+                    }}
+                        height={100}
+                        width={100} />
+                    <p style={{ textAlign: 'center', textDecoration: 'none' }}>Clique aqui para baixar e imprimir a lista completa de sabores!</p>
+                </a>
             </div>
         </div>
         <Footer />

@@ -132,7 +132,7 @@ function Index() {
           height={200}
           width={200} />
         <h3>Onde comprar sorvetes Itabaú?</h3>
-        <Link to={'/picoles'} style={{ textDecoration: 'none' }}><div className='button'>Pesquisar Endereço</div></Link>
+        <Link to={'/encontrar'} style={{ textDecoration: 'none' }}><div className='button'>Pesquisar Endereço</div></Link>
       </div>
     </div>
 

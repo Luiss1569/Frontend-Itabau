@@ -24,12 +24,13 @@ div[data-reach-combobox] input:focus {
   flex-direction: row;
   gap: 30px;
   flex-wrap: wrap;
+  width: 80%;
   transition: 2s;
   padding-bottom: 200px;
 }
 
 .container-location .content-location .box-location {
-  width: 25%;
+  width: 30%;
   background-color: #f5f5f5;
   padding-bottom: 10px;
   border-radius: 10px;
@@ -46,6 +47,7 @@ div[data-reach-combobox] input:focus {
   justify-content: center;
   background-color: #175519;
   padding: 7px;
+  transition: 1s;
 }
 
 .container-location .content-location .box-location .header h4 {
@@ -65,6 +67,10 @@ div[data-reach-combobox] input:focus {
 .container-location .content-location .box-location:hover{
   transform: scale(1.1);
   box-shadow: 4px 7px 10px 6px rgba(0, 0, 0, 0.507);
+
+}
+.container-location .content-location .box-location:hover .header{
+  background-color: #ba3676f6 ;
 }
 
 .container-location .content-location .box-location .body .content {
@@ -121,6 +127,6 @@ div[data-reach-combobox] input:focus {
 /* margin on small screens */
 @media only screen and (max-width: 767px) {
   .container-location .content-location .box-location {
-    width: 80%;
+    width: 100%;
   }
 }
