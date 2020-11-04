@@ -15,6 +15,7 @@ import Selos from './pages/Selos'
 import Frutas from './pages/Frutas'
 import Videos from './pages/Videos'
 import Ingredientes from './pages/Ingredientes'
+import Cidade from './pages/Cidade'
 
 var hist = createBrowserHistory();
 
@@ -34,6 +35,7 @@ ReactDOM.render(
       <Route path="/frutas"  component={Frutas} />
       <Route path="/videos"  component={Videos} />
       <Route path="/ingredientes"  component={Ingredientes} />
+      <Route path="/cidade"  component={Cidade} />
  
   </Router>,
   document.getElementById("root")
