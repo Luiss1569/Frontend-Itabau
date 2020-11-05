@@ -1,27 +1,11 @@
-import React from 'react'
+import React from "react";
 
-import './style.css';
+import Gallery from 'react-grid-gallery'
 
-function Galery(props) {
-    const images = props.images
+export default function Components(props) {
 
-    return <>
-        {images.map.forEach((image,index) => {
-            <div className='masonry'>
-                <div className={"box-card"}>
-                    <div className={"imgBx"}>
-                        <img
-                            src={image}
-                            alt="..." />
-                        <div className={"content"}>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>;
-        })}
-    </>
+   
+    return (
+        <Gallery images={props.images} backdropClosesModal={true} showLightboxThumbnails={true} enableImageSelection={false} />
+    );
 }
-
-export default Galery;

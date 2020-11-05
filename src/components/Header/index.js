@@ -178,7 +178,7 @@ export default function Components() {
 
                         <ListItem button selected={location.pathname === '/cidade'}>
                             <Link to='/cidade' style={{ textDecoration: 'none', color: 'black' }}>
-                                <ListItemText primary={'Cidade'} />
+                                <ListItemText primary={'NOSSA CIDADE'} />
                             </Link>
                         </ListItem>
 

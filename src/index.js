@@ -16,6 +16,10 @@ import Frutas from './pages/Frutas'
 import Videos from './pages/Videos'
 import Ingredientes from './pages/Ingredientes'
 import Cidade from './pages/Cidade'
+import Matriz from './pages/Matriz'
+import Pesquisa from './pages/Pesquisa'
+import Fotos from './pages/Fotos'
+import Boleto from './pages/Boleto'
 
 var hist = createBrowserHistory();
 
@@ -36,7 +40,11 @@ ReactDOM.render(
       <Route path="/videos"  component={Videos} />
       <Route path="/ingredientes"  component={Ingredientes} />
       <Route path="/cidade"  component={Cidade} />
- 
+      <Route path="/matriz"  component={Matriz} />
+      <Route path="/opiniao"  component={Pesquisa} />
+      <Route path="/galeria"  component={Fotos} />
+      <Route path="/boletos"  component={Boleto} />
+
   </Router>,
   document.getElementById("root")
 );
