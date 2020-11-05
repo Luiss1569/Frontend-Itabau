@@ -35,7 +35,7 @@ function Picoles() {
             </div>
             <div className='content-img  galery left' style={{ marginTop: 50 }} data-about>
                 <div className='box-img'>
-                    <Link to=''>
+                    <Link to='/picoles/organicos'>
                         <img
                             className='buttonImg'
                             src={p1}
@@ -43,7 +43,7 @@ function Picoles() {
                     </Link>
                 </div>
                 <div className='box-img'>
-                    <Link to=''>
+                    <Link to='/picoles/acucar'>
                         <img
                             className='buttonImg'
                             src={p2}
@@ -51,7 +51,7 @@ function Picoles() {
                     </Link>
                 </div>
                 <div className='box-img'>
-                    <Link to=''>
+                    <Link to='/picoles/naturais'>
                         <img
                             className='buttonImg'
                             src={p3}
@@ -59,7 +59,7 @@ function Picoles() {
                     </Link>
                 </div>
                 <div className='box-img'>
-                    <Link to=''>
+                    <Link to='/picoles/recheados'>
                         <img
                             className='buttonImg'
                             src={p4}
