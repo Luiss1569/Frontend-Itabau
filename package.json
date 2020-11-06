@@ -2,6 +2,13 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "browser": {
+    "colors": false,
+    "events": "eventemitter3",
+    "checkForModuleDuplicates": false,
+    "url": "./shims/url",
+    "tracer": false
+  },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "4.9.1",
@@ -21,6 +28,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-text-mask": "^5.4.3",
+    "require-context": "^1.1.0",
     "use-places-autocomplete": "^1.5.9",
     "web-vitals": "^0.2.4"
   },

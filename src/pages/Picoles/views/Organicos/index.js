@@ -7,11 +7,15 @@ import PicolesTab from '../../../../components/PicolesTab'
 
 import bg from '../../../../assets/img/massa/bg.jpg'
 
+import organicos from './data/organicos.json'
+import vegano from './data/vegano.json'
+import xAcucar from './data/xAcucar.json'
+
 import './style.css'
 
 function Organicos() {
     window.scrollTo(0, 0)
-
+    console.log(organicos);
     return (<>
 
         <Header />
@@ -41,7 +45,22 @@ function Organicos() {
                 <h4>Orgânicos - Sem Glúten e Com Lactose</h4>
             </div>
         </div>
-        <PicolesTab />
+        <PicolesTab  picoles={organicos}/>
+
+        <div className='container container-historia container-picoles animated'>
+            <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
+                <h4>Orgânicos Veganos - Sem Glúten e Sem Lactose</h4>
+            </div>
+        </div>
+        <PicolesTab  picoles={vegano}/>
+
+        <div className='container container-historia container-picoles animated'>
+            <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
+                <h4>Orgânicos Veganos - Sem Açúcar, Sem Glúten e Sem Lactose</h4>
+            </div>
+        </div>
+        <PicolesTab  picoles={xAcucar}/>
+
         <Footer />
     </>)
 }

@@ -1,0 +1,722 @@
+[
+  {
+    "nome": "Abóbora com Coco",
+    "ingredientes": "leite pasteurizado integral e/ou leite integral reconstituído, polpa de abóbora com coco (polpa de abóbora e cravo), açúcar orgânico, leite em pó integral, polpa de coco e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/naturais/sg1.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "114 kcal ou 479 kJ",
+        "vd": "6"
+      },
+      {
+        "quant": "21g",
+        "vd": "7"
+      },
+      {
+        "quant": "1,7g",
+        "vd": "2"
+      },
+      {
+        "quant": "2,8g",
+        "vd": "5"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2,1g",
+        "vd": "10"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "20mg",
+        "vd": "1"
+      },
+      {
+        "quant": "57mg",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Chocolate",
+    "ingredientes": "leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral, massa de cacau, cacau em pó e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "LEITE",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/naturais/sg2.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "102 kcal ou 428 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "16g",
+        "vd": "5"
+      },
+      {
+        "quant": "2,5g",
+        "vd": "3"
+      },
+      {
+        "quant": "3,1g",
+        "vd": "6"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2g",
+        "vd": "9"
+      },
+      {
+        "quant": "0,6g",
+        "vd": "2"
+      },
+      {
+        "quant": "30mg",
+        "vd": "1"
+      },
+      {
+        "quant": "82mg",
+        "vd": "8"
+      }
+    ]
+  },
+  {
+    "nome": "Coco",
+    "ingredientes": "leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral, polpa de coco, espessante natural goma guar e aroma natural de coco.",
+    "contem": "LACTOSE, AROMATIZANTE NATURAL.",
+    "alergicos": "LEITE",
+    "não_contem": "GLÚTEN E CORANTES.",
+    "img": "/naturais/sg3.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "104 kcal ou 437 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "15g",
+        "vd": "5"
+      },
+      {
+        "quant": "2,2g",
+        "vd": "3"
+      },
+      {
+        "quant": "4g",
+        "vd": "7"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "3g",
+        "vd": "14"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "30mg",
+        "vd": "1"
+      },
+      {
+        "quant": "77mg",
+        "vd": "8"
+      }
+    ]
+  },
+  {
+    "nome": "Coco Queimado",
+    "ingredientes": "leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, coco queimado, leite em pó integral, concentrado de malte de cevada, espessante natural goma guar e aroma natural de coco queimado.",
+    "contem": "LACTOSE E AROMATIZANTE NATURAL.",
+    "alergicos": "LEITE E AMENDOIM",
+    "não_contem": "GLÚTEN E CORANTES.",
+    "img": "/naturais/sg4.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "114 kcal ou 479 kJ",
+        "vd": "6"
+      },
+      {
+        "quant": "16g",
+        "vd": "5"
+      },
+      {
+        "quant": "2,3g",
+        "vd": "3"
+      },
+      {
+        "quant": "4,6g",
+        "vd": "8"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "3,5g",
+        "vd": "16"
+      },
+      {
+        "quant": "0,6g",
+        "vd": "2"
+      },
+      {
+        "quant": "31mg",
+        "vd": "1"
+      },
+      {
+        "quant": "80mg",
+        "vd": "8"
+      }
+    ]
+  },
+  {
+    "nome": "Creme",
+    "ingredientes": "Leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral, concentrado de cártamo, aroma natural de creme e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "LEITE",
+    "não_contem": "GLÚTEN E CORANTES",
+    "img": "/naturais/sg5.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "88 kcal ou 370 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "14g",
+        "vd": "5"
+      },
+      {
+        "quant": "2,2g",
+        "vd": "3"
+      },
+      {
+        "quant": "2,2g",
+        "vd": "4"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,5g",
+        "vd": "7"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "32mg",
+        "vd": "1"
+      },
+      {
+        "quant": "84mg",
+        "vd": "8"
+      }
+    ]
+  },
+  {
+    "nome": "Doce de Leite Cremoso",
+    "ingredientes": "doce de leite pastoso (leite padronizado e/ou leite em pó, açúcar, bicarbonato de sódio, cloreto de sódio e lactose), leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "LEITE",
+    "não_contem": "GLÚTEN, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/sg6.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "137 kcal ou 575 kJ",
+        "vd": "7"
+      },
+      {
+        "quant": "23g",
+        "vd": "8"
+      },
+      {
+        "quant": "3,4g",
+        "vd": "5"
+      },
+      {
+        "quant": "3,5g",
+        "vd": "6"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2,2g",
+        "vd": "10"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "62mg",
+        "vd": "3"
+      },
+      {
+        "quant": "124mg",
+        "vd": "12"
+      }
+    ]
+  },
+  {
+    "nome": "Leite Condensado",
+    "ingredientes": " Leite pasteurizado integral e/ou leite integral reconstituído, leite condensado (lactose), açúcar orgânico, leite em pó integral, aroma natural de leite condensado e espessante natural goma guar.",
+    "contem": "LACTOSE e AROMATIZANTE NATURAL.",
+    "alergicos": "LEITE",
+    "não_contem": "GLUTÉN E CORANTES.",
+    "img": "/naturais/sg7.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "118 kcal ou 496 kJ",
+        "vd": "6"
+      },
+      {
+        "quant": "20g",
+        "vd": "7"
+      },
+      {
+        "quant": "2,8g",
+        "vd": "4"
+      },
+      {
+        "quant": "3,1g",
+        "vd": "6"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,9g",
+        "vd": "9"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "40mg",
+        "vd": "2"
+      },
+      {
+        "quant": "106mg",
+        "vd": "11"
+      }
+    ]
+  },
+  {
+    "nome": "Limão Suiço",
+    "ingredientes": "leite pasteurizado Integral e/ou Leite Integral reconstituído, leite condensado (lactose), polpa de limão, açúcar orgânico, polidextrose, leite em pó integral e espessante natural goma guar.",
+    "contem": "LACTOSE e ALTO TEOR DE FIBRAS.",
+    "alergicos": "LEITE",
+    "não_contem": "leite pasteurizado Integral e/ou Leite Integral reconstituído, leite condensado (lactose), polpa de limão, açúcar orgânico, polidextrose, leite em pó integral e espessante natural goma guar.",
+    "img": "/naturais/sg8.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "108 kcal ou 454 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "20g",
+        "vd": "7"
+      },
+      {
+        "quant": "2,1g",
+        "vd": "3"
+      },
+      {
+        "quant": "22g",
+        "vd": "4"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,4g",
+        "vd": "6"
+      },
+      {
+        "quant": "5,1g",
+        "vd": "20"
+      },
+      {
+        "quant": "28mg",
+        "vd": "1"
+      },
+      {
+        "quant": "76mg",
+        "vd": "8"
+      }
+    ]
+  },
+  {
+    "nome": "Milho Verde",
+    "ingredientes": " Polpa de milho, leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral, concentrado de cártamo, canela e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "LEITE",
+    "não_contem": "GLUTÉN, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/sg9.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "89 kcal ou 374 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "16g",
+        "vd": "5"
+      },
+      {
+        "quant": "2g",
+        "vd": "3"
+      },
+      {
+        "quant": "1,9g",
+        "vd": "3"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "5"
+      },
+      {
+        "quant": "0g",
+        "vd": "2"
+      },
+      {
+        "quant": "25g",
+        "vd": "1"
+      },
+      {
+        "quant": "62mg",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Mousse de Marecujá",
+    "ingredientes": "leite pasteurizado integral e/ou leite integral reconstituído, polpa de maracujá, leite condensado (lactose), açúcar orgânico, leite em pó integral e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "LEITE",
+    "não_contem": "GLÚTEN, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/sg10.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "108 kcal ou 454 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "19g",
+        "vd": "6"
+      },
+      {
+        "quant": "2,5g",
+        "vd": "3"
+      },
+      {
+        "quant": "2,4g",
+        "vd": "4"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,5g",
+        "vd": "7"
+      },
+      {
+        "quant": "1,8g",
+        "vd": "7"
+      },
+      {
+        "quant": "35mg",
+        "vd": "1"
+      },
+      {
+        "quant": "82mg",
+        "vd": "8"
+      }
+    ]
+  },
+  {
+    "nome": "Mousse de Morango",
+    "ingredientes": "Polpa de morango, leite pasteurizado integral e/ou leite integral reconstituído, leite condensado (lactose), açúcar orgânico, leite em pó integral, extrato de sabugueiro, extrato de cenoura preta e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "LEITE",
+    "não_contem": "GLÚTEN, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/sg11.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "101 kcal ou 424 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "19g",
+        "vd": "6"
+      },
+      {
+        "quant": "1,8g",
+        "vd": "2"
+      },
+      {
+        "quant": "1,8g",
+        "vd": "3"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "5"
+      },
+      {
+        "quant": "0,6g",
+        "vd": "2"
+      },
+      {
+        "quant": "23mg",
+        "vd": "1"
+      },
+      {
+        "quant": "63mg",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Pé de Moleque",
+    "ingredientes": "Leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, amendoim torrado, açúcar mascavo, pasta integral de amendoim torrada, leite em pó integral e espessante natural goma guar.",
+    "contem": "LACTOSE E AMENDOIM",
+    "alergicos": "LEITE",
+    "não_contem": "GLÚTEN, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/sg12.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "158 kcal ou 664 kJ",
+        "vd": "8"
+      },
+      {
+        "quant": "18g",
+        "vd": "6"
+      },
+      {
+        "quant": "4,5g",
+        "vd": "6"
+      },
+      {
+        "quant": "7,4g",
+        "vd": "13"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,9g",
+        "vd": "9"
+      },
+      {
+        "quant": "0,8g",
+        "vd": "3"
+      },
+      {
+        "quant": "26mg",
+        "vd": "1"
+      },
+      {
+        "quant": "68mg",
+        "vd": "7"
+      }
+    ]
+  }
+]

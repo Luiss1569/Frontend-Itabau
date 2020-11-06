@@ -1,0 +1,482 @@
+[
+  {
+    "nome": "Abacaxi Suiço",
+    "ingredientes": "polpa de abacaxi orgânica, leite orgânico pasteurizado, açúcar orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE",
+    "alergicos": "LEITE.",
+    "não_contem": " GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/organicos/p1.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      { 
+        "quant": "74 kcal ou 311 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "16g",
+        "vd": "5"
+      },
+      {
+        "quant": "0,9g",
+        "vd": "1"
+      },
+      {
+        "quant": "0,8g",
+        "vd": "1"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "0,5g",
+        "vd": "2"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "0mg",
+        "vd": "0"
+      },
+      {
+        "quant": "30mg",
+        "vd": "3"
+      }
+    ]
+  },
+  {
+    "nome": "Arroz Doce",
+    "ingredientes": "Polpa orgânica de arroz doce, leite orgânico pasteurizado, açúcar orgânico, canela e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/organicos/p2.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "110 kcal ou 462 kJ",
+        "vd": "6"
+      },
+      {
+        "quant": "22g",
+        "vd": "7"
+      },
+      {
+        "quant": "1,9g",
+        "vd": "3"
+      },
+      {
+        "quant": "1,6g",
+        "vd": "3"
+      },
+      {
+        "quant": "0",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1g",
+        "vd": "5"
+      },
+      {
+        "quant": "0g",
+        "vd": "1"
+      },
+      {
+        "quant": "22mg",
+        "vd": "1"
+      },
+      {
+        "quant": "58mg",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Banana Caramelada",
+    "ingredientes": " polpa orgânica de banana, leite orgânico pasteurizado, açúcar orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/organicos/p3.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "102 kcal ou 428 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "22g",
+        "vd": "7"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "2"
+      },
+      {
+        "quant": "0,9g",
+        "vd": "2"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "0,5g",
+        "vd": "2"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "4"
+      },
+      {
+        "quant": "11mg",
+        "vd": "0"
+      },
+      {
+        "quant": "31mg",
+        "vd": "3"
+      }
+    ]
+  },
+  {
+    "nome": "Chocolate",
+    "ingredientes": "leite orgânico pasteurizado, açúcar orgânico, cacau em pó orgânico, liquor cacau orgânico, pasta de cacau cru orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": null,
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "93kcal ou 391 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "15g",
+        "vd": "5"
+      },
+      {
+        "quant": "2g",
+        "vd": "3"
+      },
+      {
+        "quant": "2,6g",
+        "vd": "5"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,6g",
+        "vd": "7"
+      },
+      {
+        "quant": "0,6g",
+        "vd": "2"
+      },
+      {
+        "quant": "23mg",
+        "vd": "1"
+      },
+      {
+        "quant": "63mg",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Limão Suiço com Mel e Inhame ",
+    "ingredientes": "leite orgânico pasteurizado, polpa orgânica de limão, açúcar orgânico, casca de limão orgânica, polpa de inhame orgânica, mel orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/organicos/p5.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "93 kcal ou 391 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "20g",
+        "vd": "7"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "2"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "2"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "0,7g",
+        "vd": "3"
+      },
+      {
+        "quant": "0,8g",
+        "vd": "3"
+      },
+      {
+        "quant": "15mg",
+        "vd": "1"
+      },
+      {
+        "quant": "45mg",
+        "vd": "5"
+      }
+    ]
+  },
+  {
+    "nome": "Milho Verde",
+    "ingredientes": "polpa de milho verde orgânica, leite orgânico pasteurizado, açúcar orgânico, canela e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/organicos/p6.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "86 kcal ou 361 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "16g",
+        "vd": "5"
+      },
+      {
+        "quant": "1,9g",
+        "vd": "3"
+      },
+      {
+        "quant": "1,7g",
+        "vd": "3"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1g",
+        "vd": "5"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "24mg",
+        "vd": "1"
+      },
+      {
+        "quant": "58mg",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Pinhão",
+    "ingredientes": "polpa orgânica de pinhão, leite orgânico pasteurizado, açúcar orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/organicos/p7.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "135 kcal ou 567 kJ",
+        "vd": "7"
+      },
+      {
+        "quant": "29g",
+        "vd": "10"
+      },
+      {
+        "quant": "1,9g",
+        "vd": "3"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "2"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "0,5g",
+        "vd": "2"
+      },
+      {
+        "quant": "3,9g",
+        "vd": "16"
+      },
+      {
+        "quant": "0mg",
+        "vd": "0"
+      },
+      {
+        "quant": "37mg",
+        "vd": "4"
+      }
+    ]
+  },
+  {
+    "nome": "Abacate",
+    "ingredientes": "polpa de abacate orgânico, leite orgânico pasteurizado, açúcar orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": null,
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "122 kcal ou 512 kJ",
+        "vd": "6"
+      },
+      {
+        "quant": "15g",
+        "vd": "5"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "2"
+      },
+      {
+        "quant": "6,2g",
+        "vd": "11"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "5"
+      },
+      {
+        "quant": "2,7g",
+        "vd": "11"
+      },
+      {
+        "quant": "0mg",
+        "vd": "0"
+      },
+      {
+        "quant": "22mg",
+        "vd": "2"
+      }
+    ]
+  }
+]

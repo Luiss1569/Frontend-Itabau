@@ -1,0 +1,197 @@
+[
+  {
+    "nome": "Mousse de Maracujá",
+    "ingredientes": "eite pasteurizado integral e/ou leite integral reconstituído, polpa de maracujá, maltitol, polidextrose, leite em pó integral, espessante natural goma guar e edulcorante natural de steviol.",
+    "contem": "AÇÚCARES PRÓPRIOS DOS INGREDIENTES, ALTO TEOR DE FIBRAS.",
+    "alergicos": " CONTÉM LEITE.",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/acucar/n1.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Açúcares",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "86 kcal ou 361 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "14g",
+        "vd": "5"
+      },
+      {
+        "quant": "5,3g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2,4g",
+        "vd": "3"
+      },
+      {
+        "quant": "2,2g",
+        "vd": "4"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,3g",
+        "vd": "6"
+      },
+      {
+        "quant": "5,6g",
+        "vd": "22"
+      },
+      {
+        "quant": "33mg",
+        "vd": "1"
+      },
+      {
+        "quant": "74mg",
+        "vd": "7"
+      }
+    ]
+  },
+  {
+    "nome": "Mousse de Morango",
+    "ingredientes": "Morango, leite pasteurizado integral e/ou leite integral reconstituído, maltitol, polidextrose, leite em pó integral, extrato de sabugueiro, extrato de cenoura preta, espessante natural goma guar e edulcorante natural de steviol.",
+    "contem": "AÇÚCARES PRÓPRIOS DOS INGREDIENTES,  LACTOSE e ALTO TEOR DE FIBRAS.",
+    "alergicos": "CONTÉM LEITE.",
+    "não_contem": " GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/acucar/n2.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "Atenção: O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Açúcares",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "55 kcal ou 231 kJ",
+        "vd": "3"
+      },
+      {
+        "quant": "10g",
+        "vd": "3"
+      },
+      {
+        "quant": "3,3g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "2"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "2"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "0,7g",
+        "vd": "3"
+      },
+      {
+        "quant": "5,2g",
+        "vd": "21"
+      },
+      {
+        "quant": "14mg",
+        "vd": "1"
+      },
+      {
+        "quant": "42mg",
+        "vd": "4"
+      }
+    ]
+  },
+  {
+    "nome": "Chocolate Vegano",
+    "ingredientes": "água mineral, maltitol, massa de cacau, massa de cacau crú, farinha de arroz biodinâmico, espessante natural goma guar e edulcorante natural de steviol.",
+    "contem": "AÇÚCARES PRÓPRIOS DOS INGREDIENTES.",
+    "alergicos": null,
+    "não_contem": "GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES e AROMATIZANTES.",
+    "img": "/acucar/n3.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Açúcares",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "132 kcal ou 554 kJ",
+        "vd": "7"
+      },
+      {
+        "quant": "23g",
+        "vd": "8"
+      },
+      {
+        "quant": "0,1g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,1g",
+        "vd": "1"
+      },
+      {
+        "quant": "4g",
+        "vd": "7"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2,4g",
+        "vd": "11"
+      },
+      {
+        "quant": "1,8g",
+        "vd": "7"
+      },
+      {
+        "quant": "0mg",
+        "vd": "0"
+      },
+      {
+        "quant": "0mg",
+        "vd": "0"
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[{
+    "nome": "Uva",
+    "ingredientes": "suco de uva orgânico e espessante natural goma guar.",
+    "contem": "AÇÚCARES PRÓPRIOS DA FRUTA.",
+    "alergicos": null,
+    "não_contem": "GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES e AROMATIZANTES.",
+    "img": "/organicos/a1.jpg",
+    "ps": "(*) % Não contém quantidades significativas de proteínas, gorduras totais, trans e saturadas, fibra alimentar, sódio e cálcio. Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.",
+    "atencao": "O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos"
+    ],
+    "table": [
+      {
+        "quant": "48 kcal ou 202 kJ",
+        "vd": "2"
+      },
+      {
+        "quant": "12g",
+        "vd": "4"
+      }
+    ]
+  }]

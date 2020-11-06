@@ -1,0 +1,302 @@
+[
+  {
+    "nome": "Açai / Leita Condensado",
+    "ingredientes": "polpa de açaí, creme de leite condensado (leite condensado (leite integral, lactose), leite em pó integral (leite integral, vitaminas (A, D e C) e minerais (ferro e zinco)) e leite pasteurizado integral), açúcar orgânico, água mineral, e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/recheado/p1.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.2",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "162 kcal ou 680 kJ",
+        "vd": "8"
+      },
+      {
+        "quant": "25g",
+        "vd": "8"
+      },
+      {
+        "quant": "3,6g",
+        "vd": "5"
+      },
+      {
+        "quant": "5,4g",
+        "vd": "10"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2,5g",
+        "vd": "11"
+      },
+      {
+        "quant": "0,9g",
+        "vd": "4"
+      },
+      {
+        "quant": "48mg",
+        "vd": "2"
+      },
+      {
+        "quant": "129mg",
+        "vd": "13"
+      }
+    ]
+  },
+  {
+    "nome": "Cappuccino/Leite Condensado e Canela",
+    "ingredientes": "leite condensado (leite integral e lactose), leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral, cacau em pó, café solúvel granulado, espessante natural goma guar e canela.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/recheado/p2.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.2",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "157 kcal ou 659 kJ",
+        "vd": "8"
+      },
+      {
+        "quant": "27g",
+        "vd": "9"
+      },
+      {
+        "quant": "3,7g",
+        "vd": "5"
+      },
+      {
+        "quant": "4g",
+        "vd": "7"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2,5g",
+        "vd": "11"
+      },
+      {
+        "quant": "0g",
+        "vd": "1"
+      },
+      {
+        "quant": "51mg",
+        "vd": "2"
+      },
+      {
+        "quant": "135mg",
+        "vd": "14"
+      }
+    ]
+  },
+  {
+    "nome": "Morango / Mousse de Maracuja",
+    "ingredientes": "polpa de morango, mousse de morango (leite condensado (leite integral, lactose) e morango), água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/recheado/p3.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.2",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "114 kcal ou 479 kJ",
+        "vd": "6"
+      },
+      {
+        "quant": "22g",
+        "vd": "7"
+      },
+      {
+        "quant": "1,9g",
+        "vd": "3"
+      },
+      {
+        "quant": "2g",
+        "vd": "4"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "5"
+      },
+      {
+        "quant": "0,6g",
+        "vd": "2"
+      },
+      {
+        "quant": "25mg",
+        "vd": "1"
+      },
+      {
+        "quant": "67mg",
+        "vd": "7"
+      }
+    ]
+  },
+  {
+    "nome": "Kiwi / Mousse de Kiwi",
+    "ingredientes": "polpa de kiwi, mousse de kiwi (leite condensado (leite integral e lactose) e kiwi), água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": null,
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.2",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "143 kcal ou 601 kJ",
+        "vd": "7"
+      },
+      {
+        "quant": "28g",
+        "vd": "9"
+      },
+      {
+        "quant": "2,3g",
+        "vd": "3"
+      },
+      {
+        "quant": "2,5g",
+        "vd": "5"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,5g",
+        "vd": "7"
+      },
+      {
+        "quant": "0,7g",
+        "vd": "3"
+      },
+      {
+        "quant": "31mg",
+        "vd": "2"
+      },
+      {
+        "quant": "83m",
+        "vd": "8"
+      }
+    ]
+  },
+  {
+    "nome": "Limão / Leite Condensado",
+    "ingredientes": "leite condensado (leite integral, lactose), água mineral, polpa de limão, açúcar orgânico e espessante natural goma guar.",
+    "contem": "LACTOSE.",
+    "alergicos": "CONTÉM LEITE",
+    "não_contem": "GLÚTEN, CORANTES e AROMATIZANTES.",
+    "img": "/recheado/p6.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": " O sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.2",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "138 kcal ou 580 kJ",
+        "vd": "7"
+      },
+      {
+        "quant": "27g",
+        "vd": "9"
+      },
+      {
+        "quant": "2,2g",
+        "vd": "3"
+      },
+      {
+        "quant": "2,4g",
+        "vd": "4"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "1,5g",
+        "vd": "7"
+      },
+      {
+        "quant": "0g",
+        "vd": "1"
+      },
+      {
+        "quant": "31mg",
+        "vd": "1"
+      },
+      {
+        "quant": "81mg",
+        "vd": "8"
+      }
+    ]
+  }
+]

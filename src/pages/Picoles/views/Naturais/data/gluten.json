@@ -1,0 +1,182 @@
+[
+  {
+    "nome": "Chocolate Branco",
+    "ingredientes": "leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral, chocolate branco (manteiga de cacau, lactose, gordura vegetal, emulsificante lectina de soja e poliricinoleato de poliglicerol e aromatizante), gordura de palma orgânica, aroma natural de chocolate branco e espessante natural goma guar.",
+    "contem": "GLÚTEN, LACTOSE, AROMATIZANTE NATURAL.",
+    "alergicos": "CONTÉM LEITE, DERIVADOS DE SOJA, AMÊNDOA, AMENDOIM, AVELÃ, CASTANHA DE CAJU E CASTANHA DO PARÁ.",
+    "não_contem": "CORANTES.",
+    "img": "/naturais/g1.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "A formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "159 kcal ou 668 kJ",
+        "vd": "8"
+      },
+      {
+        "quant": "20g",
+        "vd": "7"
+      },
+      {
+        "quant": "4,2g",
+        "vd": "6"
+      },
+      {
+        "quant": "7,1g",
+        "vd": "13"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "4,2g",
+        "vd": "19"
+      },
+      {
+        "quant": "0g",
+        "vd": "0"
+      },
+      {
+        "quant": "59mg",
+        "vd": "2"
+      },
+      {
+        "quant": "137mg",
+        "vd": "14"
+      }
+    ]
+  },
+  {
+    "nome": "Flocos",
+    "ingredientes": " leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, leite em pó integral, chocolate meio amargo (massa de cacau, manteiga de cacau, emulsificante lecitina de soja e polirinoleato de poliglicerol e aromatizante), gordura de palma orgânica, extrato de malte, cacau em pó, aroma natural de chocolate branco e espessante natural goma guar.",
+    "contem": "LACTOSE, GLÚTEN,  AROMATIZANTE NATURAL.",
+    "alergicos": "CONTÉM LEITE, DERIVADOS DE SOJA, AMÊNDOA, AMENDOIM, AVELÃ, CASTANHA DE CAJU E CASTANHA DO PARÁ.",
+    "não_contem": "CORANTES.",
+    "img": "/naturais/g2.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "A formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "149 kcal ou 626 kJ",
+        "vd": "7"
+      },
+      {
+        "quant": "16g",
+        "vd": "5"
+      },
+      {
+        "quant": "4g",
+        "vd": "5"
+      },
+      {
+        "quant": "7,4g",
+        "vd": "13"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "4,2g",
+        "vd": "19"
+      },
+      {
+        "quant": "0g",
+        "vd": "1"
+      },
+      {
+        "quant": "52g",
+        "vd": "2"
+      },
+      {
+        "quant": "137mg",
+        "vd": "14"
+      }
+    ]
+  },
+  {
+    "nome": "Morango com Flocos de Chocolate",
+    "ingredientes": "polpa de morango, leite pasteurizado integral e/ou leite integral reconstituído, açúcar orgânico, chocolate meio amargo (massa de cacau, manteiga de cacau, emulsificante lecitina de soja e polirinoleato de poliglicerol e aromatizante), gordura de palma orgânica, leite em pó integral, cacau em pó, extrato de sabugueiro, extrato de cenoura preta e espessante natural goma guar.",
+    "contem": "LACTOSE, GLÚTEN, AROMATIZANTE NATURAL.",
+    "alergicos": "CONTÉM LEITE, DERIVADOS DE SOJA, AMÊNDOA, AMENDOIM, AVELÃ, CASTANHA DE CAJU E CASTANHA DO PARÁ.",
+    "não_contem": "CORANTES",
+    "img": "/naturais/g3.jpg",
+    "ps": "(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "A formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "110 kcal ou 462 kJ",
+        "vd": "6"
+      },
+      {
+        "quant": "15g",
+        "vd": "5"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "2"
+      },
+      {
+        "quant": "4,8g",
+        "vd": "9"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "2,4g",
+        "vd": "11"
+      },
+      {
+        "quant": "0,9g",
+        "vd": "4"
+      },
+      {
+        "quant": "10mg",
+        "vd": "0"
+      },
+      {
+        "quant": "32mg",
+        "vd": "3"
+      }
+    ]
+  },
+]

@@ -1,0 +1,383 @@
+[
+  {
+    "nome": "Abacaxi",
+    "ingredientes": "polpa de abacaxi, água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos"
+    ],
+    "table": [
+      {
+        "quant": "61 kcal ou 256 kJ",
+        "vd": "3"
+      },
+      {
+        "quant": "15g",
+        "vd": "5"
+      }
+    ]
+  },
+  {
+    "nome": "Abacaxi com Hortelã",
+    "ingredientes": "polpa de abacaxi, água mineral, açúcar orgânico, hortelã e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/v2.jpg",
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos"
+    ],
+    "table": [
+      {
+        "quant": "60 kcal ou 252 kJ",
+        "vd": "3"
+      },
+      {
+        "quant": "15g",
+        "vd": "5"
+      }
+    ]
+  },
+  {
+    "nome": "Açai",
+    "ingredientes": " Polpa de açaí, açúcar orgânico, água mineral e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/v3.jpg",
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Açúcares",
+      "Proteínas",
+      "Gorduras Totais",
+      "Gorduras Trans",
+      "Gorduras Saturadas",
+      "Fibra Alimentar",
+      "Sódio",
+      "Cálcio"
+    ],
+    "table": [
+      {
+        "quant": "98 kcal ou 412 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "17g",
+        "vd": "6"
+      },
+      {
+        "quant": "0,6g",
+        "vd": "1"
+      },
+      {
+        "quant": "3,1g",
+        "vd": "6"
+      },
+      {
+        "quant": "0g",
+        "vd": "(**)"
+      },
+      {
+        "quant": "0,8g",
+        "vd": "4"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "5"
+      },
+      {
+        "quant": "0mg",
+        "vd": "0"
+      },
+      {
+        "quant": "18mg",
+        "vd": "2"
+      }
+    ]
+  },
+  {
+    "nome": "Amora Preta",
+    "ingredientes": "polpa de amora, água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "69 kcal ou 290 kJ",
+        "vd": "3"
+      },
+      {
+        "quant": "17g",
+        "vd": "6"
+      },
+      {
+        "quant": "1,5g",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Banana",
+    "ingredientes": " polpa de banana, agua mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "101 kcal ou 424 kJ",
+        "vd": "5"
+      },
+      {
+        "quant": "24g",
+        "vd": "8"
+      },
+      {
+        "quant": "1,3g",
+        "vd": "5"
+      }
+    ]
+  },
+  {
+    "nome": "Goiaba",
+    "ingredientes": "polpa de goiaba, água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "75 kcal ou 315 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "17g",
+        "vd": "6"
+      },
+      {
+        "quant": "1,6g",
+        "vd": "6"
+      }
+    ]
+  },
+  {
+    "nome": "Kiwi",
+    "ingredientes": "Polpa de kiwi, água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "77 kcal ou 323 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "19g",
+        "vd": "6"
+      },
+      {
+        "quant": "1,2g",
+        "vd": "5"
+      }
+    ]
+  },
+  {
+    "nome": "Limão",
+    "ingredientes": "água mineral, polpa de limão, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "68 kcal ou 286 kJ",
+        "vd": "3"
+      },
+      {
+        "quant": "17g",
+        "vd": "6"
+      },
+      {
+        "quant": "0,6g",
+        "vd": "2"
+      }
+    ]
+  },
+  {
+    "nome": "Manga",
+    "ingredientes": "polpa de manga, água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/v9.jpg",
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "75 kcal ou 315 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "18g",
+        "vd": "6"
+      },
+      {
+        "quant": "0,8g",
+        "vd": "3"
+      }
+    ]
+  },
+  {
+    "nome": "Maracuá",
+    "ingredientes": "água mineral, polpa de maracujá, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": "/naturais/v10.jpg",
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "70 kcal ou 294 kJ",
+        "vd": "4"
+      },
+      {
+        "quant": "17g",
+        "vd": "6"
+      },
+      {
+        "quant": "2,2g",
+        "vd": "9"
+      }
+    ]
+  },
+  {
+    "nome": "Morango",
+    "ingredientes": "polpa de morango, água mineral, açúcar orgânico, extrato de sabugueiro, extrato de cenoura preta e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "57 kcal ou 239 kJ",
+        "vd": "3"
+      },
+      {
+        "quant": "14g",
+        "vd": "5"
+      },
+      {
+        "quant": "0,8g",
+        "vd": "3"
+      }
+    ]
+  },
+  {
+    "nome": "uva",
+    "ingredientes": "suco de uva tinto integral, água mineral, açúcar orgânico e espessante natural goma guar.",
+    "contem": null,
+    "alergicos": null,
+    "não_contem": " GLÚTEN, LACTOSE E DERIVADOS DE LEITE, CORANTES E AROMATIZANTES.",
+    "img": null,
+    "ps": "Não contém quantidades significativas de proteínas, gorduras totais, saturadas e trans, sódio e cálcio.(*) % Valores Diários de Referência com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.",
+    "atencao": "o sabor e a cor podem variar conforme a safra, e a formação de cristais de gelo na superfície do picolé é normal.",
+    "Validade": "1 anos após a data de fabricação.",
+    "table_head": [
+      "Valor Energético",
+      "Carboidratos",
+      "Fibra Alimentar"
+    ],
+    "table": [
+      {
+        "quant": "5 kcal ou 231 kJ",
+        "vd": "3"
+      },
+      {
+        "quant": "13g",
+        "vd": "4"
+      },
+      {
+        "quant": "1,28g",
+        "vd": "2"
+      }
+    ]
+  }
+]
