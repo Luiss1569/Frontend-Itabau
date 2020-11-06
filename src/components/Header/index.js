@@ -104,9 +104,9 @@ export default function Components() {
                             button
                             selected={location.pathname === '/'}
                         >
-                            <a href={'/home'} style={{ textDecoration: 'none', color: 'black' }}>
+                            <Link to={'/home'} style={{ textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
                                 <ListItemText primary="Inicial" />
-                            </a>
+                            </Link>
                         </ListItem>
                         <Divider />
 
@@ -119,10 +119,9 @@ export default function Components() {
                                 <ListItem
                                     button
                                     key={option}
-                                    onClick={()=>{window.location.href = `/${optionItabau[index]}`}}
                                     selected={location.pathname === `/${optionItabau[index]}`}
                                 >
-                                    <Link to={`/${optionItabau[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black'}}>
+                                    <Link to={`/${optionItabau[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black', width: '200%', height: '200%'}}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>
@@ -141,7 +140,7 @@ export default function Components() {
                                     key={option}
                                     selected={location.pathname === `/${optionSorvetes[index]}`}
                                 >
-                                    <Link to={`/${optionSorvetes[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionSorvetes[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>
@@ -150,7 +149,7 @@ export default function Components() {
                         <Divider />
 
                         <ListItem button selected={location.pathname === '/encontrar'}>
-                            <Link to='/encontrar' style={{ textDecoration: 'none', color: 'black' }}>
+                            <Link to='/encontrar' style={{ textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
                                 <ListItemText primary={'ONDE ENCONTRAR'} />
                             </Link>
                         </ListItem>
@@ -168,7 +167,7 @@ export default function Components() {
                                     key={option}
                                     selected={location.pathname === `/${optionSaibaMais[index]}`}
                                 >
-                                    <Link to={`/${optionSaibaMais[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionSaibaMais[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>
@@ -177,7 +176,7 @@ export default function Components() {
                         <Divider />
 
                         <ListItem button selected={location.pathname === '/cidade'}>
-                            <Link to='/cidade' style={{ textDecoration: 'none', color: 'black' }}>
+                            <Link to='/cidade' style={{ textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
                                 <ListItemText primary={'NOSSA CIDADE'} />
                             </Link>
                         </ListItem>
@@ -193,7 +192,7 @@ export default function Components() {
                                     key={option}
                                     selected={location.pathname === `/${optionSaibaMais[index]}`}
                                 >
-                                    <Link to={`/${optionContato[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black' }}>
+                                    <Link to={`/${optionContato[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
                                         <ListItemText primary={option} />
                                     </Link>
                                 </ListItem>

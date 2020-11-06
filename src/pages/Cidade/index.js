@@ -30,7 +30,7 @@ function Cidade() {
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-historia animated'>
-            <div className='content-itens left' data-about>
+            <div className='content-itens left'>
                 <h3>Conheça nossa cidade</h3>
                 <h4 style={{ fontSize: 20 }}>São Bento do Sapucaí-SP</h4>
                 <p>O Município da Estância Climática de São Bento do Sapucaí situa-se ao leste do Estado de São
@@ -41,7 +41,7 @@ function Cidade() {
                 agricultura diversificada que, ao lado da pecuária, forma a base econômica do Município que
                         também produz hortifrutigranjeiros.</p>
             </div>
-            <div className='content-img right' data-about>
+            <div className='content-img right' >
                 <img src={c1} alt='São Bento' />
                 <span>Fundação: 16 de agosto de 1832.</span>
             </div>

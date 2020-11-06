@@ -29,79 +29,6 @@ div[data-reach-combobox] input:focus {
   padding-bottom: 200px;
 }
 
-.container-location .content-location .box-location {
-  width: 30%;
-  background-color: #f5f5f5;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  transition: 1s;
-  box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.507);
-}
-
-.container-location .content-location .box-location .header {
-  display: flex;
-  border-radius: 10px 10px 0 0;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #175519;
-  padding: 7px;
-  transition: 1s;
-}
-
-.container-location .content-location .box-location .header h4 {
-  font-family: "Philosopher", sans-serif;
-  margin: 0 0;
-  color: #fff;
-}
-
-.container-location .content-location .box-location .body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-location .content-location .box-location:hover{
-  transform: scale(1.1);
-  box-shadow: 4px 7px 10px 6px rgba(0, 0, 0, 0.507);
-
-}
-.container-location .content-location .box-location:hover .header{
-  background-color: #ba3676f6 ;
-}
-
-.container-location .content-location .box-location .body .content {
-  background-color: #FFF;
-  width: 97%;
-  border: 3px solid #f5f5f5;
-  margin-top: 3px;
-  border-radius: 5px;
-  border-top: 0;
-  border-bottom: 0;
-  background-image: url('../../assets/img/encontrar/b2.jpg');
-  background-size: contain;
-  transition: 2s;
-}
-
-.container-location .content-location .box-location .body .content:hover{
-  transform: translateY(-3px);
-}
-
-.container-location .content-location .box-location .body h4 {
-  font-family: "Philosopher", sans-serif;
-  color: #38a38d;
-  margin: 0 0;
-  padding: 7px;
-  width: 90%;
-  border: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-}
-
 #loading[data-about]{
   opacity: 0;
   transition: 1s;
@@ -110,23 +37,4 @@ div[data-reach-combobox] input:focus {
 #loading{
   opacity: 1;
   transition: 1s;
-}
-
-@media only screen and (min-width: 1400px) {
-  .container-location .content-location .box-location {
-    width: 20%;
-  }
-}
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .container-location .content-location .box-location {
-    width: 40%;
-  }
-}
-
-/* margin on small screens */
-@media only screen and (max-width: 767px) {
-  .container-location .content-location .box-location {
-    width: 100%;
-  }
 }

@@ -116,8 +116,8 @@ function HistoriaSorvete() {
 
             <div className='content-itens right' data-about style={{ marginTop: 60 }}>
                 <label style={{marginTop: 100}}>O Sorvete é Alimento:</label>
-                <p style={{marginTop: 0}}>www.abis.com.br<br/>
-                www.insumos.com.br/sorvetes_e_casquinhas/materias/103.pdf</p>
+                <p style={{marginTop: 0}}>www.abis.com.br</p>
+                <p style={{wordBreak: 'break-word', lineHeight: '20px', marginTop: "-10px"}}>www.insumos.com.br/sorvetes_e_casquinhas/materias/103.pdf</p>
             </div>
         </div>
 

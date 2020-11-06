@@ -1,23 +1,20 @@
 import React, { useState, useMemo } from 'react';
 
-import Tooltip from '@material-ui/core/Tooltip';
-
 import Skeleton from '@material-ui/lab/Skeleton';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
+import Location from '../../components/Location'
 import PlacesAutoComplete from '../../components/PlacesAutoComplete'
 
 import Lottie from 'react-lottie';
 
 import animationLocation from '../../assets/animations/location-finding.json'
-import animationIconLocation from '../../assets/animations/iconLocation.json'
 
 import bg from '../../assets/img/encontrar/bg.jpg'
 
 import './style.css'
-import { PinDropSharp } from '@material-ui/icons';
 
 function Lançamento() {
     const cont = [0, 1, 2]
@@ -70,36 +67,31 @@ function Lançamento() {
 
         if (locations.length > 0) {
             return (
-                cont.map(() => (
-                    <div className='box-location'>
-                        <div className='header'>
-                            <PinDropSharp style={{ color: '#fff', marginRight: 5 }} />
-                            <h4>São Bento do Sapucai-SP</h4>
-                        </div>
-                        <div className='body'>
-                            <Tooltip title="Ver Rotas" aria-label="Ver Rotas">
-                                <div className='content'>
-                                    <a href={`https://www.google.com/maps/dir/?api=1&destination=-22.6858218,-45.7249803`} rel="noreferrer"
-                                        target='_blank' onmouseover="Tip('Ver Rota')" onmouseout="UnTip()">
-                                        <Lottie options={{
-                                            loop: true,
-                                            autoplay: true,
-                                            animationData: animationIconLocation,
-                                            rendererSettings: {
-                                                preserveAspectRatio: 'xMidYMid slice'
-                                            }
-                                        }}
-                                            height={100}
-                                            width={100} />
-                                    </a>
-                                </div>
-                            </Tooltip>
-                            <h4>Rua: São José</h4>
-                            <h4>Nº 188 - Centro</h4>
-                            <h4>Tel. (35)3651-2450</h4>
-                        </div>
-                    </div>
-                ))
+                    <Location locations={[{
+                        nome: 'Salgadao',
+                        cidade: 'São Bento do Sapucaí-SP',
+                        lat: '-45.7249803',
+                        long: '-22.6858218',
+                        rua: 'asdasdasd asdad',
+                        bairro: 'asdads asdasd',
+                        tel: '1299793443'
+                    },{
+                        nome: 'Salgadao',
+                        cidade: 'São Bento do Sapucaí-SP',
+                        lat: '-45.7249803',
+                        long: '-22.6858218',
+                        rua: 'asdasdasd asdad',
+                        bairro: 'asdads asdasd',
+                        tel: '1299793443'
+                    },{
+                        nome: 'Salgadao',
+                        cidade: 'São Bento do Sapucaí-SP',
+                        lat: '-45.7249803',
+                        long: '-22.6858218',
+                        rua: 'asdasdasd asdad',
+                        bairro: 'asdads asdasd',
+                        tel: '1299793443'
+                    }]}/>
             )
         }
 

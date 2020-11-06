@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom'
 
 
 import Header from '../../components/Header'
 import Carrossel from '../../components/Carrossel'
 import Footer from '../../components/Footer'
+import Location from '../../components/Location'
 
 import Lottie from 'react-lottie';
 
@@ -36,8 +37,9 @@ function Index() {
   const [long, setLong] = useState(null)
 
 
-  useEffect(() => {
+  useMemo(() => {
     console.log(lat, long);
+    // eslint-disable-next-line
   }, [long])
 
   useEffect(() => {
@@ -126,7 +128,7 @@ function Index() {
       </div>
     </div>
 
-    <div className='container container-map animated'>
+    <div className='container container-map animated' style={{backgroundColor: '#f7f7f7'}}>
       <div className='content-itens right' data-about='true'>
         <Lottie options={{
           loop: true,
@@ -141,6 +143,39 @@ function Index() {
         <h3>Onde comprar sorvetes Itabaú?</h3>
         <Link to={'/encontrar'} style={{ textDecoration: 'none' }}><div className='button'>Pesquisar Endereço</div></Link>
       </div>
+
+    </div>
+    <div className='container container-reverse container-location animated' style={{paddingBottom: 70}}>
+      <div className="content-itens">
+        <h3>Locais Proximos</h3>
+      </div>
+        <div className='content-location  galery right' style={{padding: 0, marginTop: 20}}>
+          {<Location locations={[{
+            nome: 'Salgadao',
+            cidade: 'São Bento do Sapucaí-SP',
+            lat: '-45.7249803',
+            long: '-22.6858218',
+            rua: 'asdasdasd asdad',
+            bairro: 'asdads asdasd',
+            tel: '1299793443'
+          }, {
+            nome: 'Salgadao',
+            cidade: 'São Bento do Sapucaí-SP',
+            lat: '-45.7249803',
+            long: '-22.6858218',
+            rua: 'asdasdasd asdad',
+            bairro: 'asdads asdasd',
+            tel: '1299793443'
+          }, {
+            nome: 'Salgadao',
+            cidade: 'São Bento do Sapucaí-SP',
+            lat: '-45.7249803',
+            long: '-22.6858218',
+            rua: 'asdasdasd asdad',
+            bairro: 'asdads asdasd',
+            tel: '1299793443'
+          }]} />}
+        </div>
     </div>
 
     <div className='container animated'>
