@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import Index from './pages/Index'
 import Historia from './pages/Historia'
 import Historia_Sorvete from './pages/Historia-Sorvete'
+import Curiosidades from './pages/Historia-Sorvete/view'
 import Lancamento from './pages/Lançamentos'
 import Picoles from './pages/Picoles'
 import MassaPremium from './pages/MassaPremium'
@@ -33,8 +34,9 @@ ReactDOM.render(
     <Switch>
       <Route path="/" exact component={Index} />
       <Route path="/home" exact component={Index} />
-      <Route path="/historia" exact component={Historia} />
+      <Route path="/historia"  component={Historia} />
       <Route path="/historia-sorvete" component={Historia_Sorvete} />
+      <Route path="/curiosidades" component={Curiosidades} />
       <Route path="/lancamentos" component={Lancamento} />
       <Route path="/picoles/organicos" exact component={Organicos} />
       <Route path="/picoles/acucar" exact component={Acucar} />
@@ -54,6 +56,7 @@ ReactDOM.render(
       <Route path="/galeria" component={Fotos} />
       <Route path="/boletos" component={Boleto} />
       <Route path="*">
+        <Redirect to="/home"/>
       </Route>
     </Switch>
   </Router>,

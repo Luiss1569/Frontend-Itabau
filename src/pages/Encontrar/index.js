@@ -20,12 +20,14 @@ import './style.css'
 import { PinDropSharp } from '@material-ui/icons';
 
 function Lançamento() {
-
     const cont = [0, 1, 2]
-
     const [location, setLocation] = useState('')
     const [locations, setLocations] = useState([])
     const [loading, setLoading] = useState(false)
+
+    React.useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
 
     useMemo(() => {
         if (!location) {

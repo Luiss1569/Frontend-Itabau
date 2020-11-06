@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
+import Galery from '../../components/Galery'
 
 import bg from '../../assets/img/Historia/bg.jpg'
 import rme from '../../assets/img/Historia/rme.jpg'
@@ -18,11 +19,104 @@ import g8 from '../../assets/img/Historia/g8.jpg'
 import g9 from '../../assets/img/Historia/g9.jpg'
 import g9_2 from '../../assets/img/Historia/g9-2.jpg'
 
+import f1 from '../../assets/img/Historia/f1.jpg'
+import f2 from '../../assets/img/Historia/f2.jpg'
+import f3 from '../../assets/img/Historia/f3.jpg'
+import f4 from '../../assets/img/Historia/f4.jpg'
+import f5 from '../../assets/img/Historia/f5.jpg'
+import f6 from '../../assets/img/Historia/f6.jpg'
+import f7 from '../../assets/img/Historia/f7.jpg'
+import f8 from '../../assets/img/Historia/f8.jpg'
+import f9 from '../../assets/img/Historia/f9.jpg'
+import f10 from '../../assets/img/Historia/f10.jpg'
+import f12 from '../../assets/img/Historia/f12.jpg'
+import f13 from '../../assets/img/Historia/f13.jpg'
+import f14 from '../../assets/img/Historia/f14.jpg'
+
 import './style.css'
 
 function Historia() {
     window.scrollTo(0, 0)
     const geracoes = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g9_2]
+
+    const IMAGES = [{
+        src: f1,
+        thumbnail: f1,
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+    },
+    {
+        src: f2,
+        thumbnail: f2,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f3,
+        thumbnail: f3,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f4,
+        thumbnail: f4,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f5,
+        thumbnail: f5,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f6,
+        thumbnail: f6,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f7,
+        thumbnail: f7,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f8,
+        thumbnail: f8,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f9,
+        thumbnail: f9,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f10,
+        thumbnail: f10,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f12,
+        thumbnail: f12,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f13,
+        thumbnail: f13,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    },
+    {
+        src: f14,
+        thumbnail: f14,
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+    }]
 
     return (<>
 
@@ -82,6 +176,9 @@ function Historia() {
             <div className='content-itens right' data-about style={{ marginTop: -40 }}>
                 <p>Os membros da família ainda são os maiores colaboradores da empresa.
                     Quase no quintal da empresa está a Pedra do Baú.</p>
+            </div>
+            <div className='content-itens right' data-about style={{ marginTop: 30 }}>
+                <Galery images={IMAGES} />
             </div>
         </div>
 

@@ -32,16 +32,24 @@ function Index() {
   const location = useLocation()
   const [iceAnimation, setIceAnimation] = useState(location.pathname === '/home' ? true : false)
   const [load, setLoad] = useState(location.pathname === '/home' ? false : true)
+  const [lat, setLat] = useState(null)
+  const [long, setLong] = useState(null)
 
-  window.scrollTo(0, 0)
 
   useEffect(() => {
+    console.log(lat, long);
+  }, [long])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
     setTimeout(() => { setLoad(false) }, 3000)
-    console.log(location.pathname);
-  })
-
-  useEffect(() => {
     setTimeout(() => { setIceAnimation(true) }, 5000)
+    document.addEventListener('DOMContentLoaded', function () {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setLat(position.coords.latitude)
+        setLong(position.coords.longitude)
+      });
+    });
     try {
       document.querySelectorAll('.animated div[data-about]')[1].removeAttribute('data-about');
       document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
@@ -162,7 +170,7 @@ function Index() {
         <Link to=''>
           {/* eslint-disable-next-line*/}
           <iframe src="//www.youtube.com/embed/8Yoytt2b-o0?feature=youtu.be&amp;wmode=transparent"
-            allowfullscreen="" class="uk-responsive-width" width="480" height="270">
+            allowfullscreen="" className="uk-responsive-width" width="480" height="270">
 
           </iframe>
         </Link>

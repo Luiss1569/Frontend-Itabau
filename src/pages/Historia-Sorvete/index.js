@@ -6,6 +6,8 @@ import Carrossel from '../../components/Carrossel'
 
 import bg from '../../assets/img/historia_sorvete/bg.jpg'
 
+import {Link} from 'react-router-dom'
+
 import './style.css'
 
 function HistoriaSorvete() {
@@ -109,6 +111,7 @@ function HistoriaSorvete() {
                 <p style={{ marginTop: -10 }}>Os sorvetes associam prazer, conveniência, sabor, aspectos
                 nutritivos e benefícios à saúde em uma boa medida. Em termos de conveniência e variedade,
                  atendem todos os gostos e necessidades.</p>
+                 <Link to='/curiosidades'>Clique aqui para ver as curiosidades mais divertidas sobre o sorvete</Link>
             </div>
 
             <div className='content-itens right' data-about style={{ marginTop: 60 }}>

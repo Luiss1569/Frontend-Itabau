@@ -126,7 +126,7 @@ body {
 .container-map .content-itens .button {
   background-color: #dfcc73;
   color: #2f5d36;
-  margin-top: 40px;
+  margin-top: 10%;
 }
 
 .container-map .content-itens .button:hover {
