@@ -16,6 +16,7 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 
 import './style.css'
 
@@ -67,7 +68,7 @@ function Lançamento() {
                 <p>Entre em contato conosco através do número (12) 3971-1492 ou preenchendo o formulário abaixo:</p>
             </div>
         </div>
-        <div className='container animated'>
+        <div className='container animated' style={{alignItems: 'flex-start'}}>
             <div className='content-itens left' data-about>
                 <form className='' autoComplete="off" onSubmit={handleSubmit}>
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} label="Nome" required variant="outlined" fullWidth />
@@ -98,6 +99,7 @@ function Lançamento() {
                     <Button variant='outlined' style={{ marginLeft: '40%' }} color='primary'>Enviar</Button>
                 </form>
             </div>
+            <div style={{marginBottom: 50}}/>
             <div className='content-itens right' data-about>
                 <p>
                     <a href="https://www.google.com.br/maps/dir/''/Itabau/@-22.6786713,-45.7560131,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cc7b9000738dbd:0x2107f48dcf11dcab!2m2!1d-45.685619!2d-22.679151"
@@ -122,6 +124,7 @@ function Lançamento() {
                 <label>Caixa Postal 19</label>
             </div>
         </div>
+        <div style={{marginBottom: 100}}/>
         <Footer />
     </>)
 }

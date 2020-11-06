@@ -7,6 +7,9 @@ import Box from '@material-ui/core/Box';
 import Table from '../Table'
 import Paper from '@material-ui/core/Paper';
 import Grow from '@material-ui/core/Grow';
+import Lottie from 'react-lottie';
+
+import animationTablet from '../../assets/animations/tablet.json'
 
 import './style.css'
 
@@ -39,6 +42,7 @@ function a11yProps(index) {
 
 export default function ScrollableTabsButtonAuto(props) {
   const [value, setValue] = React.useState(0);
+  // eslint-disable-next-line
   const [checked, setChecked] = React.useState(true)
 
   const handleChange = (event, newValue) => {
@@ -54,7 +58,9 @@ export default function ScrollableTabsButtonAuto(props) {
           indicatorColor="primary"
           textColor="primary"
           variant="scrollable"
-          scrollButtons="on"
+          scrollButtons="auto"
+          centered
+          selectionFollowsFocus
         >
           {
             props.picoles.map((picole, index) => (
@@ -67,7 +73,7 @@ export default function ScrollableTabsButtonAuto(props) {
       {
         props.picoles.map((picole, index) => (
 
-          <TabPanel value={value} index={index} key={picole.nome}>
+          <TabPanel value={value} index={index} key={picole.nome+index}>
             <Grow in={checked}>
               <div className="container animated" id="container-tab">
                 {
@@ -75,7 +81,7 @@ export default function ScrollableTabsButtonAuto(props) {
                     <div className="content-img left" style={{ maxWidth: 300 }}>
                       <img src={`${window.location.origin}/picoles${picole.img}`} alt={picole.nome} />
                     </div>
-                  ) : ""
+                  ) : (<div className="content-img left" style={{ maxWidth: 20, height: 10 }}/>)
                 }
                 <div className="content-itens left info" >
                   <div className="box">
@@ -109,7 +115,20 @@ export default function ScrollableTabsButtonAuto(props) {
                 <div className="content-itens table" >
                   <Paper elevation={2} style={{ padding: 10 }}>
                     <div className="box">
-                      <label><span>Informação Nutricional:</span></label>
+                      <div style={{ marginTop: -50 }}>
+                        <Lottie options={{
+                          loop: true,
+                          autoplay: true,
+                          animationData: animationTablet,
+                          rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                          }
+                        }}
+                          height={80}
+                          width={80} />
+                        <label><span>Informação Nutricional:</span>
+                        </label>
+                      </div>
                     </div>
                     <p style={{ marginTop: -5 }}>Porção de 65g (1 Unidade)</p>
                     <Table head={picole.table_head} table={picole.table} key={picole.nome} />

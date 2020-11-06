@@ -6,7 +6,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
     table: {
@@ -18,7 +17,7 @@ export default function SpanningTable(props) {
     const classes = useStyles();
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer  >
             <Table className={classes.table} size="small">
                 <TableHead>
                     <TableRow>

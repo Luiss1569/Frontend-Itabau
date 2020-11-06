@@ -15,7 +15,7 @@ import './style.css'
 
 function Organicos() {
     window.scrollTo(0, 0)
-    console.log(organicos);
+  
     return (<>
 
         <Header />

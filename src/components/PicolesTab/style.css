@@ -9,7 +9,8 @@
 
 #container-tab .content-itens .box {
   display: flex;
-  justify-content: baseline;
+  justify-content: space-between;
+  flex-direction: column;
   padding-bottom: 3%;
 }
 #container-tab .content-itens .box label {
