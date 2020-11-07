@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -20,7 +20,18 @@ import Button from '@material-ui/core/Button';
 import './style.css'
 
 function Lançamento() {
-    window.scrollTo(0, 0)
+
+    const [nome, setNome] = useState('')
+    const [email, setEmail] = useState('')
+    const [telefone, setTelefone] = useState('')
+    const [cidade, setCidade] = useState('')
+    const [estado, setEstado] = useState('')
+    const [assunto, setAssunto] = useState('')
+    const [mensagem, setMensagem] = useState('')
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    },[])
 
     const estados = [
         { key: "AC", value: "Acre" },
@@ -54,6 +65,9 @@ function Lançamento() {
 
     async function handleSubmit(e) {
         e.preventDefault()
+        const data = {nome, email, telefone, cidade, estado, assunto, mensagem}
+        
+        console.log(data);
     }
 
     return (<>
@@ -67,23 +81,23 @@ function Lançamento() {
                 <p>Entre em contato conosco através do número (12) 3971-1492 ou preenchendo o formulário abaixo:</p>
             </div>
         </div>
-        <div className='container animated' style={{alignItems: 'flex-start'}}>
+        <div className='container animated' style={{ alignItems: 'flex-start' }}>
             <div className='content-itens left' data-about>
                 <form className='' autoComplete="off" onSubmit={handleSubmit}>
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} label="Nome" required variant="outlined" fullWidth />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} label="Email" required type='email' fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} label="Telefone" required type='tel' fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} label="Cidade" fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e=>{setNome(e.target.value)}} label="Nome" required variant="outlined" fullWidth />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} label="Email" onChange={e=>{setEmail(e.target.value)}} required type='email' fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e=>{setTelefone(e.target.value)}} required type='tel' inputProps={{pattern:"[0-9]{2}-[0-9]{5}-[0-9]{4}"}}  fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}  value={cidade} label="Cidade" onChange={e=>{setCidade(e.target.value)}} fullWidth variant="outlined" />
                     <FormControl variant="outlined" style={{ marginBottom: 20, width: '100%' }} className={''}>
                         <InputLabel id="demo-simple-select-outlined-label">Estado</InputLabel>
                         <Select
                             labelId="demo-simple-select-outlined-label"
                             id="demo-simple-select-outlined"
                             style={{ width: '100%' }}
-                            // value={age}
-                            // onChange={handleChange}
+                            value={estado}
+                            onChange={e =>{setEstado(e.target.value)}}
                             label="Idade"
-                        >
+                        > 
                             <MenuItem value="">
                                 <em>Nenhum</em>
                             </MenuItem>
@@ -92,13 +106,13 @@ function Lançamento() {
                             ))}
                         </Select>
                     </FormControl>
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} label="Assunto" fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} label="Mensagem" fullWidth required multiline
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}  value={assunto} label="Assunto" onChange={e=>{setAssunto(e.target.value)}} fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}  value={mensagem} label="Mensagem" onChange={e=>{setMensagem(e.target.value)}} fullWidth required multiline
                         rowsMax={4} variant="outlined" rows={4} />
-                    <Button variant='outlined' style={{ marginLeft: '40%' }} color='primary'>Enviar</Button>
+                    <Button variant='outlined' type='submit' style={{ marginLeft: '40%' }} color='primary'>Enviar</Button>
                 </form>
             </div>
-            <div style={{marginBottom: 50}}/>
+            <div style={{ marginBottom: 50 }} />
             <div className='content-itens right' data-about>
                 <p>
                     <a href="https://www.google.com.br/maps/dir/''/Itabau/@-22.6786713,-45.7560131,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cc7b9000738dbd:0x2107f48dcf11dcab!2m2!1d-45.685619!2d-22.679151"
@@ -115,7 +129,7 @@ function Lançamento() {
                             }
                         }}
                             height={75}
-                            width={75} /><label style={{marginLeft: 0}}>Clique aqui e veja sua rota como chegar até a Itabaú!</label>
+                            width={75} /><label style={{ marginLeft: 0 }}>Clique aqui e veja sua rota como chegar até a Itabaú!</label>
                     </a>
                 </p>
                 <label>Estrada Benedito Gomes de Souza, KM 4,6 Bairro: Paiol Grande</label><br />
@@ -123,7 +137,7 @@ function Lançamento() {
                 <label>Caixa Postal 19</label>
             </div>
         </div>
-        <div style={{marginBottom: 100}}/>
+        <div style={{ marginBottom: 100 }} />
         <Footer />
     </>)
 }
