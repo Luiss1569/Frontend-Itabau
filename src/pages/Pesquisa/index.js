@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import api from '../../services/api'
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -67,9 +68,38 @@ function Pesquisa() {
 
     async function handleSubmit(e) {
         e.preventDefault()
-        const data = {nome,email, telefone, cidade, idade, estado, o1, o2, o3, o4, o5, o6, o7}
+        // const data = {nome,email, telefone, cidade, idade, estado, o1, o2, o3, o4, o5, o6, o7}
 
-        console.log(data);
+        const data = new FormData()
+        data.append('nome', nome)
+        data.append('email', email)
+        data.append('telefone', telefone)
+        data.append('cidade', cidade)
+        data.append('estado', estado)
+        data.append('idade', idade)
+        data.append('o1', o1)
+        data.append('o2', o2)
+        data.append('o3', o3)
+        data.append('o4', o4)
+        data.append('o5', o5)
+        data.append('o6', o6)
+        data.append('o7', o7)
+
+        const response = await fetch(`${api}/php/pesquisa/insert.php`, {
+            method: 'post',
+            body: data
+        }).then(function (response) {
+            return response.json();
+        })
+
+        console.log(response);
+
+        if(response.result){
+            alert('Mensagem Enviada')
+        }else{
+            alert('Mensagem não Enviada')
+        }
+
     }
 
     return (<>

@@ -20,6 +20,7 @@ function Footer() {
                 <Link to='/selos' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>SAIBA MAIS</Link>
                 <Link to='/encontrar' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>ONDE ENCONTRAR</Link>
                 <Link to='/matriz' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>NOSSSA CIDADE</Link>
+                <Link to='/painel' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>PAINEL</Link>
             </div>
             <span>Copyright &copy; {1900 + new Date().getYear()} , todos os direitos reservados Itabaú - Site Desenvolvido por <a href='https://github.com/luiss1569'>Luis Ricardo</a></span>
         </div>

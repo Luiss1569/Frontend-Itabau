@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom'
-
+import api from '../../services/api'
 
 import Header from '../../components/Header'
 import Carrossel from '../../components/Carrossel'
@@ -35,22 +35,15 @@ function Index() {
   const [load, setLoad] = useState(location.pathname === '/home' ? false : true)
   const [lat, setLat] = useState(null)
   const [long, setLong] = useState(null)
-
-
-  useMemo(() => {
-    console.log(lat, long);
-    // eslint-disable-next-line
-  }, [long])
+  const [locations, setLocations] = useState(null)
 
   useEffect(() => {
     window.scrollTo(0, 0)
     setTimeout(() => { setLoad(false) }, 3000)
     setTimeout(() => { setIceAnimation(true) }, 5000)
-    document.addEventListener('DOMContentLoaded', function () {
-      navigator.geolocation.getCurrentPosition(function (position) {
-        setLat(position.coords.latitude)
-        setLong(position.coords.longitude)
-      });
+    navigator.geolocation.getCurrentPosition(function (position) {
+      setLat(position.coords.latitude)
+      setLong(position.coords.longitude)
     });
     try {
       document.querySelectorAll('.animated div[data-about]')[1].removeAttribute('data-about');
@@ -64,6 +57,27 @@ function Index() {
       });
     }, 6000)
   })
+
+  useMemo(() => {
+    console.log(lat, long);
+    async function getLocations() {
+      if (lat & long) {
+        const response = await fetch(`${api}php/cliente/get.php?lat=${lat}&long=${long}&limit=5`, {
+          method: 'get',
+        }).then(function (response) {
+          return response.json();
+        })
+        if (response.data) {
+          setLocations([])
+        } else {
+          setLocations(response)
+        }
+        console.log(response);
+      }
+    }
+    getLocations()
+    // eslint-disable-next-line
+  }, [long])
 
   return <>
     <Header />
@@ -128,7 +142,7 @@ function Index() {
       </div>
     </div>
 
-    <div className='container container-map animated' style={{backgroundColor: '#f7f7f7'}}>
+    <div className='container container-map animated' style={{ backgroundColor: '#f7f7f7' }}>
       <div className='content-itens right' data-about='true'>
         <Lottie options={{
           loop: true,
@@ -145,38 +159,21 @@ function Index() {
       </div>
 
     </div>
-    <div className='container container-reverse container-location animated' style={{paddingBottom: 70}}>
-      <div className="content-itens">
-        <h3>Locais Proximos</h3>
-      </div>
-        <div className='content-location  galery right' style={{padding: 0, marginTop: 20}}>
-          {<Location locations={[{
-            nome: 'Salgadao',
-            cidade: 'São Bento do Sapucaí-SP',
-            lat: '-45.7249803',
-            long: '-22.6858218',
-            rua: 'asdasdasd asdad',
-            bairro: 'asdads asdasd',
-            tel: '1299793443'
-          }, {
-            nome: 'Salgadao',
-            cidade: 'São Bento do Sapucaí-SP',
-            lat: '-45.7249803',
-            long: '-22.6858218',
-            rua: 'asdasdasd asdad',
-            bairro: 'asdads asdasd',
-            tel: '1299793443'
-          }, {
-            nome: 'Salgadao',
-            cidade: 'São Bento do Sapucaí-SP',
-            lat: '-45.7249803',
-            long: '-22.6858218',
-            rua: 'asdasdasd asdad',
-            bairro: 'asdads asdasd',
-            tel: '1299793443'
-          }]} />}
+    {locations ? (
+      <>
+        <div className='container container-reverse container-location animated' style={{ paddingBottom: 70 }}>
+          <div className="content-itens">
+            <h3>Locais Proximos</h3>
+          </div>
+          <div className='content-location  galery right' style={{ padding: 0, marginTop: 20 }}>
+            {<Location locations={locations} />}
+          </div>
         </div>
-    </div>
+      </>
+    ) : (
+        <></>
+      )
+    }
 
     <div className='container animated'>
       <div className='content-img left ' data-about='true'>
@@ -263,18 +260,20 @@ function Index() {
 
     <Footer />
 
-    {load ? (<div style={{ position: 'fixed', backgroundColor: '#fff', top: 0, bottom: 0, left: 0, right: 0, zIndex: 2010, display: 'flex', flex: 1, width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
-      <Lottie options={{
-        loop: true,
-        autoplay: true,
-        animationData: iceLoad,
-        rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice'
-        }
-      }}
-        height={400}
-        width={400} />
-    </div>) : ""}
+    {
+      load ? (<div style={{ position: 'fixed', backgroundColor: '#fff', top: 0, bottom: 0, left: 0, right: 0, zIndex: 2010, display: 'flex', flex: 1, width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+        <Lottie options={{
+          loop: true,
+          autoplay: true,
+          animationData: iceLoad,
+          rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+          }
+        }}
+          height={400}
+          width={400} />
+      </div>) : ""
+    }
 
   </>;
 }

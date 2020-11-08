@@ -11,17 +11,23 @@ import { PinDropSharp } from '@material-ui/icons';
 
 function Location(props) {
 
+    if(props.locations.length === 0){
+        return (
+            <h3>Sem Locais Próximos</h3>
+        )
+    }
+
     return (<>
             {props.locations.map(location => (
                 <div className='box-location'>
                     <div className='header'>
                         <PinDropSharp style={{ color: '#fff', marginRight: 5 }} />
-                        <h4>{location.nome}</h4>
+                        <h4>{location.NOME}</h4>
                     </div>
                     <div className='body'>
                         <Tooltip title="Ver Rotas" aria-label="Ver Rotas">
                             <div className='content'>
-                                <a href={`https://www.google.com/maps/dir/?api=1&destination=${location.long},${location.lat}`} rel="noreferrer"
+                                <a href={`https://www.google.com/maps/dir/?api=1&destination=${location.LATITUDE},${location.LONGITUDE}`} rel="noreferrer"
                                     target='_blank' onmouseover="Tip('Ver Rota')" onmouseout="UnTip()">
                                     <Lottie options={{
                                         loop: true,
@@ -36,10 +42,10 @@ function Location(props) {
                                 </a>
                             </div>
                         </Tooltip>
-                        <h4>{location.cidade}</h4>
-                        <h4>{location.rua}</h4>
-                        <h4>{location.bairro}</h4>
-                        <h4>{location.tel}</h4>
+                        <h4>{location.CIDADE}</h4>
+                        <h4>{location.RUA}</h4>
+                        <h4>{location.BAIRRO}</h4>
+                        <h4>{location.TELEFONE}</h4>
                     </div>
                 </div>
 

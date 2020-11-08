@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import api from '../../services/api'
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -31,7 +32,7 @@ function Lançamento() {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-    },[])
+    }, [])
 
     const estados = [
         { key: "AC", value: "Acre" },
@@ -65,9 +66,31 @@ function Lançamento() {
 
     async function handleSubmit(e) {
         e.preventDefault()
-        const data = {nome, email, telefone, cidade, estado, assunto, mensagem}
-        
-        console.log(data);
+        // const data = {nome, email, telefone, cidade, estado, assunto, mensagem}
+
+        const data = new FormData()
+        data.append('nome', nome)
+        data.append('email', email)
+        data.append('telefone', telefone)
+        data.append('cidade', cidade)
+        data.append('estado', estado)
+        data.append('assunto', assunto)
+        data.append('mensagem', mensagem)
+
+        const response = await fetch(`${api}/php/matriz/insert.php`, {
+            method: 'post',
+            body: data
+        }).then(function (response) {
+            return response.json();
+        })
+
+        console.log(response);
+
+        if(response.result){
+            alert('Mensagem Enviada')
+        }else{
+            alert('Mensagem não Enviada')
+        }
     }
 
     return (<>
@@ -84,10 +107,10 @@ function Lançamento() {
         <div className='container animated' style={{ alignItems: 'flex-start' }}>
             <div className='content-itens left' data-about>
                 <form className='' autoComplete="off" onSubmit={handleSubmit}>
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e=>{setNome(e.target.value)}} label="Nome" required variant="outlined" fullWidth />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} label="Email" onChange={e=>{setEmail(e.target.value)}} required type='email' fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e=>{setTelefone(e.target.value)}} required type='tel' inputProps={{pattern:"[0-9]{2}-[0-9]{5}-[0-9]{4}"}}  fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}  value={cidade} label="Cidade" onChange={e=>{setCidade(e.target.value)}} fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} label="Email" onChange={e => { setEmail(e.target.value) }} required type='email' fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
                     <FormControl variant="outlined" style={{ marginBottom: 20, width: '100%' }} className={''}>
                         <InputLabel id="demo-simple-select-outlined-label">Estado</InputLabel>
                         <Select
@@ -95,9 +118,9 @@ function Lançamento() {
                             id="demo-simple-select-outlined"
                             style={{ width: '100%' }}
                             value={estado}
-                            onChange={e =>{setEstado(e.target.value)}}
+                            onChange={e => { setEstado(e.target.value) }}
                             label="Idade"
-                        > 
+                        >
                             <MenuItem value="">
                                 <em>Nenhum</em>
                             </MenuItem>
@@ -106,8 +129,8 @@ function Lançamento() {
                             ))}
                         </Select>
                     </FormControl>
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}  value={assunto} label="Assunto" onChange={e=>{setAssunto(e.target.value)}} fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}  value={mensagem} label="Mensagem" onChange={e=>{setMensagem(e.target.value)}} fullWidth required multiline
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={assunto} label="Assunto" onChange={e => { setAssunto(e.target.value) }} fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={mensagem} label="Mensagem" onChange={e => { setMensagem(e.target.value) }} fullWidth required multiline
                         rowsMax={4} variant="outlined" rows={4} />
                     <Button variant='outlined' type='submit' style={{ marginLeft: '40%' }} color='primary'>Enviar</Button>
                 </form>

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import api from '../../services/api'
 
 import Skeleton from '@material-ui/lab/Skeleton';
 
@@ -22,9 +23,9 @@ function Lançamento() {
     const [locations, setLocations] = useState([])
     const [loading, setLoading] = useState(false)
 
-    React.useEffect(()=>{
+    React.useEffect(() => {
         window.scrollTo(0, 0)
-    },[])
+    }, [])
 
     useMemo(() => {
         if (!location) {
@@ -33,13 +34,31 @@ function Lançamento() {
 
         async function loadLocations() {
             setLoading(true)
-            setTimeout(() => {
-                document.querySelector('#loading').removeAttribute('data-about')
-            }, 1000);
-            setTimeout(() => {
+            const data = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDNsh5nO2nantURwxD1Amcg6G4Ldgqv7ug&address=${location}`, {
+                method: 'get',
+            }).then(function (response) {
+                return response.json();
+            })
+            if (data.status !== "OK") {
+                return
+            }
+            const lat = data.results[0].geometry.location.lat
+            const long = data.results[0].geometry.location.lng
+            console.log(lat, long);
+            if (lat & long) {
+                const response = await fetch(`${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=15`, {
+                    method: 'get',
+                }).then(function (response) {
+                    return response.json();
+                })
+                if (response.data) {
+                    setLocations([])
+                } else {
+                    setLocations(response)
+                }
                 setLoading(false)
-                setLocations(cont)
-            }, 3000)
+                console.log(response);
+            }
         }
         loadLocations()
         // eslint-disable-next-line
@@ -47,7 +66,13 @@ function Lançamento() {
 
     const render = () => {
 
-        if (!location && locations.length === 0) {
+        if (location !== '' && locations.length === 0) {
+            <div>
+                <h3>Infelizmente não encontramos lojas perto!</h3>
+            </div>
+        }
+
+        if (location === '' && locations.length === 0) {
             return (
                 <div style={{ width: '80%', height: 300 }} />
             )
@@ -67,38 +92,8 @@ function Lançamento() {
 
         if (locations.length > 0) {
             return (
-                    <Location locations={[{
-                        nome: 'Salgadao',
-                        cidade: 'São Bento do Sapucaí-SP',
-                        lat: '-45.7249803',
-                        long: '-22.6858218',
-                        rua: 'asdasdasd asdad',
-                        bairro: 'asdads asdasd',
-                        tel: '1299793443'
-                    },{
-                        nome: 'Salgadao',
-                        cidade: 'São Bento do Sapucaí-SP',
-                        lat: '-45.7249803',
-                        long: '-22.6858218',
-                        rua: 'asdasdasd asdad',
-                        bairro: 'asdads asdasd',
-                        tel: '1299793443'
-                    },{
-                        nome: 'Salgadao',
-                        cidade: 'São Bento do Sapucaí-SP',
-                        lat: '-45.7249803',
-                        long: '-22.6858218',
-                        rua: 'asdasdasd asdad',
-                        bairro: 'asdads asdasd',
-                        tel: '1299793443'
-                    }]}/>
+                <Location locations={locations} />
             )
-        }
-
-        if (location && locations.length === 0) {
-            <div>
-                <h3>Infelizmente não encontramos lojas perto!</h3>
-            </div>
         }
 
     }
