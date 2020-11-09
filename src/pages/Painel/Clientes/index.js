@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import * as React from 'react';
+import { useEffect, useState } from 'react';
+import { DataGrid } from '@material-ui/data-grid';
+
 import api from '../../../services/api'
 
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 import { Link } from 'react-router-dom'
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
 
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
@@ -20,30 +17,71 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import bg from '../../../assets/img/Historia/bg.jpg'
 
-function PainelMatriz() {
+export default function DataTable() {
+
     const [mensagens, setMensagens] = useState([])
+
+    const collumns = [
+        {
+            field: 'id', headerName: 'ID', width: 70,
+        },
+        {
+            field: 'NOME', headerName: 'NOME', width: 140,
+        },
+        {
+            field: 'CIDADE', headerName: 'CIDADE', width: 200,
+        },
+        {
+            field: 'TELEFONE', headerName: 'TELEFONE', width: 140,
+        },
+        {
+            field: 'RUA', headerName: 'RUA', width: 250,
+        },
+        {
+            field: 'BAIRRO', headerName: 'BAIRRO', width: 140,
+        },
+        {
+            field: 'LATITUDE', headerName: 'LATITUDE', width: 100,
+        },
+        {
+            field: 'LONGITUDE', headerName: 'LONGITUDE', width: 100,
+        },
+        {
+            field: 'OPÇÕES', headerName: 'OPÇÕES', width: 100,
+            renderCell: ({data}) =>(
+               <>
+                 <Link to={`/painel/cliente/${data.ID}/update`}><EditIcon style={{ color: 'yellow' }}/></Link><div onClick={()=>{handleDelete(data.ID)}}><DeleteForeverIcon style={{ color: 'tomato', cursor: 'pointer' }}/></div>
+               </>
+              ),
+        },
+    ]
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        async function getMensagens() {
-            const response = await fetch(`${api}/php/location/get.php`, {
-                method: 'get',
-            }).then(function (response) {
-                return response.json();
-            })
-            if (response.data) {
-                setMensagens([])
-            } else {
-                setMensagens(response)
-                console.log(response);
-            }
-            console.log(response);
-
-        }
         getMensagens()
     }, [])
 
+    async function getMensagens() {
+        const response = await fetch(`${api}/php/location/get.php`, {
+            method: 'get',
+        }).then(function (response) {
+            return response.json();
+        })
+        if (response.data) {
+            setMensagens([])
+        } else {
+            setMensagens(response)
+            console.log(response);
+        }
+        console.log(response);
+
+    }
+
     async function handleDelete(id) {
+
+        if(!window.confirm('Dejesa mesmo excluir cliente?')){
+            return 0
+        }
 
         const data = new FormData()
         data.append('danoninho', id)
@@ -57,57 +95,29 @@ function PainelMatriz() {
 
         console.log(response);
 
-        if(response.result){
+        if (response.result) {
             alert('Cliente Deletado')
-        }else{
+            getMensagens()
+        } else {
             alert('Cliente não Deletado')
         }
     }
 
     return (<>
-
         <Header />
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-historia animated' style={{ paddingBottom: 200 }}>
             <div className='content-itens left' data-about>
-                <h3><Link to='/painel/home' ><ArrowBackIcon /></Link>Clientes <Link style={{position: 'absolute', right: 30}} to='/painel/cliente/create'><AddCircleOutlineIcon style={{color:'green', fontSize: 40}}/></Link></h3>
+                <h3><Link to='/painel/home' ><ArrowBackIcon /></Link>Clientes <Link style={{ position: 'absolute', right: 30 }} to='/painel/cliente/create'><AddCircleOutlineIcon style={{ color: 'green', fontSize: 40 }} /></Link></h3>
             </div>
-            <TableContainer  >
-                <Table>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell align="center">Id</TableCell>
-                            <TableCell align="center">Nome</TableCell>
-                            <TableCell align="center">Cidade</TableCell>
-                            <TableCell align="center">Telefone</TableCell>
-                            <TableCell align="center">Bairro</TableCell>
-                            <TableCell align="center">Rua</TableCell>
-                            <TableCell align="center">Opcões</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {mensagens.lenght === 0 ? (
-                            <h3>Sem Clientes</h3>
-                        ) : (
-                                mensagens.map((row, index) => (
-                                    <TableRow key={row.ID}>
-                                        <TableCell align="center">{row.ID}</TableCell>
-                                        <TableCell align="center">{row.NOME}</TableCell>
-                                        <TableCell align="center">{row.CIDADE}</TableCell>
-                                        <TableCell align="center">{row.TELEFONE}</TableCell>
-                                        <TableCell align="center">{row.BAIRRO}</TableCell>
-                                        <TableCell align="center">{row.RUA}</TableCell>
-                                        <TableCell align="center"><Link to={`/painel/cliente/${row.ID}/update`}><EditIcon style={{ color: 'yellow' }}/></Link><div onClick={()=>{handleDelete(row.ID)}}><DeleteForeverIcon style={{ color: 'tomato' }}/></div></TableCell>
-                                    </TableRow>
-                                ))
-                            )}
-                    </TableBody>
-                </Table>
-            </TableContainer>
-        </div>
+            <div style={{ height: 400, width: '100%' }}>
+                <DataGrid rows={mensagens.map((mensagem, index) => ({
+                    id: index,
+                    ...mensagem
+                }))} columns={collumns} autoHeight autoPageSize disableSelectionOnClick onRowClick={({ rowIndex }) => { console.log(mensagens[rowIndex]); }} />
+            </div>       </div>
         <Footer />
-    </>)
+    </>
+    );
 }
-
-export default PainelMatriz;

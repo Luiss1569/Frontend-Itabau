@@ -76,7 +76,7 @@ function CreateCliente() {
             <div className='content-itens left' data-about>
                 <form className='' autoComplete="off" onSubmit={handleSubmit}>
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade (Cidade-UF)" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={rua} label="Rua" onChange={e => { setRua(e.target.value) }} required  fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={bairro} label="Bairro" onChange={e => { setBairro(e.target.value) }} required  fullWidth variant="outlined" />

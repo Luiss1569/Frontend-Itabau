@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background-image: url('../../assets/img/footer/f1.jpg');
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
