@@ -26,6 +26,9 @@ import Painel from './pages/Painel'
 import PainelIndex from './pages/Painel/views'
 import PainelMatriz from './pages/Painel/views/matriz'
 import PainelPesquisa from './pages/Painel/views/pesquisa'
+import ClienteIndex from './pages/Painel/Clientes'
+import ClienteCreate from './pages/Painel/Clientes/create'
+import ClienteUpdate from './pages/Painel/Clientes/update'
 
 import Organicos from './pages/Picoles/views/Organicos'
 import Acucar from './pages/Picoles/views/Acucar'
@@ -60,6 +63,10 @@ ReactDOM.render(
       <Route path="/opiniao" component={Pesquisa} />
       <Route path="/galeria" component={Fotos} />
       <Route path="/boletos" component={Boleto} />
+
+      <Route path="/painel/cliente" exact component={ClienteIndex} />
+      <Route path="/painel/cliente/create" exact component={ClienteCreate} />
+      <Route path="/painel/cliente/:id/update" exact component={ClienteUpdate} />
 
       <Route path="/painel/home" exact component={PainelIndex} />
       <Route path="/painel/matriz" exact component={PainelMatriz} />

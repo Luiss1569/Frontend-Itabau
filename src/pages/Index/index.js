@@ -61,8 +61,9 @@ function Index() {
   useMemo(() => {
     console.log(lat, long);
     async function getLocations() {
+
       if (lat & long) {
-        const response = await fetch(`${api}php/cliente/get.php?lat=${lat}&long=${long}&limit=5`, {
+        const response = await fetch(`${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=5`, {
           method: 'get',
         }).then(function (response) {
           return response.json();

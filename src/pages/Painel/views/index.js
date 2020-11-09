@@ -5,7 +5,7 @@ import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 import { Link } from 'react-router-dom'
 
-import bg from '../../../assets/img/lancamentos/bg.jpg'
+import bg from '../../../assets/img/matriz/bg.jpg'
 
 function Lançamento() {
     window.scrollTo(0, 0)
@@ -19,7 +19,7 @@ function Lançamento() {
             <div className='content-itens left'>
                 <h3>Clientes</h3>
                 <p>Adicionar, Atualizar ou apagar</p>
-                <Link to={'/painel/clientes'} style={{ textDecoration: 'none' }}><div className='button'>Ver Clientes</div></Link>
+                <Link to={'/painel/cliente'} style={{ textDecoration: 'none' }}><div className='button'>Ver Clientes</div></Link>
             </div>
             <div className='content-itens left'>
                 <h3>Lançamentos</h3>

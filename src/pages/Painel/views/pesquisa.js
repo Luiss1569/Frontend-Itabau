@@ -14,7 +14,7 @@ import TableRow from '@material-ui/core/TableRow';
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import bg from '../../../assets/img/lancamentos/bg.jpg'
+import bg from '../../../assets/img/massa/bg.jpg'
 
 function PainelPesquisa() {
     const [mensagens, setMensagens] = useState([])
@@ -44,7 +44,7 @@ function PainelPesquisa() {
         <Header />
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
-        <div className='container container-historia animated' style={{ paddingBottom: 200, marginTop: -10 }}>
+        <div className='container container-historia animated' style={{ paddingBottom: 200 }}>
             <div className='content-itens left' data-about>
                 <h3><Link to='/painel/home' ><ArrowBackIcon /></Link>Opinião</h3>
                 <p>Legenda</p>

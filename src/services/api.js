@@ -1,2 +1,2 @@
-const ip = 'http://locahost'
+const ip = 'http://localhost'
 export default ip 
