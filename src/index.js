@@ -25,6 +25,7 @@ import Boleto from './pages/Boleto'
 import Painel from './pages/Painel'
 import PainelIndex from './pages/Painel/views'
 import PainelMatriz from './pages/Painel/views/matriz'
+import PainelLancamento from './pages/Painel/views/lancamento'
 import PainelPesquisa from './pages/Painel/views/pesquisa'
 import ClienteIndex from './pages/Painel/Clientes'
 import ClienteCreate from './pages/Painel/Clientes/create'
@@ -70,6 +71,7 @@ ReactDOM.render(
 
       <Route path="/painel/home" exact component={PainelIndex} />
       <Route path="/painel/matriz" exact component={PainelMatriz} />
+      <Route path="/painel/lancamentos" exact component={PainelLancamento} />
       <Route path="/painel/pesquisa" exact component={PainelPesquisa} />
       <Route path="/painel" component={Painel} />
 

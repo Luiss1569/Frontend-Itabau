@@ -18,6 +18,29 @@
     max-width: 400px;
 }
 
-@media only screen and (max-width: 767px) {
-    
-}
+.container .content-itens label#thumbnail {
+    margin-bottom: 20px;
+    border: 3px dashed #bbb;
+    background-color: #e5e5e5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .container .content-itens label#thumbnail input {
+    display: none;
+  }
+  
+  .container .content-itens label#thumbnail.has-thumbnail {
+    border: 0;
+  }
+  
+  .container .content-itens label#thumbnail.has-thumbnail img {
+    display: none;
+  }
