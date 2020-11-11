@@ -22,7 +22,15 @@ import p9 from '../../assets/img/cidade/p9.jpg'
 import './style.css'
 
 function Cidade() {
-    window.scrollTo(0, 0)
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+    }, [])
 
     return (<>
 
@@ -30,7 +38,7 @@ function Cidade() {
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-historia animated'>
-            <div className='content-itens left'>
+            <div className='content-itens left' data-about>
                 <h3>Conheça nossa cidade</h3>
                 <h4 style={{ fontSize: 20 }}>São Bento do Sapucaí-SP</h4>
                 <p>O Município da Estância Climática de São Bento do Sapucaí situa-se ao leste do Estado de São
@@ -41,7 +49,7 @@ function Cidade() {
                 agricultura diversificada que, ao lado da pecuária, forma a base econômica do Município que
                         também produz hortifrutigranjeiros.</p>
             </div>
-            <div className='content-img right' >
+            <div className='content-img right' data-about>
                 <img src={c1} alt='São Bento' />
                 <span>Fundação: 16 de agosto de 1832.</span>
             </div>
@@ -82,12 +90,12 @@ function Cidade() {
                       1918), “Pedra do Bahú” (Plínio Salgado, 1915) e “Pedra do Baú” (Bento Cortez, 1962).</p>
                 <p>E aí ficou interessado nessa história fantástica dos três irmão?! Clique no link a seguir e viaje no tempo: <a href='https://www.saobentodosapucai.sp.gov.br/site/historia-pedra-do-bau/' target='_blank' rel="noreferrer">Clique aqui</a></p>
             </div>
-        </div>  
+        </div>
 
         <div className='container container-historia animated' style={{ marginTop: 0 }}>
-        <div className='content-itens right' data-about>
-            <h3>Nossas Parceiros</h3>
-        </div><br/><br/><br/>
+            <div className='content-itens right' data-about>
+                <h3>Nossas Parceiros</h3>
+            </div><br /><br /><br />
             <div className='content-img  galery left' data-about>
                 <div className='box-img'>
                     <a href='http://www.restaurantecomidamineira.com.br/' target='_blank' rel="noreferrer">

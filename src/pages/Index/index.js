@@ -41,13 +41,17 @@ function Index() {
     window.scrollTo(0, 0)
     setTimeout(() => { setLoad(false) }, 3000)
     setTimeout(() => { setIceAnimation(true) }, 5000)
-    navigator.geolocation.getCurrentPosition(function (position) {
-      setLat(position.coords.latitude)
-      setLong(position.coords.longitude)
-    });
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setLat(position.coords.latitude)
+        setLong(position.coords.longitude)
+      }, function(error){
+        console.log(error);
+      }, {enableHighAccuracy: true});
+    }
     try {
-      document.querySelectorAll('.animated div[data-about]')[1].removeAttribute('data-about');
-      document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+      document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
+      document.querySelectorAll('.animated div[prime]')[1].removeAttribute('data-about');
     } catch (e) {
       console.log(e);
     }
@@ -100,11 +104,11 @@ function Index() {
     </div>
 
     <div className='container animated'>
-      <div className='content-img left ' data-about='true'>
+      <div className='content-img left ' prime='true' data-about='true'>
         <img src={i1} alt='picoles sem açucar' />
       </div>
 
-      <div className='content-itens right ' data-about='true'>
+      <div className='content-itens right ' prime='true' data-about='true'>
         <h3>Picolés Orgânicos</h3>
         <label>Além de deliciosas guloseimas, alimentos saudáveis</label>
         <p>A linha de picolés orgânicos da Itabaú é para você que mantém uma alimentação saudável e valoriza
@@ -162,11 +166,11 @@ function Index() {
     </div>
     {locations ? (
       <>
-        <div className='container container-reverse container-location animated' style={{ paddingBottom: 70 }}>
-          <div className="content-itens">
+        <div className='container container-reverse container-location container-historia animated' style={{ paddingBottom: 70, paddingTop: 100 }}>
+          <div className="content-itens left" data-about>
             <h3>Locais Proximos</h3>
           </div>
-          <div className='content-location  galery right' style={{ padding: 0, marginTop: 20 }}>
+          <div className='content-location  galery right'  data-about style={{ padding: 0, marginTop: 20 }}>
             {<Location locations={locations} />}
           </div>
         </div>

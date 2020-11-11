@@ -29,7 +29,6 @@ import f20 from '../../assets/img/frutas/f20.jpg'
 import './style.css'
 
 function Frutas() {
-    window.scrollTo(0, 0)
 
     const frutasInfo = [
         {
@@ -154,6 +153,18 @@ function Frutas() {
         },
     ]
 
+    
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
+
     function returnClasses(index) {
         if (index % 2 === 0) {
             return "container animated"
@@ -185,7 +196,7 @@ function Frutas() {
                     <p style={{marginBottom:0}}>Fontes:</p>
                     {fruta.fonte.map(font => (
                         <>
-                            <a href={font} style={{ textDecoration: 'none',  color:'#175519', fontStyle: 'italic', fontFamily: "Philosopher, sans-serif", marginBottom:20 }}>{font}</a><br />
+                            <a href={font} style={{ textDecoration: 'none',  color:'#175519', fontStyle: 'italic', fontFamily: "Philosopher, sans-serif", marginBottom:20, wordWrap: 'break-word' }}>{font}</a><br />
                         </>
                     ))}
                 </div>

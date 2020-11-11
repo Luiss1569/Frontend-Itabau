@@ -12,7 +12,15 @@ import i1 from '../../assets/img/ingredientes/s1.png'
 import './style.css'
 
 function Ingredientes() {
-    window.scrollTo(0, 0)
+    
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
 
     return (<>
 
@@ -26,7 +34,7 @@ function Ingredientes() {
             </div>
         </div>
 
-        <div className='container container-ingre animated'>
+        <div className='container container-ingre animated' data-about style={{marginTop: -30}}>
             <h4>Nossos ingredientes Açúcar Orgânico</h4>
             <label>É açúcar cristal extraído da cana, com plantio orgânico seguindo as formas da LEI 10.831.</label>
 
@@ -48,7 +56,7 @@ function Ingredientes() {
             <label>Usamos leite integral tipo A, in natura, pasteurizado, e ou leite em pó integral.</label>
 
             <h4>Maltitol</h4>
-            <label>O Maltitol é um edulcorante natural obtido através da hidrogenação da Maltose. Esse
+            <label style={{wordWrap: 'break-word', width: '80%'}}>O Maltitol é um edulcorante natural obtido através da hidrogenação da Maltose. Esse
             ingrediente é um dos principais substitutos do açúcar nas formulações em geral para recuperar
             corpo mantendo as características do produto regular. Apresenta ainda excelente sabor e
             estabilidade térmica, não é cariogênio, apto para diabéticos e possui cerca de 70% do dulçor do
@@ -66,7 +74,7 @@ function Ingredientes() {
                 <li>Estável em pH ácido;</li>
                 <li>Não tem sabor residual podendo também ser aplicado em produtos salgados.</li>
             </ul>
-            <label>Fonte: http://tovani.com.br/website/ingredientes/</label>
+            <label style={{wordWrap: 'break-word', width: '90%'}}>Fonte: http://tovani.com.br/website/ingredientes/</label>
 
             <h4>Farinha de Arroz Integral</h4>
             <label>Farinha de arroz biodinâmica.</label>
@@ -94,7 +102,7 @@ function Ingredientes() {
 
         <div className=' container animated'  style={{paddingBottom: 200}}>
             <div className='content-img left ' data-about='true'>
-                <img src={i1} alt='picoles sem açucar' style={{width: 300, marginLeft: '10%'}} />
+                <img src={i1} alt='picoles sem açucar' style={{width: '100%', marginLeft: '10%'}} />
             </div>
             <div className='content-itens right' data-about='true'>
                 <h3>Nos mande uma mensagem, será um prazer atender a sua solicitação.</h3>

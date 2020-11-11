@@ -11,7 +11,14 @@ import {Link} from 'react-router-dom'
 import './style.css'
 
 function HistoriaSorvete() {
-    window.scrollTo(0, 0)
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+          document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      })
 
     return (<>
 
@@ -19,7 +26,7 @@ function HistoriaSorvete() {
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-historia animated'>
-            <div className='content-itens left'>
+            <div className='content-itens left' prime data-about>
                 <h3>Historia do Sorvete</h3>
                 <p>História do sorvete
                 A história do sorvete é cheia de curiosidades. Pesquisas mostram que ele foi inventado há

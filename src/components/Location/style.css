@@ -71,6 +71,11 @@
     border-left: 0;
     border-right: 0;
   }
+
+  #heLocation{
+    font-family: "Philosopher", sans-serif;
+    color: #38a38d;
+  }
   
   @media only screen and (min-width: 1400px) {
     .box-location {

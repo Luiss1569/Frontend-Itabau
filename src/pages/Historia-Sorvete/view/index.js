@@ -15,7 +15,14 @@ import c6 from '../../../assets/img/historia_sorvete/c6.jpg'
 import '../style.css'
 
 function Curiosidades() {
-    window.scrollTo(0, 0)
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+          document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      })
 
     return (<>
 
@@ -23,7 +30,7 @@ function Curiosidades() {
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-historia animated'>
-            <div className='content-itens left' data-about>
+            <div className='content-itens left' prime data-about>
                 <h3>Curiosidades divertidas sobre o sorvete</h3>
             </div>
         </div>

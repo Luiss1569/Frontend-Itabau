@@ -13,7 +13,7 @@ function Location(props) {
 
     if(props.locations.length === 0){
         return (
-            <h3>Sem Locais Próximos</h3>
+            <h3 id='heLocation'>Sem Locais Próximos</h3>
         )
     }
 

@@ -36,8 +36,16 @@ import f14 from '../../assets/img/Historia/f14.jpg'
 import './style.css'
 
 function Historia() {
-    window.scrollTo(0, 0)
     const geracoes = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g9_2]
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+          document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      })
 
     const IMAGES = [{
         src: f1,
@@ -125,7 +133,7 @@ function Historia() {
         <div className={'margin'} />
 
         <div className='container container-historia animated'>
-            <div className='content-itens left'>
+            <div className='content-itens left' prime="true" data-about>
                 <h3>Nossa Historia</h3>
                 <p>A Itabaú sorvetes com mel, foi fundada no alto da serra da Mantiqueira, aos pés do maior
                 monumento natural do alto Vale do Paraíba, a Pedra do Baú, pelos até então apicultores
@@ -134,11 +142,11 @@ function Historia() {
                 ao mel colhido. Este foi nosso primeiro freezer (Apiário Itabaú) pintado a mão pela Marilia
                     Inke.</p>
             </div>
-            <div className='content-img' data-about>
+            <div className='content-img right' data-about>
                 <img src={rme} alt='nos' />
             </div>
             <span>Na foto da esquerda para direita: Carlos Robson Galvão, Marília Inke e Ricardo Camargo Inke.</span>
-            <div className='content-itens right' data-about style={{ marginTop: 0 }}>
+            <div className='content-itens left' data-about style={{ marginTop: 0 }}>
                 <p>Os sabores exóticos e a alta qualidade do produto caíram no gosto dos turistas e munícipes;
                 com a grande aceitação, resolve-se então no dia 30 de junho de 1990 fundar formalmente a
                 Itabaú Produtos Naturais Ltda. Em março de 1993 Carlos Robson adquire a parte do sócio
@@ -177,7 +185,7 @@ function Historia() {
                 <p>Os membros da família ainda são os maiores colaboradores da empresa.
                     Quase no quintal da empresa está a Pedra do Baú.</p>
             </div>
-            <div className='content-itens right' data-about style={{ marginTop: 30 }}>
+            <div className='content-itens right' style={{ marginTop: 30 }}>
                 <Galery images={IMAGES} />
             </div>
         </div>

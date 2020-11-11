@@ -13,16 +13,25 @@ import s3 from '../../assets/img/selos/s3.jpg'
 import './style.css'
 
 function Selos() {
-    window.scrollTo(0, 0)
+    
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
 
     return (<>
 
         <Header />
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
-        <div className='container animated'>
+        <div className='container container-selo animated'>
             <div className='content-img left ' data-about='true'>
-                <img src={s1} alt='picoles sem açucar' style={{ width: '310px', height: "auto", marginLeft: '10%' }} />
+                <img src={s1} alt='picoles sem açucar' style={{ width: '100%', height: "auto", margin:"auto"}} />
             </div>
 
             <div className='content-itens right ' data-about='true'>
@@ -41,7 +50,7 @@ function Selos() {
 
         <div className='container animated'>
             <div className='content-img left ' data-about='true'>
-                <img src={s2} alt='picoles sem açucar' style={{ width: '310px', height: "auto", marginLeft: '10%' }} />
+                <img src={s2} alt='picoles sem açucar' style={{  width: '100%', height: "auto", margin:"auto" }} />
             </div>
 
             <div className='content-itens right ' data-about='true'>

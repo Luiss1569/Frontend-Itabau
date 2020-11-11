@@ -21,7 +21,15 @@ import animationPrint from '../../assets/animations/printer.json'
 import './style.css'
 
 function Picoles() {
-    window.scrollTo(0, 0)
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+          document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+          document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      })
 
     return (<>
 
@@ -30,7 +38,7 @@ function Picoles() {
         <div className={'margin'} />
 
         <div className='container container-historia animated' >
-            <div className='content-itens left' data-about>
+            <div className='content-itens left' prime data-about>
                 <h3>Picolés</h3>
             </div>
             <div className='content-img  galery left' style={{ marginTop: 50 }} data-about>

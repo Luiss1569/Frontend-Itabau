@@ -4,3 +4,13 @@
 .container .content-img .box-img .buttonImg:hover{
     transform: translateY(-10px);
 } 
+
+@media only screen and (max-width: 767px) {
+    .container-sorvete{
+        width: 94%;
+        padding:0 ;
+    }
+    .MuiBox-root{
+        padding: 0 !important;
+    }
+}

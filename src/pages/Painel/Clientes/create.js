@@ -26,6 +26,25 @@ function CreateCliente() {
         window.scrollTo(0, 0)
     }, [])
 
+    useEffect(() => {
+        async function getEndress() {
+            if (long !== '' && lat !== '') {
+                const {results, status}= await fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDNsh5nO2nantURwxD1Amcg6G4Ldgqv7ug&latlng=${lat},${long}`, {
+                    method: 'get'
+                }).then(function (response) {
+                    return response.json();
+                })
+               
+                if (status === 'OK') {
+                    let result = results[0].address_components
+                    setCidade(`${result[1].long_name}-${result[2].short_name}`)
+                    setRua(`${result[0].short_name}`)
+                }
+            }
+        }
+        getEndress()
+    }, [long, lat])
+
     async function handleSubmit(e) {
         e.preventDefault()
         // const data = {nome, email, telefone, cidade, estado, assunto, mensagem}
@@ -48,7 +67,7 @@ function CreateCliente() {
 
         console.log(response);
 
-        if(response.result){
+        if (response.result) {
             alert('Cliente Criado')
             setNome('')
             setRua('')
@@ -57,7 +76,7 @@ function CreateCliente() {
             setLat('')
             setLong('')
             setBairro('')
-        }else{
+        } else {
             alert('Cliente não Criado')
         }
     }
@@ -78,15 +97,15 @@ function CreateCliente() {
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade (Cidade-UF)" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={rua} label="Rua" onChange={e => { setRua(e.target.value) }} required  fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={bairro} label="Bairro" onChange={e => { setBairro(e.target.value) }} required  fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={lat} label="Latitude" onChange={e => { setLat(e.target.value) }} required type='number'  fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={long} label="Longitude" onChange={e => { setLong(e.target.value) }} type='number' required  fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={rua} label="Rua" onChange={e => { setRua(e.target.value) }} required fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={bairro} label="Bairro" onChange={e => { setBairro(e.target.value) }} required fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={lat} label="Latitude" onChange={e => { setLat(e.target.value) }} required type='number' fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={long} label="Longitude" onChange={e => { setLong(e.target.value) }} type='number' required fullWidth variant="outlined" />
                     <Button variant='outlined' type='submit' style={{ marginLeft: '40%' }} color='primary'>Enviar</Button>
                 </form>
             </div>
-            </div>
-            <div style={{ marginBottom: 50 }} />
+        </div>
+        <div style={{ marginBottom: 50 }} />
         <Footer />
     </>)
 }

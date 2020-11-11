@@ -70,7 +70,6 @@ function UpdateCliente({match, history}) {
 
         if(response.result){
             alert('Cliente Alterado')
-            history.push('/painel/cliente')
         }else{
             alert('Cliente não Alterado')
         }

@@ -74,8 +74,8 @@ export default function ScrollableTabsButtonAuto(props) {
         props.picoles.map((picole, index) => (
 
           <TabPanel value={value} index={index} key={picole.nome+index}>
-            <Grow in={checked}>
-              <div className="container animated" id="container-tab">
+            <Grow in={checked} style={{padding: 0}}>
+              <div className="container container-sorvete animated" id="container-tab">
                 {
                   picole.img ? (
                     <div className="content-img left" style={{ maxWidth: 300 }}>

@@ -33,8 +33,8 @@ CREATE TABLE `clientes` (
   `TELEFONE` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `RUA` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `BAIRRO` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `LATITUDE` float NOT NULL,
-  `LONGITUDE` float NOT NULL,
+  `LATITUDE` double NOT NULL,
+  `LONGITUDE` double  NOT NULL,
   `ID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

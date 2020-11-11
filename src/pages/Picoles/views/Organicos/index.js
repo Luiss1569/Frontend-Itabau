@@ -14,7 +14,15 @@ import xAcucar from './data/xAcucar.json'
 import './style.css'
 
 function Organicos() {
-    window.scrollTo(0, 0)
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+          document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+          document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      })
   
     return (<>
 
@@ -22,7 +30,7 @@ function Organicos() {
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-massa animated'>
-            <div className='content-itens left'>
+            <div className='content-itens left' data-about>
                 <h3>Picolés Orgânicos</h3>
             </div>
         </div>

@@ -61,7 +61,7 @@
 /* margin on small screens */
 @media only screen and (max-width: 767px) {
   .container-historia .galery .box-img{
-    max-width: 45%;
+    max-width: 80%;
   }
 }
 

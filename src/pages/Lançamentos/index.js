@@ -6,7 +6,6 @@ import Carrossel from '../../components/Carrossel'
 import api from '../../services/api'
 
 import bg from '../../assets/img/lancamentos/bg.jpg'
-import l1 from '../../assets/img/lancamentos/l1.jpg'
 
 import './style.css'
 

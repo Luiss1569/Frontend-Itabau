@@ -25,7 +25,13 @@ function Lançamento() {
 
     React.useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
 
     useMemo(() => {
         if (!location) {
@@ -40,6 +46,7 @@ function Lançamento() {
                 return response.json();
             })
             if (data.status !== "OK") {
+                setLocations([])
                 return
             }
             const lat = data.results[0].geometry.location.lat
@@ -66,12 +73,6 @@ function Lançamento() {
 
     const render = () => {
 
-        if (location !== '' && locations.length === 0) {
-            <div>
-                <h3>Infelizmente não encontramos lojas perto!</h3>
-            </div>
-        }
-
         if (location === '' && locations.length === 0) {
             return (
                 <div style={{ width: '80%', height: 300 }} />
@@ -90,7 +91,7 @@ function Lançamento() {
             )
         }
 
-        if (locations.length > 0) {
+        if (locations) {
             return (
                 <Location locations={locations} />
             )
@@ -104,8 +105,8 @@ function Lançamento() {
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
 
-        <div className='container container-historia animated'>
-            <div className='content-itens left'>
+        <div className='container container-historia animated' >
+            <div className='content-itens left' data-about>
                 <h3>Onde Encontrar?</h3>
             </div>
         </div>

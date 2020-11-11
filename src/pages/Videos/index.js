@@ -9,7 +9,16 @@ import bg from '../../assets/img/ingredientes/bg.jpg'
 import './style.css'
 
 function Video() {
-    window.scrollTo(0, 0)
+    
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
 
     return (<>
 
@@ -18,7 +27,7 @@ function Video() {
         <div className={'margin'} />
 
         <div className='container container-historia animated'>
-            <div className='content-itens left'>
+            <div className='content-itens left' data-about>
                 <h3>Reportagens da Itabaú:</h3>
             </div>
         </div>
@@ -27,7 +36,7 @@ function Video() {
             <div className='content-img left '>
                 <iframe width="480" height="270" src="https://www.youtube.com/embed/8Yoytt2b-o0" title='1' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div className='content-itens right '>
+            <div className='content-itens right ' data-about>
                 <h3>PROGRAMA MUNDO EMPRESARIAL</h3>
                 <label>TV Band 09/07/2017</label>
             </div>

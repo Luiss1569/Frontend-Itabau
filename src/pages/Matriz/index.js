@@ -29,10 +29,16 @@ function Lançamento() {
     const [estado, setEstado] = useState('')
     const [assunto, setAssunto] = useState('')
     const [mensagem, setMensagem] = useState('')
-
+  
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
 
     const estados = [
         { key: "AC", value: "Acre" },
