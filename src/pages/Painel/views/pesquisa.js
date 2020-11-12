@@ -16,11 +16,18 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import bg from '../../../assets/img/massa/bg.jpg'
 
-function PainelPesquisa() {
+function PainelPesquisa({history}) {
     const [mensagens, setMensagens] = useState([])
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        async function testLogin(){
+            const log = await localStorage.getItem('@itabau/login')
+            if(!log){
+                history.push('/home')
+            }
+        }  
+        testLogin()
         async function getMensagens() {
             const response = await fetch(`${api}/php/pesquisa/get.php`, {
                 method: 'get',
@@ -37,7 +44,7 @@ function PainelPesquisa() {
 
         }
         getMensagens()
-    }, [])
+    }, [history])
 
     return (<>
 

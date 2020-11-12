@@ -22,7 +22,7 @@ function Location(props) {
                 <div className='box-location'>
                     <div className='header'>
                         <PinDropSharp style={{ color: '#fff', marginRight: 5 }} />
-                        <h4>{location.NOME}</h4>
+                        <h4>{location.CIDADE}</h4>
                     </div>
                     <div className='body'>
                         <Tooltip title="Ver Rotas" aria-label="Ver Rotas">
@@ -42,7 +42,7 @@ function Location(props) {
                                 </a>
                             </div>
                         </Tooltip>
-                        <h4>{location.CIDADE}</h4>
+                        <h4>{location.NOME}</h4>
                         <h4>{location.RUA}</h4>
                         <h4>{location.BAIRRO}</h4>
                         <h4>{location.TELEFONE}</h4>

@@ -16,11 +16,18 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import bg from '../../../assets/img/historia_sorvete/bg.jpg'
 
-function PainelMatriz() {
+function PainelMatriz({history}) {
     const [mensagens, setMensagens] = useState([])
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        async function testLogin(){
+            const log = await localStorage.getItem('@itabau/login')
+            if(!log){
+                history.push('/home')
+            }
+        }  
+        testLogin()
         async function getMensagens() {
             const response = await fetch(`${api}/php/matriz/get.php`, {
                 method: 'get',
@@ -37,7 +44,7 @@ function PainelMatriz() {
 
         }
         getMensagens()
-    }, [])
+    }, [history])
 
     return (<>
 

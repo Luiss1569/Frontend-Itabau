@@ -7,6 +7,8 @@ import api from '../../../services/api'
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
+import SnackBar from '../../../components/SnackBar'
+
 import { Link } from 'react-router-dom'
 
 import EditIcon from '@material-ui/icons/Edit';
@@ -17,9 +19,10 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import bg from '../../../assets/img/Historia/bg.jpg'
 
-export default function DataTable() {
+export default function DataTable({history}) {
 
     const [mensagens, setMensagens] = useState([])
+    const [open, setOpen] = useState({ type: 'success', bool: false, children: 'Cliente Salvo' });
 
     const collumns = [
         {
@@ -58,8 +61,15 @@ export default function DataTable() {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        async function testLogin(){
+            const log = await localStorage.getItem('@itabau/login')
+            if(!log){
+                history.push('/home')
+            }
+        }  
+        testLogin()
         getMensagens()
-    }, [])
+    }, [history])
 
     async function getMensagens() {
         const response = await fetch(`${api}/php/location/get.php`, {
@@ -96,16 +106,25 @@ export default function DataTable() {
         console.log(response);
 
         if (response.result) {
-            alert('Cliente Deletado')
+            setOpen({
+                type: 'success',
+                bool: true,
+                children: 'Cliente Deletado'
+            })
             getMensagens()
         } else {
-            alert('Cliente não Deletado')
+            setOpen({
+                type: 'error',
+                bool: true,
+                children: 'Cliente não Deletado'
+            })
         }
     }
 
     return (<>
         <Header />
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <SnackBar setOpen={setOpen} open={open.bool} type={open.type}>{open.children}</SnackBar>
         <div className={'margin'} />
         <div className='container container-historia animated' style={{ paddingBottom: 200 }}>
             <div className='content-itens left' data-about>

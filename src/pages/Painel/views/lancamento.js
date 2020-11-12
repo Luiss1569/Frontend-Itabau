@@ -6,8 +6,10 @@ import { Link } from 'react-router-dom'
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
-import Camera from '@material-ui/icons/AddAPhoto';
+import SnackBar from '../../../components/SnackBar'
+
 import BackspaceIcon from '@material-ui/icons/Backspace';
+import Camera from '@material-ui/icons/AddAPhoto';
 
 import bg from '../../../assets/img/matriz/bg.jpg'
 
@@ -23,6 +25,7 @@ function UpdateCliente({ match, history }) {
     const [image, setImage] = useState('')
     const [preview, setPreview] = useState(null)
     const [thumbnail, setThumbnail] = useState(null)
+    const [open, setOpen] = useState({ type: 'success', bool: false, children: 'Cliente Salvo' });
     let imagem;
 
     function selectFileHandle(e) {
@@ -33,6 +36,13 @@ function UpdateCliente({ match, history }) {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        async function testLogin(){
+            const log = await localStorage.getItem('@itabau/login')
+            if(!log){
+                history.push('/home')
+            }
+        }  
+        testLogin()
         async function getMensagens() {
             const response = await fetch(`${api}/php/lancamento/get.php`, {
                 method: 'get',
@@ -51,7 +61,7 @@ function UpdateCliente({ match, history }) {
 
         }
         getMensagens()
-    }, [])
+    }, [history])
 
     useMemo(() => {
         thumbnail ? setPreview(URL.createObjectURL(thumbnail)) : setPreview(`${api}/php/${image}`)
@@ -100,9 +110,17 @@ function UpdateCliente({ match, history }) {
         console.log(response);
 
         if (response.result) {
-            alert('Lançamentos Alterado')
+            setOpen({
+                type: 'success',
+                bool: true,
+                children: 'Lançamentos Atualizado'
+            })
         } else {
-            alert('Lançamentos não Alterado')
+            setOpen({
+                type: 'error',
+                bool: true,
+                children: 'Lançamentos não Atualizado'
+            })
         }
     }
 
@@ -110,6 +128,7 @@ function UpdateCliente({ match, history }) {
 
         <Header />
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <SnackBar setOpen={setOpen} open={open.bool} type={open.type}>{open.children}</SnackBar>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>

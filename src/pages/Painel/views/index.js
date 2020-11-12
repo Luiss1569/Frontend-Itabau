@@ -7,8 +7,17 @@ import { Link } from 'react-router-dom'
 
 import bg from '../../../assets/img/matriz/bg.jpg'
 
-function Lançamento() {
-    window.scrollTo(0, 0)
+function Lançamento({history}) {
+    React.useEffect(()=>{
+        window.scrollTo(0, 0) 
+        async function testLogin(){
+            const log = await localStorage.getItem('@itabau/login')
+            if(!log){
+                history.push('/home')
+            }
+        }  
+        testLogin()
+    })
 
     return (<>
 
