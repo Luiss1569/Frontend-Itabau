@@ -14,7 +14,7 @@ function HistoriaSorvete() {
     React.useEffect(() => {
         window.scrollTo(0, 0)
         try {
-          document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
+          document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
         } catch (error) {
             console.log(error);
         }

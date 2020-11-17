@@ -6,6 +6,7 @@ import Header from '../../components/Header'
 import Carrossel from '../../components/Carrossel'
 import Footer from '../../components/Footer'
 import Location from '../../components/Location'
+import FlipCarrossel from '../../components/FlipCarrossel'
 
 import Lottie from 'react-lottie';
 
@@ -180,7 +181,7 @@ function Index() {
       )
     }
 
-    <div className='container animated'>
+    <div className='container contaier-massa animated'>
       <div className='content-img left ' data-about='true'>
         <img src={i4} alt='picoles sem açucar' />
       </div>
@@ -196,6 +197,7 @@ function Index() {
       </div>
     </div>
 
+    <FlipCarrossel />
 
     <div className="container  container-vid animated">
       <div className='content-itens right' data-about='true'>
