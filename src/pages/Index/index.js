@@ -87,7 +87,7 @@ function Index() {
 
   return <>
     <Header />
-    <Carrossel images={[c1, c2, c3]} />
+    <Carrossel images={[c1,c2,c3]} />
     <div className={'margin'} />
 
     <div className={'container-ice'} visible='true'>

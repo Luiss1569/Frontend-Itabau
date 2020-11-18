@@ -135,7 +135,7 @@ function Receitas() {
         <div className='container container-historia animated' style={{paddingBottom: 100}}>
             <div className='content-itens right'>
                 {receitasInfo.map(receita => (
-                    <Accordion key={receita.title} style={{ backgroundColor: '#f9f9f9' }}>
+                    <Accordion key={receita.title} style={{ backgroundColor: '#f9f9f9' }} >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"

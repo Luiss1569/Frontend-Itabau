@@ -42,7 +42,7 @@ export default function Parallax(props) {
 
   let windowScrollTop;
   if (window.innerWidth >= 768) {
-    windowScrollTop = window.pageYOffset/3;
+    windowScrollTop = window.pageYOffset/2;
   } else {
     windowScrollTop = 0;
   }
