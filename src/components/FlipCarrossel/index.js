@@ -22,7 +22,6 @@ import s16 from '../../assets/img/slideshow/s16.jpg'
 import s17 from '../../assets/img/slideshow/s17.jpg'
 import s18 from '../../assets/img/slideshow/s18.jpg'
 import s19 from '../../assets/img/slideshow/s19.jpg'
-import s20 from '../../assets/img/slideshow/s20.jpg'
 import s21 from '../../assets/img/slideshow/s21.jpg'
 import s22 from '../../assets/img/slideshow/s22.jpg'
 import s23 from '../../assets/img/slideshow/s23.jpg'
@@ -31,16 +30,16 @@ import './style.css'
 
 function Gallery() {
 
-    const images = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23]
+    const images = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s21,s22,s23]
 
     return (
         <AliceCarousel
             responsive={{
                 0: {
-                    items: 1
+                    items: 2
                 },
                 600: {
-                    items: 2
+                    items: 3
                 },
                 1024: {
                     items: 4
