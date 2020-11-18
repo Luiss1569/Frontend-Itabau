@@ -5,7 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import { Slide } from '@material-ui/core';
+import Slide  from '@material-ui/core/Fade';
 
 // core components
 import styles from "./styles/style";
@@ -32,7 +32,7 @@ export default function Parallax(props) {
         }
         setTimeout(()=>{
           setChecked(true)
-        },100)
+        },50)
       }, 5000);
       return () => clearInterval(interval);
     }

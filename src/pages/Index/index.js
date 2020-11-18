@@ -29,6 +29,8 @@ import { Link } from 'react-router-dom';
 const c1 = `${window.location.origin}/img/carrossel/c1.jpg`
 const c2 = `${window.location.origin}/img/carrossel/c2.jpg`
 const c3 = `${window.location.origin}/img/carrossel/c3.jpg`
+const c4 = `${window.location.origin}/img/carrossel/c4.jpg`
+const c5 = `${window.location.origin}/img/carrossel/c5.jpg`
 
 function Index() {
   const location = useLocation()
@@ -46,13 +48,14 @@ function Index() {
       navigator.geolocation.getCurrentPosition(function (position) {
         setLat(position.coords.latitude)
         setLong(position.coords.longitude)
-      }, function(error){
+      }, function (error) {
         console.log(error);
-      }, {enableHighAccuracy: true});
+      }, { enableHighAccuracy: true });
     }
     try {
       document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
       document.querySelectorAll('.animated div[prime]')[1].removeAttribute('data-about');
+     
     } catch (e) {
       console.log(e);
     }
@@ -87,7 +90,7 @@ function Index() {
 
   return <>
     <Header />
-    <Carrossel images={[c1,c2,c3]} />
+    <Carrossel images={[c1, c2, c3, c4, c5]} />
     <div className={'margin'} />
 
     <div className={'container-ice'} visible='true'>
@@ -106,17 +109,19 @@ function Index() {
 
     <div className='container animated'>
       <div className='content-img left ' prime='true' data-about='true'>
-        <img src={i1} alt='picoles sem açucar' />
+        <img src={i3} alt='picoles sem açucar' />
       </div>
 
-      <div className='content-itens right ' prime='true' data-about='true'>
-        <h3>Picolés Orgânicos</h3>
-        <label>Além de deliciosas guloseimas, alimentos saudáveis</label>
-        <p>A linha de picolés orgânicos da Itabaú é para você que mantém uma alimentação saudável e valoriza
-        a qualidade de vida. Das matérias-primas ao processo de produção, nossos picolés levam as principais
-        certificações que regulam o segmento. Cultivo das frutas sem o uso de agrotóxicos, ausência de realçador
-          de sabores e produtos com muito mais frutas.</p>
-        <Link to={'/picoles'} style={{ textDecoration: 'none' }}><div className='button'>Ver sabores</div></Link>
+      <div className='content-itens right' prime='true' data-about='true'>
+        <h3>Picolés Naturais</h3>
+        <label>VEGANOS  -  CREMOSOS – RECHEADOS – ZERO AÇÚCAR</label>
+        <p> Em todos não há  adição de aditivos e ou ingredientes  artificiais ou idênticos ao natural....  É simplesmente NATURAL,
+          saboroso e saudável.</p>
+        <Link to={'/picoles'} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'collum', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ padding: 5 }}><div className='button'> Tabela Nutricional</div></div>
+          <div style={{ padding: 5 }}><div className='button'>Lista de Ingredientes</div></div>
+          <div style={{ padding: 5 }}><div className='button' style={{ marginBottom: 5 }}>Lista de Sabores</div></div>
+        </Link>
       </div>
     </div>
 
@@ -130,25 +135,37 @@ function Index() {
         <p>O picolé natural recheado é feito com os mesmo princípios do picolé natural, sem adição de aromas
         artificiais, corantes e conservante, porém colocamos neles recheios magníficos, que lhe proporciona
           um sensação inesquecível, e impossível provar somente um.</p>
-        <Link to={'/picoles'} style={{ textDecoration: 'none' }}><div className='button'>Ver sabores</div></Link>
+        <Link to={'/picoles'} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'collum', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ padding: 5 }}><div className='button'> Tabela Nutricional</div></div>
+          <div style={{ padding: 5 }}><div className='button'>Lista de Ingredientes</div></div>
+          <div style={{ padding: 5 }}><div className='button' style={{ marginBottom: 5 }}>Lista de Sabores</div></div>
+        </Link>
       </div>
     </div>
 
     <div className='container animated'>
       <div className='content-img left ' data-about='true'>
-        <img src={i3} alt='picoles sem açucar' />
+        <img src={i1} alt='picoles sem açucar' />
       </div>
 
-      <div className='content-itens right' data-about='true'>
-        <h3>Picolés Naturais</h3>
-        <label>Pra você que não abre mão da qualidade</label>
-        <p>Com 0% de utilização de aditivos artificiais, contamos com uma extensa linha de deliciosos sabores
-           naturais, que utilizam matérias-primas da mais alta qualidade.</p>
-        <Link to={'/picoles'} style={{ textDecoration: 'none' }}><div className='button'>Ver sabores</div></Link>
+      <div className='content-itens right ' data-about='true'>
+        <h3>Picolés Orgânicos</h3>
+        <label>VEGANOS  -  CREMOSOS – ZERO AÇÚCAR</label>
+        <p> Em toda cadeia, da  matéria-prima ao processo de produção, nossos picolés tem  as principais certificações que regulam o segmento.
+        Somos auditados pelo  IBD (Instituto Bio Dinâmico), o qual  nos concede o selo SISORG ( Sistema Brasileiro de Avaliação de Conformidade
+        Orgânica)  este último selo  é obrigatório estar aparente nas embalagens de todos os produtos orgânicos. Ser um sorvete orgânico é ter
+        em sua composição produtos cultivado e ou produzidos sem agrotóxicos e sem fertilizantes químicos, não ter aditivos artificiais ou
+        idênticos ao natural . A produção orgânica melhora a qualidade de vida do homem do campo,   mantêm a vida do solo intacta, conserva o
+          lençol freático e  não agridem a natureza.</p>
+        <Link to={'/picoles'} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'collum', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ padding: 5 }}><div className='button'> Tabela Nutricional</div></div>
+          <div style={{ padding: 5 }}><div className='button'>Lista de Ingredientes</div></div>
+          <div style={{ padding: 5 }}><div className='button' style={{ marginBottom: 5 }}>Lista de Sabores</div></div>
+        </Link>
       </div>
     </div>
 
-    <div className='container container-map animated' style={{ backgroundColor: '#f7f7f7' }}>
+    <div className='container container-map animated' style={{ backgroundColor: '#f7f7f7'}}>
       <div className='content-itens right' data-about='true'>
         <Lottie options={{
           loop: true,
@@ -171,7 +188,7 @@ function Index() {
           <div className="content-itens left" data-about>
             <h3>Locais Proximos</h3>
           </div>
-          <div className='content-location  galery right'  data-about style={{ padding: 0, marginTop: 20 }}>
+          <div className='content-location  galery right' data-about style={{ padding: 0, marginTop: 20 }}>
             {<Location locations={locations} />}
           </div>
         </div>
@@ -187,13 +204,16 @@ function Index() {
       </div>
 
       <div className='content-itens right' data-about='true'>
-        <h3>Sorvetes de Massa</h3>
+        <h3>Massa Premium</h3>
         <label>Pra você que não abre mão da qualidade</label>
-        <p>A Itabaú também conta com uma linha especial de Sorvetes no formato Massa Premium, com uma grande
-        variedade e deliciosos sabores, ainda com a mesma qualidade da produção dos picolés, pois são feitos
-        com produtos selecionados, e em sua calda base não é adicionado nenhum tipo de gordura, e todos são
-            adoçados com açúcar orgânico.</p>
-        <Link to={'/picoles'} style={{ textDecoration: 'none' }}><div className='button'>Ver sabores</div></Link>
+        <p>Uma linha especial de Sorvetes no formato Massa Premium, com uma grande variedade de deliciosos sabores,  são feitos com produtos
+        selecionados e de alta qualidade. Em sua calda base não é adicionado nenhum tipo de gordura vegetal  e todos tem em sua composição
+          açúcar orgânico.</p>
+        <Link to={'/picoles'} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'collum', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ padding: 5 }}><div className='button'> Tabela Nutricional</div></div>
+          <div style={{ padding: 5 }}><div className='button'>Lista de Ingredientes</div></div>
+          <div style={{ padding: 5 }}><div className='button' style={{ marginBottom: 5 }}>Lista de Sabores</div></div>
+        </Link>
       </div>
     </div>
 

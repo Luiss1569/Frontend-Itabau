@@ -13,7 +13,7 @@ import s3 from '../../assets/img/selos/s3.jpg'
 import './style.css'
 
 function Selos() {
-    
+
     React.useEffect(() => {
         window.scrollTo(0, 0)
         try {
@@ -22,16 +22,21 @@ function Selos() {
         } catch (error) {
             console.log(error);
         }
-      },[])
+    }, [])
 
     return (<>
 
         <Header />
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
+        <div className='container container-historia animated'>
+            <div className='content-itens left ' data-about='true'>
+                <h3>CERTIFICAÇÃO ORGÂNICA</h3>
+            </div>
+        </div>
         <div className='container container-selo animated'>
             <div className='content-img left ' data-about='true'>
-                <img src={s1} alt='picoles sem açucar' style={{ width: '100%', height: "auto", margin:"auto"}} />
+                <img src={s1} alt='picoles sem açucar' style={{ width: '100%', height: "auto", margin: "auto" }} />
             </div>
 
             <div className='content-itens right ' data-about='true'>
@@ -50,7 +55,7 @@ function Selos() {
 
         <div className='container animated'>
             <div className='content-img left ' data-about='true'>
-                <img src={s2} alt='picoles sem açucar' style={{  width: '100%', height: "auto", margin:"auto" }} />
+                <img src={s2} alt='picoles sem açucar' style={{ width: '100%', height: "auto", margin: "auto" }} />
             </div>
 
             <div className='content-itens right ' data-about='true'>
@@ -82,9 +87,9 @@ function Selos() {
             </div>
         </div>
 
-        <div className='container container-historia animated' style={{marginTop:-20}}>
+        <div className='container container-historia animated' style={{ marginTop: -20 }}>
             <div className='content-img left ' data-about='true'>
-                <img src={s3} alt='picoles sem açucar'/>
+                <img src={s3} alt='picoles sem açucar' />
             </div>
         </div>
 

@@ -81,9 +81,9 @@ export default function ScrollableTabsButtonAuto(props) {
                     <div className="content-img left" style={{ maxWidth: 300 }}>
                       <img src={`${window.location.origin}/img/picoles${picole.img}`} alt={picole.nome} />
                     </div>
-                  ) : (<div className="content-img left" style={{ maxWidth: 20, height: 10 }}/>)
+                  ) : (<div className="content-img left" style={{ maxWidth: 20, height: '100%' }}/>)
                 }
-                <div className="content-itens left info" >
+                <div className="content-itens left info" style={{marginTop: (!picole.img)? 30: 0}} >
                   <div className="box">
                     <label><span>Ingredientes:</span>{"  " + picole.ingredientes}</label>
                   </div>
@@ -112,7 +112,7 @@ export default function ScrollableTabsButtonAuto(props) {
 
                 </div>
 
-                <div className="content-itens table" >
+                <div className="content-itens table"  style={{marginTop: (!picole.img)? 20: 0}} >
                   <Paper elevation={2} style={{ padding: 10 }}>
                     <div className="box">
                       <div style={{ marginTop: -50 }}>

@@ -8,6 +8,10 @@ import Carrossel from '../../components/Carrossel'
 import Lottie from 'react-lottie';
 
 import animationIconLocation from '../../assets/animations/iconLocation.json'
+import animationWhatsapp from '../../assets/animations/whatsapp.json'
+import animationEmail from '../../assets/animations/email.json'
+import animationPhone from '../../assets/animations/phone.json'
+import animationSend from '../../assets/animations/sendMensage.json'
 
 import bg from '../../assets/img/matriz/bg.jpg'
 
@@ -29,7 +33,8 @@ function Lançamento() {
     const [estado, setEstado] = useState('')
     const [assunto, setAssunto] = useState('')
     const [mensagem, setMensagem] = useState('')
-  
+    const [send, setSend] = useState(false)
+
     useEffect(() => {
         window.scrollTo(0, 0)
         try {
@@ -38,7 +43,7 @@ function Lançamento() {
         } catch (error) {
             console.log(error);
         }
-      },[])
+    }, [])
 
     const estados = [
         { key: "AC", value: "Acre" },
@@ -92,9 +97,9 @@ function Lançamento() {
 
         console.log(response);
 
-        if(response.result){
-            alert('Mensagem Enviada')
-        }else{
+        if (response.result) {
+            setSend(true)
+        } else {
             alert('Mensagem não Enviada')
         }
     }
@@ -107,39 +112,56 @@ function Lançamento() {
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
                 <h3>Itabaú Matriz</h3>
-                <p>Entre em contato conosco através do número (12) 3971-1492 ou preenchendo o formulário abaixo:</p>
+                <p>Entre em contato conosco preenchendo o formulário abaixo ou pelos dados informados:</p>
             </div>
         </div>
-        <div className='container animated' style={{ alignItems: 'flex-start' }}>
+        <div className='container container-matriz animated' >
             <div className='content-itens left' data-about>
-                <form className='' autoComplete="off" onSubmit={handleSubmit}>
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} label="Email" onChange={e => { setEmail(e.target.value) }} required type='email' fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
-                    <FormControl variant="outlined" style={{ marginBottom: 20, width: '100%' }} className={''}>
-                        <InputLabel id="demo-simple-select-outlined-label">Estado</InputLabel>
-                        <Select
-                            labelId="demo-simple-select-outlined-label"
-                            id="demo-simple-select-outlined"
-                            style={{ width: '100%' }}
-                            value={estado}
-                            onChange={e => { setEstado(e.target.value) }}
-                            label="Idade"
-                        >
-                            <MenuItem value="">
-                                <em>Nenhum</em>
-                            </MenuItem>
-                            {estados.map(estado => (
-                                <MenuItem value={estado.key}>{estado.value}</MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={assunto} label="Assunto" onChange={e => { setAssunto(e.target.value) }} fullWidth variant="outlined" />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={mensagem} label="Mensagem" onChange={e => { setMensagem(e.target.value) }} fullWidth required multiline
-                        rowsMax={4} variant="outlined" rows={4} />
-                    <Button variant='outlined' type='submit' style={{ marginLeft: '40%' }} color='primary'>Enviar</Button>
-                </form>
+                {send ? (
+                    <>
+                        <Lottie options={{
+                            loop: false,
+                            autoplay: send,
+                            animationData: animationSend,
+                            rendererSettings: {
+                                preserveAspectRatio: 'xMidYMid slice'
+                            }
+                        }}
+                            height={500}
+                            width={250} />
+                    </>
+                ) : (
+                        <>
+                            <form className='' autoComplete="off" onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
+                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} label="Email" onChange={e => { setEmail(e.target.value) }} required type='email' fullWidth variant="outlined" />
+                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
+                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
+                                <FormControl variant="outlined" style={{ marginBottom: 20, width: '100%' }} className={''}>
+                                    <InputLabel id="demo-simple-select-outlined-label">Estado</InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-outlined-label"
+                                        id="demo-simple-select-outlined"
+                                        style={{ width: '100%' }}
+                                        value={estado}
+                                        onChange={e => { setEstado(e.target.value) }}
+                                        label="Idade"
+                                    >
+                                        <MenuItem value="">
+                                            <em>Nenhum</em>
+                                        </MenuItem>
+                                        {estados.map(estado => (
+                                            <MenuItem value={estado.key}>{estado.value}</MenuItem>
+                                        ))}
+                                    </Select>
+                                </FormControl>
+                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={assunto} label="Assunto" onChange={e => { setAssunto(e.target.value) }} fullWidth variant="outlined" />
+                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={mensagem} label="Mensagem" onChange={e => { setMensagem(e.target.value) }} fullWidth required multiline
+                                    rowsMax={4} variant="outlined" rows={4} />
+                                <Button variant='outlined' type='submit' color='primary'>Enviar</Button>
+                            </form>
+                        </>
+                    )}
             </div>
             <div style={{ marginBottom: 50 }} />
             <div className='content-itens right' data-about>
@@ -164,8 +186,61 @@ function Lançamento() {
                 <label>Estrada Benedito Gomes de Souza, KM 4,6 Bairro: Paiol Grande</label><br />
                 <label>CEP: 12490-000 São Bento do Sapucaí SP</label><br />
                 <label>Caixa Postal 19</label>
+                <p>
+                    <a href="mailto:contato@itabau.com.br"
+
+                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content' }}
+                    >
+                        <Lottie options={{
+                            loop: true,
+                            autoplay: true,
+                            animationData: animationEmail,
+                            rendererSettings: {
+                                preserveAspectRatio: 'xMidYMid slice'
+                            }
+                        }}
+                            height={50}
+                            width={50} /><label style={{ marginLeft: 0, cursor: 'pointer' }}>contato@itabau.com.br</label>
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:(12) 3971-1881"
+                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content', marginLeft: -12 }}
+                    >
+                        <Lottie options={{
+                            loop: true,
+                            autoplay: true,
+                            animationData: animationPhone,
+                            rendererSettings: {
+                                preserveAspectRatio: 'xMidYMid slice'
+                            }
+                        }}
+                            height={75}
+                            width={75} /><label style={{ marginLeft: 0, cursor: 'pointer' }}>(12) 3971-1881</label>
+                    </a>
+                </p>
+
+                <p style={{ marginTop: -10 }}>
+                    <a href="https://api.whatsapp.com/send?phone=5512997861414&text=Ol%C3%A1%20Itaba%C3%BA!"
+                        rel="noreferrer"
+                        target='_blank'
+                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content', marginLeft: -22 }}
+                    >
+                        <Lottie options={{
+                            loop: true,
+                            autoplay: true,
+                            animationData: animationWhatsapp,
+                            rendererSettings: {
+                                preserveAspectRatio: 'xMidYMid slice'
+                            }
+                        }}
+                            height={100}
+                            width={100} /><label style={{ marginLeft: 0, cursor: 'pointer' }}>(12) 99786-1414</label>
+                    </a>
+                </p>
             </div>
-        </div>
+        </div >
         <div style={{ marginBottom: 100 }} />
         <Footer />
     </>)

@@ -39,14 +39,13 @@ function MassaPremium() {
         <div className='container container-massa animated'>
             <div className='content-itens content-box right' data-about>
                 <h3>Sorvete de Massa</h3>
-                <p>A Itabaú também conta com uma linha especial de Sorvetes no formato Massa Premium, com uma
-                grande variedade e deliciosos sabores, ainda com a mesma qualidade da produção dos picolés,
-                pois são feitos com produtos selecionados, e em sua calda base não é adicionado nenhum tipo
-                de gordura, e todos são adoçados com açúcar orgânico. Nos sabores a seguir: Chocolate,
-                Chocolate Suíço, Chocolate Branco, Flocos, Sensação e Menta com flocos de chocolate, que
-                contém flocos de chocolate em seus recheios, utilizamos gordura de palma orgânica, que é
-                misturado junto ao chocolate meio amargo e cacau em pó, e no caso do chocolate branco é
-                      mistura gordura de palma orgânica ao chocolate branco.</p>
+                <p>  Itabaú – A Energia da montanha, é uma linha especial de Sorvetes no formato Massa Premium, com uma grande variedade de 
+                    deliciosos sabores. Há na composição somente produtos selecionados com qualidade comprovada, em sua calda base não é 
+                    adicionado nenhum tipo de gordura vegetal,  utilizamos amido de batata no lugar da gordura para deixar o sorvete mais leve e
+                     mais saudável,  e há em  açúcar orgânico. Nos sabores a seguir: Chocolate, Chocolate Suíço, Chocolate Branco, Flocos,
+                      Sensação e Menta com flocos de chocolate, que contém flocos de chocolate em seus recheios, utilizamos gordura de palma 
+                      orgânica, que é misturado junto ao chocolate meio amargo e cacau em pó, e no caso do chocolate branco é mistura gordura 
+                      de palma orgânica ao chocolate branco.</p>
             </div>
         </div>
         <div className='container container-massa animated'>

@@ -36,11 +36,8 @@ export default function Components() {
     const sorvetes = ['Lançamentos', 'Picolés', 'Massa Premium']
     const optionSorvetes = ['lancamentos', 'picoles', 'massa']
 
-    const saibaMais = ['Receitas', 'Selos', 'Conheça as Frutas', 'Vídeos', 'Nossos Ingredientes']
+    const saibaMais = ['Receitas', 'Certificação Orgânica', 'Conheça as Frutas', 'Vídeos', 'Nossos Ingredientes']
     const optionSaibaMais = ['receitas', 'selos', 'frutas', 'videos', 'ingredientes']
-
-    const contato = ['Itabaú Matriz', 'Atualização de Boletos']
-    const optionContato = ['matriz', 'boletos']
 
     return (
         <div>
@@ -86,14 +83,9 @@ export default function Components() {
                             <Button className={classesNav.listItem}>Nossa Cidade</Button>
                         </Link>
 
-                        <div className={classesNav.listItem} style={{ marginRight: 30 }}>
-                            <Combobox
-                                location={location}
-                                name={'Contato'}
-                                options={contato}
-                                links={optionContato}
-                            />
-                        </div>
+                        <Link to='/matriz' className={classesNav.listItem} style={{ marginRight: 30 }} >
+                            <Button className={classesNav.listItem}>Contato</Button>
+                        </Link>
 
                     </List>
                 }
@@ -181,23 +173,12 @@ export default function Components() {
                             </Link>
                         </ListItem>
 
-                        <ListItem>
-                            <ListItemText primary="CONTATO" />
+                        <ListItem button selected={location.pathname === '/matriz'}>
+                            <Link to='/matriz' style={{ textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
+                                <ListItemText primary={'CONTATO'} />
+                            </Link>
                         </ListItem>
-
-                        {
-                            contato.map((option, index) => (
-                                <ListItem
-                                    button
-                                    key={option}
-                                    selected={location.pathname === `/${optionSaibaMais[index]}`}
-                                >
-                                    <Link to={`/${optionContato[index]}`} style={{ marginLeft: 20, textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
-                                        <ListItemText primary={option} />
-                                    </Link>
-                                </ListItem>
-                            ))
-                        }
+            
                         <Divider />
                         <div style={{ width: '100%', height: 200 }} />
                         <div style={{ width: '100%', textAlign: 'center', color: '#A9A9A9' }}>V1.0 - Itabaú</div>
