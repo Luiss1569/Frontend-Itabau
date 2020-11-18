@@ -79,7 +79,7 @@ export default function ScrollableTabsButtonAuto(props) {
                 {
                   picole.img ? (
                     <div className="content-img left" style={{ maxWidth: 300 }}>
-                      <img src={`${window.location.origin}/picoles${picole.img}`} alt={picole.nome} />
+                      <img src={`${window.location.origin}/img/picoles${picole.img}`} alt={picole.nome} />
                     </div>
                   ) : (<div className="content-img left" style={{ maxWidth: 20, height: 10 }}/>)
                 }

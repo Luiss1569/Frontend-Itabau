@@ -16,10 +16,6 @@ import animationFacebook from '../../assets/animations/facebook.json'
 import animationInstagram from '../../assets/animations/instagram.json'
 import iceLoad from '../../assets/animations/iceLoad.json'
 
-import c1 from '../../assets/img/carrossel/c1.jpg'
-import c2 from '../../assets/img/carrossel/c2.jpg'
-import c3 from '../../assets/img/carrossel/c3.jpg'
-
 import i1 from '../../assets/img/index/i1.jpg'
 import i2 from '../../assets/img/index/i2.jpg'
 import i3 from '../../assets/img/index/i3.jpg'
@@ -29,6 +25,10 @@ import familia from '../../assets/img/index/familia.png'
 
 import './styles.css';
 import { Link } from 'react-router-dom';
+
+const c1 = `${window.location.origin}/img/carrossel/c1.jpg`
+const c2 = `${window.location.origin}/img/carrossel/c2.jpg`
+const c3 = `${window.location.origin}/img/carrossel/c3.jpg`
 
 function Index() {
   const location = useLocation()
