@@ -1,11 +1,15 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../../services/api'
+
+import Lottie from 'react-lottie';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
 import bg from '../../assets/img/matriz/bg.jpg'
+
+import animationSend from '../../assets/animations/sendMensage.json'
 
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';
@@ -31,10 +35,11 @@ function Pesquisa() {
     const [o5, setO5] = useState('')
     const [o6, setO6] = useState('')
     const [o7, setO7] = useState('')
+    const [send, setSend] = useState(false)
 
-    useEffect(()=>{
+    useEffect(() => {
         window.scrollTo(0, 0)
-    },[])
+    }, [])
 
     const estados = [
         { key: "AC", value: "Acre" },
@@ -94,9 +99,9 @@ function Pesquisa() {
 
         console.log(response);
 
-        if(response.result){
-            alert('Mensagem Enviada')
-        }else{
+        if (response.result) {
+            setSend(true)
+        } else {
             alert('Mensagem não Enviada')
         }
 
@@ -115,108 +120,123 @@ function Pesquisa() {
         </div>
         <div className='container animated'>
             <div className='content-itens left' data-about>
-                <form className='' autoComplete="off" onSubmit={handleSubmit}>
+                {send ? (
+                    <>
+                        <Lottie options={{
+                            loop: false,
+                            autoplay: send,
+                            animationData: animationSend,
+                            rendererSettings: {
+                                preserveAspectRatio: 'xMidYMid slice'
+                            }
+                        }}
+                            height={500}
+                            width={250} />
+                    </>
+                ) : (
+                        <form className='' autoComplete="off" onSubmit={handleSubmit}>
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e=>{setNome(e.target.value)}} label="Nome" required variant="outlined" fullWidth />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} onChange={e=>{setEmail(e.target.value)}} label="Email" required type='email' fullWidth variant="outlined" />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} onChange={e => { setEmail(e.target.value) }} label="Email" required type='email' fullWidth variant="outlined" />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} onChange={e=>{setTelefone(e.target.value)}} label="Telefone ( 00-12345-1234)" required type='tel' inputProps={{pattern:"[0-9]{2}-[0-9]{5}-[0-9]{4}"}} fullWidth variant="outlined" />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} onChange={e => { setTelefone(e.target.value) }} label="Telefone ( 00-12345-1234)" required type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} onChange={e=>{setCidade(e.target.value)}} label="Cidade" fullWidth variant="outlined" />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} onChange={e => { setCidade(e.target.value) }} label="Cidade" fullWidth variant="outlined" />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={idade} onChange={e=>{setIdade(e.target.value)}} label="Idade" fullWidth type='number' variant="outlined" />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={idade} onChange={e => { setIdade(e.target.value) }} label="Idade" fullWidth type='number' variant="outlined" />
 
-                    <FormControl variant="outlined" style={{ marginBottom: 20, width: '100%' }} className={''}>
-                        <InputLabel id="demo-simple-select-outlined-label">Estado</InputLabel>
-                        <Select
-                            labelId="demo-simple-select-outlined-label"
-                            id="demo-simple-select-outlined"
-                            style={{ width: '100%' }}
-                            value={estado}
-                            onChange={e=>{setEstado(e.target.value)}}
-                            label="Estado"
-                        >
-                            <MenuItem value="">
-                                <em>Nenhum</em>
-                            </MenuItem>
-                            {estados.map(estado => (
-                                <MenuItem value={estado.key}>{estado.value}</MenuItem>
-                            ))}
-                        </Select>
-                    </FormControl>
+                            <FormControl variant="outlined" style={{ marginBottom: 20, width: '100%' }} className={''}>
+                                <InputLabel id="demo-simple-select-outlined-label">Estado</InputLabel>
+                                <Select
+                                    labelId="demo-simple-select-outlined-label"
+                                    id="demo-simple-select-outlined"
+                                    style={{ width: '100%' }}
+                                    value={estado}
+                                    onChange={e => { setEstado(e.target.value) }}
+                                    label="Estado"
+                                >
+                                    <MenuItem value="">
+                                        <em>Nenhum</em>
+                                    </MenuItem>
+                                    {estados.map(estado => (
+                                        <MenuItem value={estado.key}>{estado.value}</MenuItem>
+                                    ))}
+                                </Select>
+                            </FormControl>
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}
-                        label="O que você acha dos produtos Itabaú e suas variedades?"
-                        fullWidth
-                        value={o1}
-                        onChange={e=>{setO1(e.target.value)}}
-                        multiline
-                        rowsMax={6}
-                        variant="outlined"
-                        rows={4} />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }}
+                                label="O que você acha dos produtos Itabaú e suas variedades?"
+                                fullWidth
+                                value={o1}
+                                onChange={e => { setO1(e.target.value) }}
+                                multiline
+                                rowsMax={6}
+                                variant="outlined"
+                                rows={4} />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}
-                        label="Qual o sabor que falta de picolé e sorvete de massa em nossa linha, que você acha interessante termos?"
-                        fullWidth
-                        value={o2}
-                        onChange={e=>{setO2(e.target.value)}}
-                        multiline
-                        rowsMax={6} variant="outlined"
-                        rows={4} />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }}
+                                label="Qual o sabor que falta de picolé e sorvete de massa em nossa linha, que você acha interessante termos?"
+                                fullWidth
+                                value={o2}
+                                onChange={e => { setO2(e.target.value) }}
+                                multiline
+                                rowsMax={6} variant="outlined"
+                                rows={4} />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}
-                        label="O que você acha do preço dos nossos produtos?"
-                        fullWidth
-                        value={o3}
-                        onChange={e=>{setO3(e.target.value)}}
-                        multiline
-                        rowsMax={6}
-                        variant="outlined"
-                        rows={4} />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }}
+                                label="O que você acha do preço dos nossos produtos?"
+                                fullWidth
+                                value={o3}
+                                onChange={e => { setO3(e.target.value) }}
+                                multiline
+                                rowsMax={6}
+                                variant="outlined"
+                                rows={4} />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}
-                        label="Você recomendaria a Itabaú para seus parentes, amigos ou companheiros?"
-                        fullWidth
-                        value={o4}
-                        onChange={e=>{setO4(e.target.value)}}
-                        multiline
-                        rowsMax={6}
-                        variant="outlined"
-                        rows={4} />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }}
+                                label="Você recomendaria a Itabaú para seus parentes, amigos ou companheiros?"
+                                fullWidth
+                                value={o4}
+                                onChange={e => { setO4(e.target.value) }}
+                                multiline
+                                rowsMax={6}
+                                variant="outlined"
+                                rows={4} />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}
-                        label="Com qual frequência você toma sorvete?"
-                        fullWidth
-                        onChange={e=>{setO5(e.target.value)}}
-                        value={o5}
-                        multiline
-                        rowsMax={6}
-                        variant="outlined"
-                        rows={4} />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }}
+                                label="Com qual frequência você toma sorvete?"
+                                fullWidth
+                                onChange={e => { setO5(e.target.value) }}
+                                value={o5}
+                                multiline
+                                rowsMax={6}
+                                variant="outlined"
+                                rows={4} />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}
-                        label="Por favor, diga-nos o que podemos fazer para melhorar"
-                        fullWidth
-                        value={o6}
-                        onChange={e=>{setO6(e.target.value)}}
-                        multiline
-                        rowsMax={6}
-                        variant="outlined"
-                        rows={4} />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }}
+                                label="Por favor, diga-nos o que podemos fazer para melhorar"
+                                fullWidth
+                                value={o6}
+                                onChange={e => { setO6(e.target.value) }}
+                                multiline
+                                rowsMax={6}
+                                variant="outlined"
+                                rows={4} />
 
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }}
-                        label="Se você pudesse melhorar algo em nosso produtos, o que melhoraria?"
-                        fullWidth
-                        value={o7}
-                        onChange={e=>{setO7(e.target.value)}}
-                        multiline
-                        rowsMax={6}
-                        variant="outlined"
-                        rows={4} />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }}
+                                label="Se você pudesse melhorar algo em nosso produtos, o que melhoraria?"
+                                fullWidth
+                                value={o7}
+                                onChange={e => { setO7(e.target.value) }}
+                                multiline
+                                rowsMax={6}
+                                variant="outlined"
+                                rows={4} />
 
-                    <Button variant='outlined' type='submit' style={{ marginLeft: '40%', marginBottom: '20%' }} color='primary'>Enviar</Button>
-                </form>
+                            <Button variant='outlined' type='submit' style={{ marginLeft: '40%', marginBottom: '20%' }} color='primary'>Enviar</Button>
+                        </form>
+                    )}
             </div>
         </div>
         <Footer />
