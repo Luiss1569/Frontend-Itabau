@@ -100,8 +100,8 @@ class App extends React.Component {
         dataIndex: 'NOME',
         key: 'NOME',
         width: '15%',
-        sorter: (a, b) => a.NOME.length - b.NOME.length,
-        sortDirections: ['descend', 'ascend'],
+        sorter: (a,b) => a>b?-1:1 ,
+        sortDirections: ['descend'],
         ...this.getColumnSearchProps('NOME'),
       },
       {
@@ -109,7 +109,7 @@ class App extends React.Component {
         dataIndex: 'CIDADE',
         key: 'CIDADE',
         width: '20%',
-        sorter: (a, b) => a.CIDADE.length - b.CIDADE.length,
+        sorter: (a,b) => a>b?-1:1,
         ...this.getColumnSearchProps('CIDADE'),
       },
       {

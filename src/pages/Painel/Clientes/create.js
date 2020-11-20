@@ -25,7 +25,7 @@ function CreateCliente({ history }) {
     const [open, setOpen] = useState({ type: 'success', bool: false, children: 'Cliente Salvo' });
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 300)
         async function testLogin() {
             const log = await localStorage.getItem('@itabau/login')
             if (!log) {

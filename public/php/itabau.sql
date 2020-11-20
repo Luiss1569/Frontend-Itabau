@@ -31,8 +31,8 @@ CREATE TABLE `clientes` (
   `NOME` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `CIDADE` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `TELEFONE` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `RUA` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `BAIRRO` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `RUA` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `BAIRRO` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `LATITUDE` double NOT NULL,
   `LONGITUDE` double  NOT NULL,
   `ID` int(11) NOT NULL

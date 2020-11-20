@@ -5,7 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Slide  from '@material-ui/core/Fade';
+import Slide  from '@material-ui/core/Slide';
 
 // core components
 import styles from "./styles/style";

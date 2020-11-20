@@ -15,7 +15,7 @@ function PainelPesquisa({history}) {
     const [mensagens, setMensagens] = useState([])
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 300)
         async function testLogin(){
             const log = await localStorage.getItem('@itabau/login')
             if(!log){

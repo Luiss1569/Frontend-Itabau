@@ -2,12 +2,13 @@ import React from 'react'
 import { Table } from 'antd';
 
 const columns = [
-    { title: 'Id', dataIndex: 'ID', key: 'ID',responsive: ['md'] },
+    { title: 'Id', dataIndex: 'ID', key: 'ID',responsive: ['md'],sorter: (a, b) => a.ID - b.ID,
+    sortDirections: ['ascend'], },
     { title: 'Nome', dataIndex: 'NOME', key: 'NOME' },
     { title: 'Email', dataIndex: 'EMAIL', key: 'EMAIL',responsive: ['md'] },
     { title: 'Idade', dataIndex: 'IDADE', key: 'IDADE',responsive: ['md'] },
     { title: 'Telefone', dataIndex: 'TELEFONE', key: 'TELEFONE',responsive: ['md'] },
-    { title: 'Cidade', dataIndex: 'CIDADE', key: 'CIDADE',responsive: ['md'] },
+    { title: 'Cidade', dataIndex: 'CIDADE', key: 'CIDADE',responsive: ['md'],  sorter: (a,b) => a>b?-1:1 },
     { title: 'Estado', dataIndex: 'ESTADO', key: 'ESTADO',responsive: ['md'] },
     { title: 'DATA/TIME', dataIndex: 'DATATIME', key: 'DATATIME' },
 ];

@@ -9,7 +9,7 @@ import bg from '../../../assets/img/matriz/bg.jpg'
 
 function Lançamento({history}) {
     React.useEffect(()=>{
-        window.scrollTo(0, 0) 
+        window.scrollTo(0, 100) 
         async function testLogin(){
             const log = await localStorage.getItem('@itabau/login')
             if(!log){
