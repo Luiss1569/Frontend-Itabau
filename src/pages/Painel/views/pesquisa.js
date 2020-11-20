@@ -4,13 +4,8 @@ import api from '../../../services/api'
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
+import Table from './tables/pesquisa'
 import { Link } from 'react-router-dom'
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
@@ -67,54 +62,7 @@ function PainelPesquisa({history}) {
                     </ul>
                 </p>
             </div>
-            <TableContainer  >
-                <Table>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell align="center">Id</TableCell>
-                            <TableCell align="center">Nome</TableCell>
-                            <TableCell align="center">Email</TableCell>
-                            <TableCell align="center">Idade</TableCell>
-                            <TableCell align="center">Telefone</TableCell>
-                            <TableCell align="center">Cidade</TableCell>
-                            <TableCell align="center">Estado</TableCell>
-                            <TableCell align="center">O1</TableCell>
-                            <TableCell align="center">O2</TableCell>
-                            <TableCell align="center">O3</TableCell>
-                            <TableCell align="center">O4</TableCell>
-                            <TableCell align="center">O5</TableCell>
-                            <TableCell align="center">O6</TableCell>
-                            <TableCell align="center">O7</TableCell>
-                            <TableCell align="center">Time</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {mensagens.lenght === 0 ? (
-                            <h3>Sem Mensagens</h3>
-                        ) : (
-                                mensagens.map((row, index) => (
-                                    <TableRow key={row.ID}>
-                                        <TableCell align="center">{row.ID}</TableCell>
-                                        <TableCell align="center">{row.NOME}</TableCell>
-                                        <TableCell align="center">{row.EMAIL}</TableCell>
-                                        <TableCell align="center">{row.IDADE}</TableCell>
-                                        <TableCell align="center">{row.TELEFONE}</TableCell>
-                                        <TableCell align="center">{row.CIDADE}</TableCell>
-                                        <TableCell align="center">{row.ESTADO}</TableCell>
-                                        <TableCell align="center">{row.O1}</TableCell>
-                                        <TableCell align="center">{row.O2}</TableCell>
-                                        <TableCell align="center">{row.O3}</TableCell>
-                                        <TableCell align="center">{row.O4}</TableCell>
-                                        <TableCell align="center">{row.O5}</TableCell>
-                                        <TableCell align="center">{row.O6}</TableCell>
-                                        <TableCell align="center">{row.O7}</TableCell>
-                                        <TableCell align="center">{row.DATATIME}</TableCell>
-                                    </TableRow>
-                                ))
-                            )}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+           <Table data={mensagens}/>
         </div>
         <Footer />
     </>)

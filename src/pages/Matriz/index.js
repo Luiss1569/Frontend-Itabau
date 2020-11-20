@@ -24,7 +24,7 @@ import Button from '@material-ui/core/Button';
 
 import './style.css'
 
-function Lançamento() {
+function Matriz() {
     
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
@@ -127,8 +127,8 @@ function Lançamento() {
                                 preserveAspectRatio: 'xMidYMid slice'
                             }
                         }}
-                            height={500}
-                            width={250} />
+                            height={400}
+                            width={200} />
                     </>
                 ) : (
                         <>
@@ -246,4 +246,4 @@ function Lançamento() {
     </>)
 }
 
-export default Lançamento;
+export default Matriz;

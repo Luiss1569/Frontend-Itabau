@@ -34,7 +34,6 @@ const c5 = `${window.location.origin}/img/carrossel/c5.jpg`
 
 function Index() {
   const location = useLocation()
-  const [iceAnimation, setIceAnimation] = useState(location.pathname === '/home' ? true : false)
   const [load, setLoad] = useState(location.pathname === '/home' ? false : true)
   const [lat, setLat] = useState(null)
   const [long, setLong] = useState(null)
@@ -43,7 +42,6 @@ function Index() {
   useEffect(() => {
     window.scrollTo(0, 0)
     setTimeout(() => { setLoad(false) }, 3000)
-    setTimeout(() => { setIceAnimation(true) }, 5000)
     if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(function (position) {
         setLat(position.coords.latitude)
@@ -63,8 +61,8 @@ function Index() {
       document.querySelectorAll('.container-ice[visible]').forEach(div => {
         div.removeAttribute('visible')
       });
-    }, 6000)
-  })
+    }, 4000)
+  },[])
 
   useMemo(() => {
     console.log(lat, long);
@@ -96,7 +94,7 @@ function Index() {
     <div className={'container-ice'} visible='true'>
       <Lottie options={{
         loop: false,
-        autoplay: iceAnimation,
+        autoplay: !load,
         animationData: animationIce,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
@@ -165,7 +163,7 @@ function Index() {
       </div>
     </div>
 
-    <div className='container container-map animated' style={{ backgroundColor: '#f7f7f7'}}>
+    <div className='container container-map animated' style={{ backgroundColor: '#f7f7f7', paddingBottom: locations?25:50}}>
       <div className='content-itens right' data-about='true'>
         <Lottie options={{
           loop: true,
@@ -184,7 +182,7 @@ function Index() {
     </div>
     {locations ? (
       <>
-        <div className='container container-reverse container-location container-historia animated' style={{ paddingBottom: 70, paddingTop: 100 }}>
+        <div className='container container-map container-location container-historia animated' style={{ paddingBottom: 70, paddingTop: 100, marginTop:0 }}>
           <div className="content-itens left" data-about>
             <h3>Locais Proximos</h3>
           </div>

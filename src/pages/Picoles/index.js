@@ -12,11 +12,6 @@ import p1 from '../../assets/img/picoles/p1.jpg'
 import p2 from '../../assets/img/picoles/p2.jpg'
 import p3 from '../../assets/img/picoles/p3.jpg'
 import p4 from '../../assets/img/picoles/p4.jpg'
-import catalogo from '../../assets/img/picoles/lista-completa-sabores.pdf'
-
-import Lottie from 'react-lottie';
-
-import animationPrint from '../../assets/animations/printer.json'
 
 import './style.css'
 
@@ -77,23 +72,6 @@ function Picoles() {
             </div>
         </div>
 
-        <div className='container container-historia animated' >
-            <div className='content-itens left' data-about>
-                <a href={catalogo} target='_blank' rel="noreferrer" style={{textDecoration: 'none'}}>
-                    <Lottie options={{
-                        loop: true,
-                        autoplay: true,
-                        animationData: animationPrint,
-                        rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }
-                    }}
-                        height={100}
-                        width={100} />
-                    <p style={{ textAlign: 'center' }}>Clique aqui para baixar e imprimir a lista completa de sabores!</p>
-                </a>
-            </div>
-        </div>
         <Footer />
     </>)
 }

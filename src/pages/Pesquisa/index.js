@@ -130,11 +130,11 @@ function Pesquisa() {
                                 preserveAspectRatio: 'xMidYMid slice'
                             }
                         }}
-                            height={500}
-                            width={250} />
+                            height={400}
+                            width={200} />
                     </>
                 ) : (
-                        <form className='' autoComplete="off" onSubmit={handleSubmit}>
+                        <form className='' autoComplete="off" onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
 
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
 
@@ -234,7 +234,7 @@ function Pesquisa() {
                                 variant="outlined"
                                 rows={4} />
 
-                            <Button variant='outlined' type='submit' style={{ marginLeft: '40%', marginBottom: '20%' }} color='primary'>Enviar</Button>
+                            <Button variant='outlined' type='submit' style={{ marginBottom: '20%' }} color='primary'>Enviar</Button>
                         </form>
                     )}
             </div>

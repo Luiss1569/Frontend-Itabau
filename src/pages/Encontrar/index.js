@@ -131,7 +131,7 @@ function Lançamento() {
             </div>
         </div>
 
-        <div className='container container-location animated'>
+        <div className='container  container-location animated' style={{marginTop: 0, marginBottom: 20, paddingBottom: 10}}>
             <div className='content-location  galery right' >
                 {render()}
             </div>
