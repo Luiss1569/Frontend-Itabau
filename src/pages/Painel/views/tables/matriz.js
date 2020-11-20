@@ -1,5 +1,5 @@
+import React from 'react'
 import { Table } from 'antd';
-import react from 'react'
 
 const columns = [
     { title: 'Id', dataIndex: 'ID', key: 'ID',responsive: ['md'], width: '4%' },
