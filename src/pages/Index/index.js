@@ -62,7 +62,7 @@ function Index() {
         div.removeAttribute('visible')
       });
     }, 4000)
-  },[])
+  })
 
   useMemo(() => {
     console.log(lat, long);
@@ -283,6 +283,8 @@ function Index() {
       </div>
     </div>
 
+    <div class="powr-instagram-feed" id="08012390_1605915823"></div>
+    <div className="asndaoidna"></div>
     <Footer />
 
     {
