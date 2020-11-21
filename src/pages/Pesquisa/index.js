@@ -109,6 +109,7 @@ function Pesquisa() {
 
         if (response.result) {
             setSend(true)
+            window.scroll({ top: 380, left: 0, behavior: 'smooth' })
         } else {
             setOpen({
                 type: 'error',

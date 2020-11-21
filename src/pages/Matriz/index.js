@@ -22,11 +22,14 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import Button from '@material-ui/core/Button';
+import { Tooltip } from 'antd';
+
+import Recaptcha from 'react-recaptcha'
 
 import './style.css'
 
 function Matriz() {
-    
+
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [telefone, setTelefone] = useState('')
@@ -34,6 +37,8 @@ function Matriz() {
     const [estado, setEstado] = useState('')
     const [assunto, setAssunto] = useState('')
     const [mensagem, setMensagem] = useState('')
+    const [recaptcha, setRecaptcha] = useState(false)
+    const [recaptchaTolltip, setRecaptchaTolltip] = useState(false)
     const [send, setSend] = useState(false)
     const [active, setActive] = useState(false)
     const [open, setOpen] = useState({
@@ -86,6 +91,12 @@ function Matriz() {
         e.preventDefault()
         // const data = {nome, email, tel efone, cidade, estado, assunto, mensagem}
         setActive(true)
+        
+        if (!recaptcha) {
+            setRecaptchaTolltip(true)
+            return
+        }
+        
         const data = new FormData()
         data.append('nome', nome)
         data.append('email', email)
@@ -100,15 +111,16 @@ function Matriz() {
             body: data
         }).then(function (response) {
             return response.json();
-        }).catch(function(error) {
+        }).catch(function (error) {
             console.log('There has been a problem with your fetch operation: ' + error.message);
             return {}
-          });
+        });
 
         console.log(response);
 
         if (response.result) {
             setSend(true)
+            window.scroll({ top: 380, left: 0, behavior: 'smooth' })
         } else {
             setOpen({
                 type: 'error',
@@ -148,7 +160,7 @@ function Matriz() {
                     </>
                 ) : (
                         <>
-                            <form className='' autoComplete="off" onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+                            <form className='' autoComplete="off" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} label="Email" onChange={e => { setEmail(e.target.value) }} required type='email' fullWidth variant="outlined" />
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
@@ -174,7 +186,15 @@ function Matriz() {
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={assunto} label="Assunto" onChange={e => { setAssunto(e.target.value) }} fullWidth variant="outlined" />
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={mensagem} label="Mensagem" onChange={e => { setMensagem(e.target.value) }} fullWidth required multiline
                                     rowsMax={4} variant="outlined" rows={4} />
-                                <Button variant='outlined' disabled={active} type='submit' color='primary'>Enviar</Button>
+                                <Tooltip title={"Ative o reCaptcha"} visible={recaptchaTolltip}>
+                                    <Recaptcha
+                                        sitekey="6LdO2OcZAAAAAGjRClDncXttJPPf4iKJuJWtbmKo"
+                                        render="explicit"
+                                        verifyCallback={()=>{setRecaptcha(true); setActive(false); setRecaptchaTolltip(false)}}
+                                        expiredCallback={()=>{setRecaptcha(false)}}
+                                        hl='pt-BR'
+                                    /></Tooltip>
+                                <Button variant='outlined' disabled={active} style={{marginTop: 10}} type='submit' color='primary'>Enviar</Button>
                             </form>
                         </>
                     )}
