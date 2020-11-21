@@ -166,6 +166,7 @@ body {
   z-index: 1010;
   opacity: 0;
   transition: 2s;
+  pointer-events: none;
 }
 
 .container-ice::before {
