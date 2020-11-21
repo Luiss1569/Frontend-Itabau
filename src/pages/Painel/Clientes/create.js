@@ -23,6 +23,7 @@ function CreateCliente({ history }) {
     const [lat, setLat] = useState('')
     const [long, setLong] = useState('')
     const [open, setOpen] = useState({ type: 'success', bool: false, children: 'Cliente Salvo' });
+    const [active, setActive] = useState(false)
 
     useEffect(() => {
         window.scrollTo(0, 300)
@@ -79,7 +80,7 @@ function CreateCliente({ history }) {
     async function handleSubmit(e) {
         e.preventDefault()
         // const data = {nome, email, telefone, cidade, estado, assunto, mensagem}
-
+        setActive(true)
         const data = new FormData()
         data.append('nome', nome)
         data.append('cidade', cidade)
@@ -94,7 +95,10 @@ function CreateCliente({ history }) {
             body: data
         }).then(function (response) {
             return response.json();
-        })
+        }).catch(function(error) {
+            console.log('There has been a problem with your fetch operation: ' + error.message);
+            return {}
+          });
 
         console.log(response);
 
@@ -118,6 +122,7 @@ function CreateCliente({ history }) {
                 children: 'Cliente não Criado'
             })
         }
+        setActive(false)
     }
 
     return (<>
@@ -137,11 +142,11 @@ function CreateCliente({ history }) {
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={lat} label="Latitude" onChange={e => { setLat(e.target.value) }} required type='number' fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={long} label="Longitude" onChange={e => { setLong(e.target.value) }} type='number' required fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
-                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade (Cidade-UF)" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
+                    <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade (Cidade-UF)" onChange={e => { setCidade(e.target.value) }} required fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={rua} label="Rua" onChange={e => { setRua(e.target.value) }} required fullWidth variant="outlined" />
                     <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={bairro} label="Bairro" onChange={e => { setBairro(e.target.value) }} required fullWidth variant="outlined" />
-                    <Button variant='outlined' type='submit' color='primary'>Enviar</Button>
+                    <Button variant='outlined' disabled={active} type='submit' color='primary'>Enviar</Button>
                 </form>
             </div>
         </div>

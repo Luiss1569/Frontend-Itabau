@@ -14,7 +14,7 @@ export default function CustomizedSnackbars({ open, setOpen, type, children }) {
             return;
         }
         setOpen({
-            type: 'success',
+            type: '',
             bool: false,
             children: ''
         })

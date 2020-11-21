@@ -28,13 +28,30 @@ function UpdateCliente({ match, history }) {
     const [long, setLong] = useState('')
     const [id, setID] = useState('')
     const [open, setOpen] = useState({ type: 'success', bool: false, children: 'Cliente Salvo' });
+    const [active, setActive] = useState(false)
 
     async function getUpdate() {
-        const { NOME, BAIRRO, CIDADE, LATITUDE, LONGITUDE, TELEFONE, RUA, ID } = await fetch(`${api}/php/location/update.php?id=${match.params.id}`, {
+        setActive(true)
+        const { NOME, BAIRRO, CIDADE, LATITUDE, LONGITUDE, TELEFONE, RUA, ID, error } = await fetch(`${api}/php/location/update.php?id=${match.params.id}`, {
             method: 'get'
         }).then(function (response) {
             return response.json();
-        })
+        }).catch(function (error) {
+            console.log('There has been a problem with your fetch operation: ' + error.message);
+            return {error: true}
+        });
+
+        if (error) {
+            setOpen({
+                type: 'error',
+                bool: true,
+                children: 'Erro ao carregar cliente'
+            })
+            setLoading(false)
+            return 0
+        }
+        setActive(false)
+
         setNome(NOME)
         setBairro(BAIRRO)
         setCidade(CIDADE)
@@ -63,7 +80,7 @@ function UpdateCliente({ match, history }) {
     async function handleSubmit(e) {
         e.preventDefault()
         // const data = {nome, email, telefone, cidade, estado, assunto, mensagem}
-
+        setActive(true)
         const data = new FormData()
         data.append('nome', nome)
         data.append('cidade', cidade)
@@ -79,7 +96,10 @@ function UpdateCliente({ match, history }) {
             body: data
         }).then(function (response) {
             return response.json();
-        })
+        }).catch(function (error) {
+            console.log('There has been a problem with your fetch operation: ' + error.message);
+            return {}
+        });
 
         console.log(response);
 
@@ -96,6 +116,7 @@ function UpdateCliente({ match, history }) {
                 children: 'Cliente não Atualizado'
             })
         }
+        setActive(false)
     }
 
     return (<>
@@ -116,15 +137,15 @@ function UpdateCliente({ match, history }) {
                 </div>
             ) : (
                     <div className='content-itens left' data-about>
-                        <form className='' autoComplete="off" onSubmit={handleSubmit}  style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+                        <form className='' autoComplete="off" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
-                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} required fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={rua} label="Rua" onChange={e => { setRua(e.target.value) }} required fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={bairro} label="Bairro" onChange={e => { setBairro(e.target.value) }} required fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={lat} label="Latitude" onChange={e => { setLat(e.target.value) }} required type='number' fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={long} label="Longitude" onChange={e => { setLong(e.target.value) }} type='number' required fullWidth variant="outlined" />
-                            <Button variant='outlined' type='submit' color='primary'>Enviar</Button>
+                            <Button variant='outlined' disabled={active} type='submit' color='primary'>Enviar</Button>
                         </form>
                     </div>
                 )}

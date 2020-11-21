@@ -4,6 +4,7 @@ import api from '../../services/api'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
+import SnackBar from '../../components/SnackBar'
 
 import Lottie from 'react-lottie';
 
@@ -34,6 +35,12 @@ function Matriz() {
     const [assunto, setAssunto] = useState('')
     const [mensagem, setMensagem] = useState('')
     const [send, setSend] = useState(false)
+    const [active, setActive] = useState(false)
+    const [open, setOpen] = useState({
+        type: 'error',
+        bool: false,
+        children: ''
+    });
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -77,8 +84,8 @@ function Matriz() {
 
     async function handleSubmit(e) {
         e.preventDefault()
-        // const data = {nome, email, telefone, cidade, estado, assunto, mensagem}
-
+        // const data = {nome, email, tel efone, cidade, estado, assunto, mensagem}
+        setActive(true)
         const data = new FormData()
         data.append('nome', nome)
         data.append('email', email)
@@ -93,20 +100,29 @@ function Matriz() {
             body: data
         }).then(function (response) {
             return response.json();
-        })
+        }).catch(function(error) {
+            console.log('There has been a problem with your fetch operation: ' + error.message);
+            return {}
+          });
 
         console.log(response);
 
         if (response.result) {
             setSend(true)
         } else {
-            alert('Mensagem não Enviada')
+            setOpen({
+                type: 'error',
+                bool: true,
+                children: 'Mensagem não enviada!'
+            })
         }
+        setActive(false)
     }
 
     return (<>
 
         <Header />
+        <SnackBar setOpen={setOpen} open={open.bool} type={open.type}>{open.children}</SnackBar>
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-historia animated'>
@@ -135,7 +151,7 @@ function Matriz() {
                             <form className='' autoComplete="off" onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} label="Email" onChange={e => { setEmail(e.target.value) }} required type='email' fullWidth variant="outlined" />
-                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
+                                <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} fullWidth variant="outlined" />
                                 <FormControl variant="outlined" style={{ marginBottom: 20, width: '100%' }} className={''}>
                                     <InputLabel id="demo-simple-select-outlined-label">Estado</InputLabel>
@@ -158,7 +174,7 @@ function Matriz() {
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={assunto} label="Assunto" onChange={e => { setAssunto(e.target.value) }} fullWidth variant="outlined" />
                                 <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={mensagem} label="Mensagem" onChange={e => { setMensagem(e.target.value) }} fullWidth required multiline
                                     rowsMax={4} variant="outlined" rows={4} />
-                                <Button variant='outlined' type='submit' color='primary'>Enviar</Button>
+                                <Button variant='outlined' disabled={active} type='submit' color='primary'>Enviar</Button>
                             </form>
                         </>
                     )}
@@ -200,7 +216,7 @@ function Matriz() {
                             }
                         }}
                             height={50}
-                            width={50} /><label style={{ marginLeft: 0, cursor: 'pointer' }}>contato@itabau.com.br</label>
+                            width={50} /><label style={{ marginLeft: 12, cursor: 'pointer' }}>contato@itabau.com.br</label>
                     </a>
                 </p>
 
@@ -236,7 +252,7 @@ function Matriz() {
                             }
                         }}
                             height={100}
-                            width={100} /><label style={{ marginLeft: 0, cursor: 'pointer' }}>(12) 99786-1414</label>
+                            width={100} /><label style={{ marginLeft: -15, cursor: 'pointer' }}>(12) 99786-1414</label>
                     </a>
                 </p>
             </div>

@@ -6,6 +6,7 @@ import Lottie from 'react-lottie';
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
+import SnackBar from '../../components/SnackBar'
 
 import bg from '../../assets/img/matriz/bg.jpg'
 
@@ -36,6 +37,12 @@ function Pesquisa() {
     const [o6, setO6] = useState('')
     const [o7, setO7] = useState('')
     const [send, setSend] = useState(false)
+    const [active, setActive] = useState(false)
+    const [open, setOpen] = useState({
+        type: 'error',
+        bool: false,
+        children: ''
+    });
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -74,7 +81,7 @@ function Pesquisa() {
     async function handleSubmit(e) {
         e.preventDefault()
         // const data = {nome,email, telefone, cidade, idade, estado, o1, o2, o3, o4, o5, o6, o7}
-
+        setActive(true)
         const data = new FormData()
         data.append('nome', nome)
         data.append('email', email)
@@ -95,21 +102,28 @@ function Pesquisa() {
             body: data
         }).then(function (response) {
             return response.json();
-        })
-
-        console.log(response);
+        }).catch(function(error) {
+            console.log('There has been a problem with your fetch operation: ' + error.message);
+            return {}
+          });
 
         if (response.result) {
             setSend(true)
         } else {
-            alert('Mensagem não Enviada')
+            setOpen({
+                type: 'error',
+                bool: true,
+                children: 'Pesquisa não enviada'
+            })
         }
-
+        setActive(false)
+        
     }
 
     return (<>
 
         <Header />
+        <SnackBar setOpen={setOpen} open={open.bool} type={open.type}>{open.children}</SnackBar>
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
         <div className={'margin'} />
         <div className='container container-historia animated'>
@@ -140,7 +154,7 @@ function Pesquisa() {
 
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={email} onChange={e => { setEmail(e.target.value) }} label="Email" required type='email' fullWidth variant="outlined" />
 
-                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} onChange={e => { setTelefone(e.target.value) }} label="Telefone ( 00-12345-1234)" required type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} onChange={e => { setTelefone(e.target.value) }} label="Telefone ( 00-12345-1234)" type='tel' inputProps={{ pattern: "[0-9]{2}-[0-9]{5}-[0-9]{4}" }} fullWidth variant="outlined" />
 
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} onChange={e => { setCidade(e.target.value) }} label="Cidade" fullWidth variant="outlined" />
 
@@ -234,7 +248,7 @@ function Pesquisa() {
                                 variant="outlined"
                                 rows={4} />
 
-                            <Button variant='outlined' type='submit' style={{ marginBottom: '20%' }} color='primary'>Enviar</Button>
+                            <Button variant='outlined' disabled={active} type='submit' style={{ marginBottom: '20%' }} color='primary'>Enviar</Button>
                         </form>
                     )}
             </div>
