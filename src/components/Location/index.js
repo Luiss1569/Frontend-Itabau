@@ -69,7 +69,7 @@ function Location(props) {
                             <h4>{location.NOME}</h4>
                             <h4>{location.RUA}</h4>
                             <h4>{location.BAIRRO}</h4>
-                            <h4>{location.TELEFONE}</h4>
+                            <h4><a style={{color: 'inherit', textDecoration:'none'}} href={`tel:${location.TELEFONE}`}>{location.TELEFONE}</a></h4>
                         </div>
                     </div>
                 </div>
