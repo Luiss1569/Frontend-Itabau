@@ -22,15 +22,20 @@ import i3 from '../../assets/img/index/i3.jpg'
 import i4 from '../../assets/img/index/i4.jpg'
 import familia from '../../assets/img/index/familia.png'
 
+import c1 from '../../assets/img/carrossel/c1.jpg'
+import c2 from '../../assets/img/carrossel/c2.jpg'
+import c3 from '../../assets/img/carrossel/c3.jpg'
+import c4 from '../../assets/img/carrossel/c4.jpg'
+import c5 from '../../assets/img/carrossel/c5.jpg'
 
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-const c1 = `${window.location.origin}/img/carrossel/c1.jpg`
-const c2 = `${window.location.origin}/img/carrossel/c2.jpg`
-const c3 = `${window.location.origin}/img/carrossel/c3.jpg`
-const c4 = `${window.location.origin}/img/carrossel/c4.jpg`
-const c5 = `${window.location.origin}/img/carrossel/c5.jpg`
+// const c1 = `${window.location.origin}/img/carrossel/c1.jpg`
+// const c2 = `${window.location.origin}/img/carrossel/c2.jpg`
+// const c3 = `${window.location.origin}/img/carrossel/c3.jpg`
+// const c4 = `${window.location.origin}/img/carrossel/c4.jpg`
+// const c5 = `${window.location.origin}/img/carrossel/c5.jpg`
 
 function Index() {
   const location = useLocation()

@@ -112,7 +112,7 @@ export default function ScrollableTabsButtonAuto(props) {
 
                 </div>
 
-                <div className="content-itens table"  style={{marginTop: (!picole.img)? 20: 0}} >
+                <div className="content-itens table"  style={{marginTop: (!picole.img)? 20: ""}} >
                   <Paper elevation={2} style={{ padding: 10 }}>
                     <div className="box">
                       <div style={{ marginTop: -50 }}>

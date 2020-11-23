@@ -2,6 +2,10 @@
     max-width: ;
 } */
 
+#container-tab{
+  margin-top: 0;
+}
+
 #container-tab .content-itens {
   flex-direction: column !important;
   flex-wrap: wrap;
@@ -15,6 +19,7 @@
 }
 #container-tab .content-itens .box label {
   text-transform: lowercase;
+  text-align: left;
 }
 #container-tab .content-itens .box label span{
     color: rgb(1, 88, 88);
@@ -22,10 +27,32 @@
 }
 
 @media only screen and (max-width: 767px) {
+  #container-tab{
+    margin-top: 20px;
+  }
+
     div.content-itens.table  {
         margin-top: 20px;
     }   
     div.content-itens.info  {
         margin-top: 40px;
     }   
+
+    #container-tab .content-img{
+      display: flex;
+      justify-content: center;
+    }
+
+    #container-tab .content-img img{
+      max-height: 400px;
+      width: auto;
+    }
+
+    #container-tab .content-itens{
+      justify-content: left;
+    }
+
+    div.content-itens.table  {
+      margin-top: 40px;
+  }   
 }

@@ -35,8 +35,8 @@ function Selos() {
             </div>
         </div>
         <div className='container container-selo animated'>
-            <div className='content-img left ' data-about='true'>
-                <img src={s1} alt='picoles sem açucar' style={{ width: '100%', height: "auto", margin: "auto" }} />
+            <div className='content-img left ' data-about='true' style={{display:'flex', justifyContent: 'center', alignItems: 'center'}} >
+                <img src={s1} alt='picoles sem açucar' style={{ width: '60%', height: "auto", margin: "auto" }} />
             </div>
 
             <div className='content-itens right ' data-about='true'>
@@ -53,9 +53,9 @@ function Selos() {
             </div>
         </div>
 
-        <div className='container animated'>
-            <div className='content-img left ' data-about='true'>
-                <img src={s2} alt='picoles sem açucar' style={{ width: '100%', height: "auto", margin: "auto" }} />
+        <div className='container container-reverse animated' style={{ backgroundColor: '#fff'}} >
+            <div className='content-img left ' style={{display:'flex', justifyContent: 'center', alignItems: 'center'}}  data-about='true'>
+                <img src={s2} alt='picoles sem açucar' style={{ width: '90%', height: "auto"}} />
             </div>
 
             <div className='content-itens right ' data-about='true'>
