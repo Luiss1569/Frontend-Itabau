@@ -59,7 +59,7 @@ export default function MenuListComposition(props) {
 
     return (
         <div className={classes.root}>
-            <div>
+            <div onMouseLeave={handleClose}>
                     <Button className={classesNav.listItem}
                         ref={anchorRef}
                         aria-controls={open ? 'menu-list-grow' : undefined}

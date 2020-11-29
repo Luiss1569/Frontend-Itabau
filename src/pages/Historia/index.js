@@ -50,80 +50,54 @@ function Historia() {
     const IMAGES = [{
         src: f1,
         thumbnail: f1,
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
     },
     {
         src: f2,
         thumbnail: f2,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f3,
         thumbnail: f3,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f4,
         thumbnail: f4,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f5,
         thumbnail: f5,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f6,
         thumbnail: f6,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f7,
         thumbnail: f7,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f8,
         thumbnail: f8,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f9,
         thumbnail: f9,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f10,
         thumbnail: f10,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f12,
         thumbnail: f12,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f13,
         thumbnail: f13,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     },
     {
         src: f14,
         thumbnail: f14,
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
     }]
 
     return (<>
