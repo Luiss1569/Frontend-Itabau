@@ -4,7 +4,7 @@ import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 
-import bg from '../../../assets/img/historia_sorvete/bg.jpg'
+import bg from '../../../assets/img/curiosidades/bg.jpg'
 import c1 from '../../../assets/img/historia_sorvete/c1.jpg'
 import c2 from '../../../assets/img/historia_sorvete/c2.png'
 import c3 from '../../../assets/img/historia_sorvete/c3.jpg'

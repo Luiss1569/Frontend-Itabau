@@ -195,7 +195,7 @@ export default function Components() {
 
             />
             <div>
-                <img src={logo} alt='logo' style={{ position: 'fixed', zIndex: 1111, top: 1, left: '5%', width: 100 }} />
+                <Link to='/home'><img src={logo} alt='logo' style={{ position: 'fixed', zIndex: 1111, top: 3, left: '5%', width: 65 }} /></Link>
             </div>
             <button className='floatButton' novisible='true' onClick={() => { window.scroll({ top: 0, left: 0, behavior: 'smooth' }) }}>
                 <div className={'iceAnimated'} >

@@ -15,6 +15,7 @@ import f5  from '../../assets/img/fotos/f5.jpg'
 import f6  from '../../assets/img/fotos/f6.jpg'
 import f7  from '../../assets/img/fotos/f7.jpg'
 import f8  from '../../assets/img/fotos/f8.jpg'
+import f8_1  from '../../assets/img/fotos/f8-1.jpg'
 import f9  from '../../assets/img/fotos/f9.jpg'
 import f10  from '../../assets/img/fotos/f10.jpg'
 import f11  from '../../assets/img/fotos/f1.jpg'
@@ -92,6 +93,10 @@ function Fotos() {
         {
             src: f8,
             thumbnail:f8,
+        },
+        {
+            src: f8_1,
+            thumbnail:f8_1,
         },
         {
             src: f9,

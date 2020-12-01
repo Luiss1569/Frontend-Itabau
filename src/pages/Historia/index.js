@@ -7,6 +7,7 @@ import Galery from '../../components/Galery'
 
 import bg from '../../assets/img/Historia/bg.jpg'
 import rme from '../../assets/img/Historia/rme.jpg'
+import itabauPDF from "../../assets/pdf/itabau.pdf";
 
 import g1 from '../../assets/img/Historia/g1.jpg'
 import g2 from '../../assets/img/Historia/g2.jpg'
@@ -41,11 +42,11 @@ function Historia() {
     React.useEffect(() => {
         window.scrollTo(0, 0)
         try {
-          document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[prime]')[0].removeAttribute('data-about');
         } catch (error) {
             console.log(error);
         }
-      })
+    })
 
     const IMAGES = [{
         src: f1,
@@ -109,7 +110,7 @@ function Historia() {
         <div className='container container-historia animated'>
             <div className='content-itens left' prime="true" data-about>
                 <h3>Nossa Historia</h3>
-                <p>A Itabaú Sorvetes, foi fundada no alto da serra da Mantiqueira, aos pés do maior monumento natural do alto Vale do Paraíba, 
+                <p>A Itabaú Sorvetes, foi fundada no alto da serra da Mantiqueira, aos pés do maior monumento natural do alto Vale do Paraíba,
                     a Pedra do Baú, pelos até então apicultores Ricardo Camargo Inke e Carlos Robson Galvão. </p>
             </div>
             <div className='content-img right' data-about>
@@ -118,11 +119,11 @@ function Historia() {
             <span>Na foto da esquerda para direita: Carlos Robson Galvão, Marília Inke e Ricardo Camargo Inke.</span>
             <div className='content-itens left' data-about style={{ marginTop: 0 }}>
                 <p>Os sabores exóticos e a alta qualidade do produto caíram no gosto dos turistas e munícipes, com  grande aceitação, isso no
-                     final de 1988. Resolve-se então no dia 30 de junho de 1990 fundar formalmente a Itabaú Produtos Naturais Ltda. Em março de 
-                     1993 Carlos Robson adquire a parte do sócio Ricardo Camargo que parte para o ramo de restaurantes. A empresa continua de 
-                     cunho familiar e procura firmar uma outra marca como sorvetes DYMEL, Sorvetes Favo, depois Fratelli, como não conseguiu 
-                     registro junto ao INPI, voltou a marca de origem. A marca comercial é "Itabaú Sorvetes", e com novos projetos vindo, criamos 
-                     as submarcas, Itabaú – A energia da montanha, que representa toda a linha de Massa Premium e Itabaú – O picolé do Robson que 
+                final de 1988. Resolve-se então no dia 30 de junho de 1990 fundar formalmente a Itabaú Produtos Naturais Ltda. Em março de
+                1993 Carlos Robson adquire a parte do sócio Ricardo Camargo que parte para o ramo de restaurantes. A empresa continua de
+                cunho familiar e procura firmar uma outra marca como sorvetes DYMEL, Sorvetes Favo, depois Fratelli, como não conseguiu
+                registro junto ao INPI, voltou a marca de origem. A marca comercial é "Itabaú Sorvetes", e com novos projetos vindo, criamos
+                as submarcas, Itabaú – A energia da montanha, que representa toda a linha de Massa Premium e Itabaú – O picolé do Robson que
                      representa toda  linha de picolés naturais e orgânicos. </p>
             </div>
         </div>
@@ -144,10 +145,10 @@ function Historia() {
 
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
-                <p>A empresa ganha alguns logos ao longo do tempo, cresce paulatinamente e solidamente no mercado regional, pela qualidade e 
-                    pelos sabores exóticos, como abobora com coco, queijo, batata doce com beterraba vegano, arroz doce, mandioca com coco 
-                    vegano e entre outros tantos. A empresa tem como compromisso manter a qualidade do sorvete, fazendo com que  passe de
-                     guloseima a um alimento, e para completar esta opção a empresa desenvolve e oferece a seus consumidores os sorvetes 
+                <p>A empresa ganha alguns logos ao longo do tempo, cresce paulatinamente e solidamente no mercado regional, pela qualidade e
+                pelos sabores exóticos, como abobora com coco, queijo, batata doce com beterraba vegano, arroz doce, mandioca com coco
+                vegano e entre outros tantos. A empresa tem como compromisso manter a qualidade do sorvete, fazendo com que  passe de
+                guloseima a um alimento, e para completar esta opção a empresa desenvolve e oferece a seus consumidores os sorvetes
                      orgânicos.</p>
             </div>
             <div className='content-itens right' data-about style={{ marginTop: -40 }}>
@@ -158,7 +159,11 @@ function Historia() {
                 <Galery images={IMAGES} />
             </div>
         </div>
-
+        <div className="container animated">
+            <div className="content-itens left" data-about="true">
+                <iframe src={itabauPDF} title='pdf' width="100%" height="400px"></iframe>
+            </div>
+        </div>
         <Footer />
     </>)
 }
