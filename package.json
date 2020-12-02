@@ -42,7 +42,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && cd node_modules && cd .bin && gh-pages -d ../../build"
+    "deploy": "npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
+    "server": "serve -s build"
   },
   "eslintConfig": {
     "extends": [

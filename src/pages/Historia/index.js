@@ -159,11 +159,6 @@ function Historia() {
                 <Galery images={IMAGES} />
             </div>
         </div>
-        <div className="container animated">
-            <div className="content-itens left" data-about="true">
-                <iframe src={itabauPDF} title='pdf' width="100%" height="400px"></iframe>
-            </div>
-        </div>
         <Footer />
     </>)
 }
