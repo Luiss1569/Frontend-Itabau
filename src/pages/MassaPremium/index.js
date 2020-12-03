@@ -9,7 +9,15 @@ import bg from '../../assets/img/massa/bg.jpg'
 import './style.css'
 
 function MassaPremium() {
-    window.scrollTo(0, 0)
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
 
     const sabores = ['Abacaxi com hortelã', 'Abacaxi Suíço (ao leite)', 'Banana, mel e aveia', 'Brigadeiro',
         'Cappuccino', 'Chocolate', 'Chocolate alemão (chocolate com amendoim)', 'Chocolate Branco', 'Chocolate suíço',

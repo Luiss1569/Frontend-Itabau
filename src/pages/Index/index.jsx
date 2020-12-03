@@ -17,7 +17,6 @@ import animationInstagram from "../../assets/animations/instagram.json";
 import iceLoad from "../../assets/animations/iceLoad.json";
 
 import i1 from "../../assets/img/index/i1.jpg";
-import i2 from "../../assets/img/index/i2.jpg";
 import i3 from "../../assets/img/index/i3.jpg";
 import i4 from "../../assets/img/index/i4.jpg";
 import familia from "../../assets/img/index/familia.png";
@@ -78,7 +77,7 @@ function Index() {
         div.removeAttribute("visible");
       });
     }, 4000);
-  });
+  },[]);
 
   useMemo(() => {
     console.log(lat, long);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import api from '../../services/api'
 
 import Lottie from 'react-lottie';
@@ -44,9 +44,15 @@ function Pesquisa() {
         children: ''
     });
 
-    useEffect(() => {
+    React.useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])
+        try {
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+            document.querySelectorAll('.animated div[data-about]')[0].removeAttribute('data-about');
+        } catch (error) {
+            console.log(error);
+        }
+      },[])
 
     const estados = [
         { key: "AC", value: "Acre" },
