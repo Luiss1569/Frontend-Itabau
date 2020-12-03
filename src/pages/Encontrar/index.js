@@ -105,14 +105,8 @@ function Lançamento() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Onde Encontrar?</h3></Carrossel>
         <div className={'margin'} />
-
-        <div className='container container-historia animated' >
-            <div className='content-itens left' data-about>
-                <h3>Onde Encontrar?</h3>
-            </div>
-        </div>
 
         <div className='container container-location animated'>
 

@@ -25,14 +25,8 @@ function Ingredientes() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}> <h3>Nossos ingredientes</h3></Carrossel>
         <div className={'margin'} />
-
-        <div className='container container-historia animated'>
-            <div className='content-itens left' data-about>
-                <h3>Nossos ingredientes</h3>
-            </div>
-        </div>
 
         <div className='container container-ingre animated' data-about style={{marginTop: -30}}>
             <h4>Nossos ingredientes Açúcar Orgânico</h4>
@@ -102,7 +96,7 @@ function Ingredientes() {
 
         <div className=' container animated'  style={{paddingBottom: 200}}>
             <div className='content-img left ' data-about='true'>
-                <img src={i1} alt='picoles sem açucar' style={{width: '100%', marginLeft: '10%'}} />
+                <img src={i1} alt='picoles sem açucar' style={{width: '80%', marginLeft: '10%'}} />
             </div>
             <div className='content-itens right' data-about='true'>
                 <h3>Nos mande uma mensagem, será um prazer atender a sua solicitação.</h3>

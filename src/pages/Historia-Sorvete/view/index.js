@@ -27,13 +27,8 @@ function Curiosidades() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Curiosidades divertidas sobre o sorvete</h3></Carrossel>
         <div className={'margin'} />
-        <div className='container container-historia animated'>
-            <div className='content-itens left' prime data-about>
-                <h3>Curiosidades divertidas sobre o sorvete</h3>
-            </div>
-        </div>
 
         <div className='container container-historia animated'>
             <div className='content-img right' data-about>
@@ -65,7 +60,7 @@ function Curiosidades() {
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
                 <h3>As maiores invenções com sorvete!</h3>
-                <h4>Picolé</h4>
+                <h4 style={{fontSize: 30}}>Picolé</h4>
             </div>
             <div className='content-img right' data-about>
                 <img src={c2} alt='img' />
@@ -78,7 +73,7 @@ function Curiosidades() {
 
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about style={{marginTop: 0}}>
-                <h4>Casquinha de sorvete</h4>
+                <h4 style={{fontSize: 30}}>Casquinha de sorvete</h4>
             </div>
             <div className='content-img right' data-about>
                 <img src={c3} alt='img' />
@@ -92,7 +87,7 @@ function Curiosidades() {
 
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about style={{marginTop: 0}}>
-                <h4>Sabores tropicais</h4>
+                <h4 style={{fontSize: 30}}>Sabores tropicais</h4>
             </div>
             <div className='content-img right' data-about>
                 <img src={c4} alt='img' />
@@ -104,7 +99,7 @@ function Curiosidades() {
 
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about style={{marginTop: 0}}> 
-                <h4>Sundae e Banana Split</h4>
+                <h4 style={{fontSize: 30}}>Sundae e Banana Split</h4>
             </div>
             <div className='content-img right' data-about>
                 <img src={c5} alt='img' />
@@ -116,7 +111,7 @@ function Curiosidades() {
 
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about style={{marginTop: 0}}>
-                <h4>Ice Cream Soda</h4>
+                <h4 style={{fontSize: 30}}>Ice Cream Soda</h4>
             </div>
             <div className='content-img right' data-about style={{maxWidth: 200}}>
                 <img src={c6} alt='img' />

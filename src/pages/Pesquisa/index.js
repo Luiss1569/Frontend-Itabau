@@ -125,12 +125,12 @@ function Pesquisa() {
 
         <Header />
         <SnackBar setOpen={setOpen} open={open.bool} type={open.type}>{open.children}</SnackBar>
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}>  <h3>Pesquisa de Opinião</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
-                <h3>Pesquisa de Opinião</h3>
-                <p>Ajude-nos a melhorar nossos produtos e serviços respondendo o questionário abaixo, pois é fundamental para o nosso aprimoramento, e também para melhor atendê-lo.</p>
+                <h3>Ajude-nos</h3>
+                <p>Para melhorar nossos produtos e serviços respondendo o questionário abaixo, pois é fundamental para o nosso aprimoramento, e também para melhor atendê-lo.</p>
             </div>
         </div>
         <div className='container animated'>

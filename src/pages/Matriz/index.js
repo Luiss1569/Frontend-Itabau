@@ -135,15 +135,15 @@ function Matriz() {
 
         <Header />
         <SnackBar setOpen={setOpen} open={open.bool} type={open.type}>{open.children}</SnackBar>
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Itabaú Matriz</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
-                <h3>Itabaú Matriz</h3>
+                <h3>Contato</h3>
                 <p>Entre em contato conosco preenchendo o formulário abaixo ou pelos dados informados:</p>
             </div>
         </div>
-        <div className='container container-matriz animated' >
+        <div className='container container-matriz animated' style={{alignItems: 'none'}} >
             <div className='content-itens left' data-about>
                 {send ? (
                     <>

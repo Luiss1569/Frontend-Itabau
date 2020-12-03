@@ -131,7 +131,7 @@ function Index() {
         </div>
 
         <div className="content-itens right" prime="true" data-about="true">
-          <h3>Picolés Naturais</h3>
+          <h3>Picolés 100% Naturais</h3>
           <label>VEGANOS - CREMOSOS – RECHEADOS – ZERO AÇÚCAR</label>
           <p>
             {" "}
@@ -165,46 +165,7 @@ function Index() {
         </div>
       </div>
 
-      <div className=" container container-reverse animated">
-        <div className="content-img left " data-about="true">
-          <img src={i2} alt="picoles sem açucar" />
-        </div>
-        <div className="content-itens right" data-about="true">
-          <h3>Picolés Recheados</h3>
-          <label>Aquele picolé para deixar seu dia incrível</label>
-          <p>
-            O picolé natural recheado é feito com os mesmo princípios do picolé
-            natural, sem adição de aromas artificiais, corantes e conservante,
-            porém colocamos neles recheios magníficos, que lhe proporciona um
-            sensação inesquecível, e impossível provar somente um.
-          </p>
-          <Link
-            to={"/picoles/recheados"}
-            style={{
-              textDecoration: "none",
-              display: "flex",
-              flexDirection: "collum",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div style={{ padding: 5 }}>
-              <div className="button"> Tabela Nutricional</div>
-            </div>
-            <div style={{ padding: 5 }}>
-              <div className="button">Lista de Ingredientes</div>
-            </div>
-            <div style={{ padding: 5 }}>
-              <div className="button" style={{ marginBottom: 5 }}>
-                Lista de Sabores
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
-
-      <div className="container animated">
+      <div className="container  container-reverse  animated">
         <div className="content-img left " data-about="true">
           <img src={i1} alt="picoles sem açucar" />
         </div>
@@ -252,6 +213,41 @@ function Index() {
         </div>
       </div>
 
+        <div className="container contaier-massa animated">
+        <div className="content-img left " data-about="true">
+          <img src={i4} alt="picoles sem açucar" />
+        </div>
+
+        <div className="content-itens right" data-about="true">
+          <h3>Massa Premium</h3>
+          <label>Pra você que não abre mão da qualidade</label>
+          <p>
+            Uma linha especial de Sorvetes no formato Massa Premium, com uma
+            grande variedade de deliciosos sabores, são feitos com produtos
+            selecionados e de alta qualidade. Em sua calda base não é adicionado
+            nenhum tipo de gordura vegetal e todos tem em sua composição açúcar
+            orgânico.
+          </p>
+          <Link
+            to={"/massa"}
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              flexDirection: "collum",
+              flexWrap: "wrap",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ padding: 5 }}>
+              <div className="button" style={{ marginBottom: 5 }}>
+                Lista de Sabores
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+        
       <div
         className="container container-map animated"
         style={{
@@ -300,52 +296,11 @@ function Index() {
         <></>
       )}
 
-      <div className="container contaier-massa animated">
-        <div className="content-img left " data-about="true">
-          <img src={i4} alt="picoles sem açucar" />
-        </div>
-
-        <div className="content-itens right" data-about="true">
-          <h3>Massa Premium</h3>
-          <label>Pra você que não abre mão da qualidade</label>
-          <p>
-            Uma linha especial de Sorvetes no formato Massa Premium, com uma
-            grande variedade de deliciosos sabores, são feitos com produtos
-            selecionados e de alta qualidade. Em sua calda base não é adicionado
-            nenhum tipo de gordura vegetal e todos tem em sua composição açúcar
-            orgânico.
-          </p>
-          <Link
-            to={"/massa"}
-            style={{
-              textDecoration: "none",
-              display: "flex",
-              flexDirection: "collum",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div style={{ padding: 5 }}>
-              <div className="button"> Tabela Nutricional</div>
-            </div>
-            <div style={{ padding: 5 }}>
-              <div className="button">Lista de Ingredientes</div>
-            </div>
-            <div style={{ padding: 5 }}>
-              <div className="button" style={{ marginBottom: 5 }}>
-                Lista de Sabores
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
-
       <FlipCarrossel />
 
       <div className="container  container-vid animated">
         <div className="content-itens right" data-about="true">
-          <h3>Orgânico Natural e Saudável</h3>
+          <h3>Reportagens da Itabaú</h3>
           <Link to={"/videos"} style={{ textDecoration: "none" }}>
             <div className="button">Ver todos os vídeos</div>
           </Link>

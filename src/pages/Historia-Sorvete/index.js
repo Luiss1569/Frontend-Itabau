@@ -23,13 +23,12 @@ function HistoriaSorvete() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Historia do Sorvete</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' prime data-about>
-                <h3>Historia do Sorvete</h3>
-                <p>História do sorvete
-                A história do sorvete é cheia de curiosidades. Pesquisas mostram que ele foi inventado há
+                <h3>Sorvete</h3>
+                <p>A história do sorvete é cheia de curiosidades. Pesquisas mostram que ele foi inventado há
                 cerca de 3 mil anos pelos chineses! No início, o "sorvete" era feito com neve, suco de fruta
                 e mel.</p>
                 <p style={{ marginTop: -20 }}>Outras pesquisas apontam o líder Alexandre, o Grande como o

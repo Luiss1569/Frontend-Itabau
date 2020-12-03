@@ -260,11 +260,11 @@ function Fotos() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}> <h3>Galeria de Fotos</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
-                <h3>Galeria de Fotos</h3>
+               
                 <div style={{width:'80%', height: 50}}/>
                 <Galery images={IMAGES} />
             </div>

@@ -18,13 +18,8 @@ function Acucar() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Sem Adição de Açúcar</h3></Carrossel>
         <div className={'margin'} />
-        <div className='container container-massa animated'>
-            <div className='content-itens left'>
-                <h3> Picolés Sem Adição de Açúcar</h3>
-            </div>
-        </div>
         <div className='container container-historia container-picoles animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
                 <h4>Orgânicos - Sem Adição de Açúcar</h4>

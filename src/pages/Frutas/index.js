@@ -176,14 +176,8 @@ function Frutas() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}> <h3>Conheça as frutas</h3></Carrossel>
         <div className={'margin'} />
-
-        <div className='container container-historia animated'>
-            <div className='content-itens right ' data-about='true'>
-                <h3>Conhaça as frutas</h3>
-            </div>
-        </div>
 
         {frutasInfo.map((fruta, index) => (
             <div className={returnClasses(index)}>

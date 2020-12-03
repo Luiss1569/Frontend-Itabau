@@ -35,12 +35,11 @@ function Cidade() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Conheça nossa cidade</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
-                <h3>Conheça nossa cidade</h3>
-                <h4 style={{ fontSize: 20 }}>São Bento do Sapucaí-SP</h4>
+                <h3>São Bento do Sapucaí-SP</h3>
                 <p>O Município da Estância Climática de São Bento do Sapucaí situa-se ao leste do Estado de São
                 Paulo, nos contrafortes da Serra da Mantiqueira, Região Vale do Paraíba, mais especificamente
                 no Alto Sapucaí. Compreende uma área de 279 km², dividindo em perímetro urbano: 91.405 km2 e

@@ -44,11 +44,10 @@ function Lançamento() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Lançamentos</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
-                <h3>Lançamentos</h3>
                 <p>{title}</p>
                 <p style={{ marginTop: -20 }}>
                     <ul>

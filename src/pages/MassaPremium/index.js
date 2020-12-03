@@ -23,12 +23,9 @@ function MassaPremium() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Massa Premium</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-massa animated'>
-            <div className='content-itens left'>
-                <h3>Massa Premium</h3>
-            </div>
         </div>
         <div className='container container-massa animated'>
             <div className='content-itens content-box right' data-about>

@@ -103,12 +103,12 @@ function Historia() {
     return (<>
 
         <Header />
-        <Carrossel images={[bg]} />
+        <Carrossel images={[bg]}> <h3 className="title">Nossa Historia</h3></Carrossel>
         <div className={'margin'} />
 
         <div className='container container-historia animated'>
             <div className='content-itens left' prime="true" data-about>
-                <h3>Nossa Historia</h3>
+                <h3>Itabaú</h3>
                 <p>A Itabaú Sorvetes, foi fundada no alto da serra da Mantiqueira, aos pés do maior monumento natural do alto Vale do Paraíba,
                     a Pedra do Baú, pelos até então apicultores Ricardo Camargo Inke e Carlos Robson Galvão. </p>
             </div>

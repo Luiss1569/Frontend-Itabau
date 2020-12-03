@@ -27,13 +27,9 @@ function Selos() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Certificação Orgânica</h3></Carrossel>
         <div className={'margin'} />
-        <div className='container container-historia animated'>
-            <div className='content-itens left ' data-about='true'>
-                <h3>CERTIFICAÇÃO ORGÂNICA</h3>
-            </div>
-        </div>
+
         <div className='container container-selo animated'>
             <div className='content-img left ' data-about='true' style={{display:'flex', justifyContent: 'center', alignItems: 'center'}} >
                 <img src={s1} alt='picoles sem açucar' style={{ width: '60%', height: "auto", margin: "auto" }} />

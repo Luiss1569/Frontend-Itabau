@@ -29,14 +29,13 @@ function Picoles() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Picolés</h3></Carrossel>
         <div className={'margin'} />
 
         <div className='container container-historia animated' >
             <div className='content-itens left' prime data-about>
-                <h3>Picolés</h3>
             </div>
-            <div className='content-img  galery left' style={{ marginTop: 50 }} data-about>
+            <div className='content-img  galery left' style={{ marginTop: 100 }} data-about>
                 <div className='box-img'>
                     <Link to='/picoles/organicos'>
                         <img

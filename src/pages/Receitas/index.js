@@ -124,15 +124,10 @@ function Receitas() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]} />
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Receitas</h3></Carrossel>
         <div className={'margin'} />
-        <div className='container container-historia animated' style={{ paddingBottom: 120 }}>
-            <div className='content-itens left' data-about>
-                <h3>Receitas</h3>
-            </div>
-        </div>
 
-        <div className='container container-historia animated' style={{paddingBottom: 100}}>
+        <div className='container container-historia animated' style={{paddingBottom: 100, paddingTop: 50}}>
             <div className='content-itens right'>
                 {receitasInfo.map(receita => (
                     <Accordion key={receita.title} style={{ backgroundColor: '#f9f9f9' }} >
