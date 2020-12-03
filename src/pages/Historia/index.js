@@ -7,7 +7,6 @@ import Galery from '../../components/Galery'
 
 import bg from '../../assets/img/Historia/bg.jpg'
 import rme from '../../assets/img/Historia/rme.jpg'
-import itabauPDF from "../../assets/pdf/itabau.pdf";
 
 import g1 from '../../assets/img/Historia/g1.jpg'
 import g2 from '../../assets/img/Historia/g2.jpg'

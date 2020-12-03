@@ -43,7 +43,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
-    "server": "serve -s build"
+    "server": "serve -s build -l 3000"
   },
   "eslintConfig": {
     "extends": [
