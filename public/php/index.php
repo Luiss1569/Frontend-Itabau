@@ -1,8 +1,6 @@
 <?php
 
-	include './conexao.php';
-
-	if ($_SERVER["REQUEST_METHOD"] == 'GET') {
+	// include './conexao.php';
 
 		header("Access-Control-Allow-Origin: *");
 		header('Access-Control-Allow-Origin: *');
@@ -18,8 +16,6 @@
 		);
 		$jsonstring = json_encode($json);
 		echo $jsonstring;
-		mysqli_close($link);
-	}else{
-		echo 'error';
-	}
+		// mysqli_close($link);
+	
 ?>

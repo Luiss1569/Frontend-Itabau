@@ -80,7 +80,15 @@
     color: #38a38d;
   }
   
-  @media only screen and (min-width: 1400px) {
+
+@media only screen and (min-width: 1900px) and (max-width: 2499px){
+     .content {
+      width: 30%;
+      margin-right: 20px
+    }
+}
+
+  @media only screen and (min-width: 1400px) and (max-width: 1899px){
     .content {
       width: 20%;
     }

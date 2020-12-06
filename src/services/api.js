@@ -1,2 +1,2 @@
-const ip = 'http://192.168.0.106'
+const ip = 'https://itabau.000webhostapp.com/'
 export default ip 
