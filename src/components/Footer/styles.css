@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   padding-top: 40px;
 }
 
@@ -16,6 +16,13 @@
   padding-top: 50px;
   margin: auto;
   padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-footer .content-img img{
+width: 30%;
+height: auto;
 }
 
 .container-footer .content-itens {

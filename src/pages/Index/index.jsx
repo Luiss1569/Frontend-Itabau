@@ -18,7 +18,7 @@ import iceLoad from "../../assets/animations/iceLoad.json";
 
 import i1 from "../../assets/img/index/i1.jpg";
 import i3 from "../../assets/img/index/i3.jpg";
-import i4 from "../../assets/img/index/i4.jpg";
+import i4 from "../../assets/img/index/i5.jpg";
 import familia from "../../assets/img/index/familia.png";
 
 import c1 from "../../assets/img/carrossel/c1.jpg";

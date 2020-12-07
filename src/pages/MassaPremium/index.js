@@ -5,7 +5,7 @@ import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
 import bg from '../../assets/img/massa/bg.jpg'
-
+import logo from '../../assets/img/logo-itabau-massa.png'
 import './style.css'
 
 function MassaPremium() {
@@ -31,7 +31,8 @@ function MassaPremium() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Massa Premium</h3></Carrossel>
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Massa Premium <img src={logo} alt="logo" style={{width: 100, position: 'absolute', bottom: 0, right: -120}}/></h3>
+        </Carrossel>
         <div className={'margin'} />
         <div className='container container-massa animated'>
         </div>

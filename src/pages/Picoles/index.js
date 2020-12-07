@@ -12,6 +12,7 @@ import p1 from '../../assets/img/picoles/p1.jpg'
 import p2 from '../../assets/img/picoles/p2.jpg'
 import p3 from '../../assets/img/picoles/p3.jpg'
 import p4 from '../../assets/img/picoles/p4.jpg'
+import logo from '../../assets/img/logo-itabau-picole.png'
 
 import './style.css'
 
@@ -29,7 +30,7 @@ function Picoles() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Picolés</h3></Carrossel>
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3><img src={logo} alt="logo" style={{width: 500, position: 'absolute', bottom: 0, left: 20}}/></h3></Carrossel>
         <div className={'margin'} />
 
         <div className='container container-historia animated' >
