@@ -21,6 +21,8 @@ function Lançamento() {
     const cont = [0, 1, 2]
     const [location, setLocation] = useState('')
     const [locations, setLocations] = useState([])
+    const [lat, setLat] = useState(null);
+    const [long, setLong] = useState(null);
     const [loading, setLoading] = useState(false)
 
     React.useEffect(() => {
@@ -31,7 +33,46 @@ function Lançamento() {
         } catch (error) {
             console.log(error);
         }
-      },[])
+    }, [])
+
+    React.useEffect(() => {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    setLat(position.coords.latitude);
+                    setLong(position.coords.longitude);
+                },
+                function (error) {
+                    console.log(error);
+                },
+                { enableHighAccuracy: true }
+            );
+        }
+    }, []);
+
+    useMemo(() => {
+        console.log(lat, long);
+        async function getLocations() {
+            if (lat & long) {
+                const response = await fetch(
+                    `${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=10`,
+                    {
+                        method: "get",
+                    }
+                ).then(function (response) {
+                    return response.json();
+                });
+                if (response.data) {
+                    setLocations([]);
+                } else {
+                    setLocations(response);
+                }
+            }
+        }
+        getLocations();
+        // eslint-disable-next-line
+    }, [long]);
+
 
     useMemo(() => {
         if (!location) {
@@ -57,10 +98,10 @@ function Lançamento() {
                     method: 'get',
                 }).then(function (response) {
                     return response.json();
-                }).catch(function(error) {
+                }).catch(function (error) {
                     console.log('There has been a problem with your fetch operation: ' + error.message);
-                    return {data: true}
-                  });
+                    return { data: true }
+                });
                 if (response.data) {
                     setLocations([])
                 } else {
@@ -128,7 +169,7 @@ function Lançamento() {
             </div>
         </div>
 
-        <div className='container  container-location animated' style={{marginTop: 0, marginBottom: 20, paddingBottom: 10}}>
+        <div className='container  container-location animated' style={{ marginTop: 0, marginBottom: 20, paddingBottom: 10 }}>
             <div className='content-location  galery right' >
                 {render()}
             </div>

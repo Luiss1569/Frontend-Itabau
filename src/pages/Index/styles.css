@@ -213,7 +213,7 @@ body {
   transition: 1s ease-in-out;
 }
 
-.margin {
+.margin, .carrossel {
   height: 430px;
   width: 100%;
 }
@@ -327,6 +327,9 @@ body {
 @media only screen and (min-width: 1900px) and (max-width: 2499px){
   .margin {
     height: 430;
+  }
+  .carrossel{
+       height: 430;
   }
     body{
         zoom: 1.6;
@@ -457,6 +460,9 @@ body {
   .margin {
     margin-top: 72px;
     height: 160px;
+  }
+  .carrossel{
+       height: 159px;
   }
   .parallax h3{
       font-size: 35px

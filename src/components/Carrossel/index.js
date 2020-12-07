@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -14,31 +14,7 @@ import './styles.css'
 const useStyles = makeStyles(styles);
 
 export default function Parallax(props) {
-  const [imgIndex, setImgIndex] = useState(0)
-  const [checked, setChecked] = useState(true)
   const { filter, className, children, images, style, small } = props;
-
-  useEffect(() => {
-    var cont = 0
-    if(images.length > 1){
-      const interval = setInterval(() => {
-        cont++
-        setChecked(false)
-        if (cont >= images.length) {
-          setImgIndex(0)
-          cont = 0
-        } else {
-          setImgIndex(imgIndex => imgIndex + 1);
-        }
-        setTimeout(()=>{
-          setChecked(true)
-        },50)
-      }, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [images]);
-
-
 
   let windowScrollTop;
   if (window.innerWidth >= 768) {
@@ -72,12 +48,12 @@ export default function Parallax(props) {
   });
 
   return (
-    <Slide direction="right" in={checked} style={{width: '100%'}}>
+    <Slide direction="right" in={true} style={{width: '100%'}}>
       <div
         className={parallaxClasses+ "parallax"}
         style={{
           ...style,
-          backgroundImage: "url(" + images[imgIndex] + ")",
+          backgroundImage: "url(" + images[0] + ")",
           transform: transform
         }}
       >

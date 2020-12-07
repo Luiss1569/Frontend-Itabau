@@ -27,6 +27,7 @@
     font-family: "Philosopher", sans-serif;
     margin: 0 0;
     color: #fff;
+     transition: .7s;
   }
   
   .box-location .body {
@@ -43,7 +44,7 @@
   
   }
   .box-location:hover .header{
-    background-color: #ba3676f6 ;
+    background-color: #9A7D0A ;
   }
   
   .box-location .body .content {

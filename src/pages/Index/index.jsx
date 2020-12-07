@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import api from "../../services/api";
 
 import Header from "../../components/Header";
-import Carrossel from "../../components/Carrossel";
+import Carrossel from "../../components/Carrossel/indexCarrossel";
 import Footer from "../../components/Footer";
 import Location from "../../components/Location";
 import FlipCarrossel from "../../components/FlipCarrossel";

@@ -60,7 +60,7 @@ function Gallery() {
         >
             {
                 images.map((image, index) => (
-                    <img id='slideImg' src={image} alt={index} />
+                    <img id='slideImg' src={image} alt={index} style={{pointerEvents: 'none'}} />
                 ))
             }
         </AliceCarousel>
