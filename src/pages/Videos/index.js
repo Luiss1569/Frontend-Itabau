@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
-import bg from '../../assets/img/ingredientes/bg.jpg'
+import bg from '../../assets/img/fotos/bg.jpg'
 
 import './style.css'
 

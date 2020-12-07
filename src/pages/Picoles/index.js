@@ -30,7 +30,7 @@ function Picoles() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3><img src={logo} alt="logo" style={{width: 500, position: 'absolute', bottom: 0, left: 20}}/></h3></Carrossel>
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><div className="imgClildren"><img src={logo} alt="logo" style={{width: "100%"}}/></div></Carrossel>
         <div className={'margin'} />
 
         <div className='container container-historia animated' >

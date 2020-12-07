@@ -5,11 +5,24 @@
     transform: translateY(-10px);
 } 
 
+.imgClildren{
+    width: 50%;
+    margin-bottom: 2%;
+    margin-left: 3%
+}
+
+.parallax{
+    align-items: flex-end
+}
+
 @media only screen and (max-width: 767px) {
     .container-sorvete{
         width: 94%;
         padding:0 ;
     }
+    .imgClildren{
+    width: 80%
+}
     .MuiBox-root{
         padding: 0 !important;
     }

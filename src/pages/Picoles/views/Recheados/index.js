@@ -4,6 +4,7 @@ import Header from '../../../../components/Header'
 import Footer from '../../../../components/Footer'
 import Carrossel from '../../../../components/Carrossel'
 import PicolesTab from '../../../../components/PicolesTab'
+import LogoCarrossel from "../../../../components/LogoPicoleCarrossel";
 
 import bg from '../../../../assets/img/massa/bg.jpg'
 
@@ -17,7 +18,7 @@ function Recheados() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}>   <h3>Picolés Recheados</h3></Carrossel>
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}>   <h3>Picolés Recheados</h3><LogoCarrossel/></Carrossel>
         <div className={'margin'} />
         <div className='container container-massa animated'>
             <div className='content-itens content-box right' data-about>

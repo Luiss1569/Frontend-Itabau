@@ -4,7 +4,9 @@ import Header from '../../../../components/Header'
 import Footer from '../../../../components/Footer'
 import Carrossel from '../../../../components/Carrossel'
 import PicolesTab from '../../../../components/PicolesTab'
+import Hidden from "@material-ui/core/Hidden";
 
+import logo from '../../../../assets/img/logo-itabau-picole.png'
 import bg from '../../../../assets/img/massa/bg.jpg'
 
 import organicos from './data/organico.json'
@@ -18,7 +20,7 @@ function Acucar() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Sem Adição de Açúcar</h3></Carrossel>
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Sem Adição de Açúcar</h3><Hidden mdDown implementation="css"><img src={logo} alt="logo" style={{width: 400, position: 'absolute', bottom: 10, right: 40}}/></Hidden> </Carrossel>
         <div className={'margin'} />
         <div className='container container-historia container-picoles animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>

@@ -6,7 +6,7 @@ import Carrossel from '../../components/Carrossel'
 
 import { Link } from 'react-router-dom'
 
-import bg from '../../assets/img/ingredientes/bg.jpg'
+import bg from '../../assets/img/frutas/bg.jpg'
 import i1 from '../../assets/img/ingredientes/s1.png'
 
 import './style.css'
