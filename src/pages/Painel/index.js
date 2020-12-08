@@ -19,8 +19,10 @@ function Lançamento({history}) {
 
     async function handleSubmit(e) {
         e.preventDefault()
-
-        if(user === 'itabau' && password === '1'){
+        const users =['karina', 'paulo', 'Karina', 'Paulo']
+        const passwords = ['karina1927', 'paulo2001@']
+        
+        if(users.includes(user) && passwords.includes(password)){
             
            history.push('/painel/home')
            localStorage.setItem('@itabau/login', true)
