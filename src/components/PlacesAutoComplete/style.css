@@ -1,0 +1,19 @@
+@media only screen and (min-width: 2500px){
+     .combobox-responsive{
+          zoom: 1;
+     }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2499px){
+  .combobox-responsive{
+        zoom: 1;
+  }
+}
+
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1899px){
+    .combobox-responsive{
+          zoom: 1;
+    }
+}
