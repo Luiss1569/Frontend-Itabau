@@ -8,7 +8,8 @@ import {
     ComboboxOption,
 } from "@reach/combobox";
 
-import "@reach/combobox/styles.css";
+import "@reach/combobox/styles.css"
+import './style.css'
 
 function PlacesAutocomplete(props) {
     const {
@@ -27,7 +28,8 @@ function PlacesAutocomplete(props) {
     };
 
     return (
-        <Combobox onSelect={handleSelect} aria-labelledby="demo">
+        <div classname='combobox-responsive'>
+            <Combobox onSelect={handleSelect} aria-labelledby="demo">
             <ComboboxInput value={value} onChange={handleInput} placeholder={"Digite sua cidade, estado ou pais ..."} disabled={!ready} style={{ borderColor: '#135749', fontFamily: "Philosopher", width: '100%', height: 30, fontSize: 20, borderRadius: 10, textAlign: 'center'}} />
             <ComboboxPopover>
                 <ComboboxList>
@@ -50,6 +52,7 @@ function PlacesAutocomplete(props) {
                 </ComboboxList>
             </ComboboxPopover>
         </Combobox>
+        </div>
     );
 };
 
