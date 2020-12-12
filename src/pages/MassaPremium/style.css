@@ -27,6 +27,7 @@
   color: #135749;
   font-style: italic;
   text-align: justify;
+   font-size: clamp(16px, 1vw + 5px, 25px);
   line-height: 30px;
 }
 
@@ -34,5 +35,6 @@
   font-family:"Philosopher", sans-serif;
   color: #135749;
   margin-top: 35px;
+   font-size: clamp(16px, 1vw + 6px, 25px);
   margin-right: 10px;
 }

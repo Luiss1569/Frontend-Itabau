@@ -26,6 +26,7 @@
   .box-location .header h4 {
     font-family: "Philosopher", sans-serif;
     margin: 0 0;
+    font-size: clamp(16px, 1vw + 3px, 23px);
     color: #fff;
      transition: .7s;
   }
@@ -70,6 +71,7 @@
     margin: 0 0;
     padding: 7px;
     width: 90%;
+    font-size: clamp(16px, 1vw + 2px, 25px);
     border: 1px solid black;
     border-top: 0;
     border-left: 0;
@@ -79,8 +81,13 @@
   #heLocation{
     font-family: "Philosopher", sans-serif;
     color: #38a38d;
+    font-size:clamp(10px, 1vw + 5px, 23px);
   }
   
+  #heLocation.amarelo{
+    font-family: "Philosopher", sans-serif;
+    color: #e0cc73;
+  }
 
 @media only screen and (min-width: 1900px) and (max-width: 2499px){
      .content {

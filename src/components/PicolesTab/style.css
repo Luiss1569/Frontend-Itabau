@@ -26,6 +26,14 @@
     text-transform: uppercase;
 }
 
+.MuiTab-wrapper{
+     font-size: clamp(10px, 1vw, 25px) !important;
+}
+
+.MuiTableBody-root tr th, .MuiTableBody-root tr td, th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-alignRight.MuiTableCell-sizeSmall {
+    font-size: clamp(10px, 1vw - 2px, 20px) !important;
+} 
+
 @media only screen and (max-width: 767px) {
   #container-tab{
     margin-top: 20px;

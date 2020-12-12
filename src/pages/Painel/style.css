@@ -44,3 +44,10 @@
   .container .content-itens label#thumbnail.has-thumbnail img {
     display: none;
   }
+
+  td.ant-table-cell, .ant-table-cell p span, .ant-table-cell p  label{
+      font-size: clamp(16px, 1vw, 25px) !important;
+  }
+  th.ant-table-cell, .ant-table-column-sorters span{
+      font-size: clamp(16px, 1vw + 2px, 25px) !important;
+  }

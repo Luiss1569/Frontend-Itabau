@@ -41,7 +41,7 @@ body {
 }
 
 .container .content-itens h3 {
-  font-size: 50px;
+  font-size: clamp(50px, 1vw + 35px, 70px);
   font-family: "Philosopher", sans-serif;
   color: #135749;
   text-align: left;
@@ -53,7 +53,7 @@ body {
 }
 
 .container .content-itens label {
-  font-size: 16px;
+  font-size: clamp(16px, 1vw + 5px, 25px);
   font-family: "Philosopher", sans-serif;
   color: #38a38d;
 }
@@ -62,7 +62,7 @@ body {
   margin-top: 30px;
   font-family: "Philosopher", sans-serif;
   color: #135749;
-  font-size: clamp(15px, 0.7,  4vw);
+  font-size:clamp(10px, 1vw + 5px, 23px);
   font-style: italic;
   text-align: justify;
   line-height: 30px;
@@ -72,9 +72,9 @@ body {
   color: #fff;
   background-color: #ba3676;
   padding: 10px 20px;
-  
-  width: 100px;
-  font-style: bold;
+  width: clamp(100px, 1vw + 100px, 200px);
+  font-size: clamp(16px, 1vw, 25px);
+  height: 100%;
   border-radius: 30px;
   text-align: center;
   transition: 1s;
@@ -317,12 +317,7 @@ body {
 }
 
 @media only screen and (min-width: 2500px){
-     body{
-        zoom: 2.1;
-    }
-    .asndaoidna{
-        margin-top: -345px;
-  }
+    
 }
 
 @media only screen and (min-width: 1900px) and (max-width: 2499px){
@@ -332,21 +327,12 @@ body {
   .carrossel{
        height: 430;
   }
-    body{
-        zoom: 1.5;
-    }
-      .asndaoidna{
-        margin-top: -260px;
-       
-  }
+
 }
 
 
 
 @media only screen and (min-width: 1400px) and (max-width: 1899px){
-    body{
-        zoom: 1.2;
-    }
      .asndaoidna{
         margin-top: -280px;
        height: 100px;

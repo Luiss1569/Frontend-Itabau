@@ -2,6 +2,14 @@
     align-items: flex-start
 }
 
+.MuiInputBase-input{
+    font-size: clamp(16px, 1vw, 25px) !important;
+}
+
+.MuiButton-root{
+    font-size: clamp(16px, 1vw, 25px) !important;
+}
+
 @media only screen and (max-width: 1023px){
     .container-matriz{
         align-items: center

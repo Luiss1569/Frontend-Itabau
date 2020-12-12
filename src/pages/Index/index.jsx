@@ -277,7 +277,7 @@ function Index() {
         <>
           <div
             className="container container-map container-location container-historia animated"
-            style={{ paddingBottom: 70, paddingTop: 100, marginTop: 0 }}
+            style={{ paddingBottom: 70, paddingTop: 100, marginTop: -5 }}
           >
             <div className="content-itens left" data-about>
               <h3>Locais Proximos</h3>
@@ -287,7 +287,7 @@ function Index() {
               data-about
               style={{ padding: 0, marginTop: 20 }}
             >
-              {<Location locations={locations} />}
+              {<Location locations={locations} index={true} />}
             </div>
           </div>
         </>

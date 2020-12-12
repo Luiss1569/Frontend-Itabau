@@ -17,6 +17,8 @@ const headerLinksStyle = theme => ({
     position: "relative",
     display: "block",
     width: "auto",
+    fontSize: 'clamp(10px, 1vw , 25px);',
+    fontFamily: '"Philosopher", sans-serif;"',
     margin: "0",
     padding: "0",
     [theme.breakpoints.down("sm")]: {

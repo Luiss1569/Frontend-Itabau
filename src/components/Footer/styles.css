@@ -36,8 +36,12 @@ height: auto;
   padding-bottom: 20px;
 }
 
+.container-footer .content-itens a {
+     font-size:clamp(10px, 1vw - 1px, 25px) !important;
+}
+
 .container-footer span {
-  font-size: 12px;
+  font-size:clamp(10px, 1vw - 1px, 25px);
   color: #52995a;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -46,6 +50,7 @@ height: auto;
 }
 
 .container-footer span a {
+    font-size:clamp(10px, 1vw, 26px);
   text-decoration: none;
   color: #f7f7f7;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",

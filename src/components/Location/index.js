@@ -18,7 +18,7 @@ function Location(props) {
     if (props.locations.length === 0) {
         return (
             <>
-                <h3 id='heLocation' style={{marginTop:0, marginBottom:0, textAlign: 'center'}}> Infelizmente ainda não temos pontos de venda em sua cidade, estamos expandindo aos pouco e
+                <h3 id='heLocation' className={props.index? 'amarelo': ''} style={{marginTop:0, marginBottom:0, textAlign: 'center'}}> Infelizmente ainda não temos pontos de venda em sua cidade, estamos expandindo aos pouco e
              quem sabe em breve, estaremos aí, pertinho de você. Caso queira ser um revendedor<Link to='/matriz' style={{ textDecoration: 'none' }}> clique aqui</Link> e envie sua mensagem.</h3>
                 <Lottie options={{
                     loop: true,
