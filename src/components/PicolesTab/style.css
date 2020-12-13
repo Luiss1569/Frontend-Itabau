@@ -27,11 +27,11 @@
 }
 
 .MuiTab-wrapper{
-     font-size: clamp(10px, 1vw, 25px) !important;
+     font-size: clamp(16px, 1vw, 25px) !important;
 }
 
 .MuiTableBody-root tr th, .MuiTableBody-root tr td, th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-alignRight.MuiTableCell-sizeSmall {
-    font-size: clamp(10px, 1vw - 2px, 20px) !important;
+    font-size: clamp(14px, 1vw - 2px, 20px) !important;
 } 
 
 @media only screen and (max-width: 767px) {

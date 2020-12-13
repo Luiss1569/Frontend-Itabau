@@ -62,7 +62,7 @@ body {
   margin-top: 30px;
   font-family: "Philosopher", sans-serif;
   color: #135749;
-  font-size:clamp(10px, 1vw + 5px, 23px);
+  font-size:clamp(10px, 1vw + 7px, 23px);
   font-style: italic;
   text-align: justify;
   line-height: 30px;
@@ -72,7 +72,7 @@ body {
   color: #fff;
   background-color: #ba3676;
   padding: 10px 20px;
-  width: clamp(100px, 1vw + 100px, 200px);
+  width: clamp(100px, 1vw + 50px, 220px);
   font-size: clamp(16px, 1vw, 25px);
   height: 100%;
   border-radius: 30px;
@@ -452,6 +452,9 @@ body {
     margin-top: 72px;
     height: 160px;
   }
+  .container .content-itens .button {
+      width: 100px;
+  }
   .carrossel{
        height: 159px;
   }
@@ -460,6 +463,9 @@ body {
   }
   .asndaoidna{
     margin-top: -130px;
+  }
+  .container .content-itens p {
+      font-size: inherit;
   }
   /* .container .content-itens h3.title{
       display: block
