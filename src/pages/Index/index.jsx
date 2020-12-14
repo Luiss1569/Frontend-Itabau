@@ -125,7 +125,7 @@ function Index() {
         />
       </div>
 
-      <div className="container animated" style={{marginTop: '-1vw'}}>
+      <div className="container animated margin1">
         <div className="content-img left " prime="true" data-about="true">
           <img src={i3} alt="picoles sem açucar" />
         </div>
@@ -325,7 +325,7 @@ function Index() {
           <h3>
             Sorvetes saudavéis feitos pela nossa <strong>FAMÍLIA</strong> em
           </h3>
-          <p>São Bento do Sapucaí-SP</p>
+          <p styçe={{ whiteSpace:'nowrap'}}>São Bento do Sapucaí-SP</p>
         </div>
         <div className="content-img right" data-about="true">
           <img src={familia} alt="familia" />

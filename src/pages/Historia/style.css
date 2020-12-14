@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 .container-historia {
   flex-direction: column;
 }
@@ -8,6 +9,10 @@
 
 .container-historia .content-img {
   transition: 0.5s;
+}
+
+.container-reverse-hist{
+    flex-direction: row-reverse;
 }
 
 .galery .content-img {
@@ -23,7 +28,7 @@
   transform: none;
 }
 
-.container-historia span {
+.container .content-img p {
   text-align: center !important;
   font-size: 16px;
   font-family: "Philosopher", sans-serif;
@@ -49,19 +54,23 @@
 }
 
 .container-historia .galery .box-img{
-  max-width: 20%;
+  max-width: 90%;
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .container-historia .galery .box-img{
-    max-width: 30%;
-  }
+.container-historia .galery .box-img h3{
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(16px, 1vw + 5px, 25px);
+}
+
+div.ant-timeline-item-label{
+   font-family: "Special Elite","Philosopher", sans-serif;
+    font-size: clamp(15px, 1vw + 3px, 25px);
 }
 
 /* margin on small screens */
 @media only screen and (max-width: 767px) {
-  .container-historia .galery .box-img{
-    max-width: 40%;
+  .container-reverse-hist{
+      flex-direction: column;
   }
 }
 

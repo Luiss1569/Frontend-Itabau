@@ -8,7 +8,6 @@ import bg from '../../assets/img/selos/bg.jpg'
 
 import s1 from '../../assets/img/selos/s1.jpg'
 import s2 from '../../assets/img/selos/s2.jpg'
-import s3 from '../../assets/img/selos/s3.jpg'
 
 import './style.css'
 
@@ -80,12 +79,6 @@ function Selos() {
 </p>
                 <p>O selo visa identificar os produtos orgânicos em que a avaliação da conformidade foi realizada por organismos credenciados pelo Ministério da Agricultura, Pecuária e Abastecimento. A folha verde como elemento principal remete à pureza do produto, por ser a parte mais delicada da planta. Aproveitamos a letra "O" da palavra orgânico para sugerir o sol por trás do horizonte, principal fonte de energia para o plantio. Um fio de contorno preto delimita irregularmente a figura, acompanhando seu desenho. O fundo que preenche o interior do fio de contorno deve ser branco.</p>
                 <p>Veja abaixo o Certificado emitido pelo IBD à Itabaú:</p>
-            </div>
-        </div>
-
-        <div className='container container-historia animated' style={{ marginTop: -20 }}>
-            <div className='content-img left ' data-about='true'>
-                <img src={s3} alt='picoles sem açucar' />
             </div>
         </div>
 

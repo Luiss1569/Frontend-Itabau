@@ -1,0 +1,4 @@
+.content-img.box-img h3, .content-img .box-img h3{
+     font-family: 'Special Elite', cursive;
+    font-size: clamp(16px, 1vw + 5px, 25px);
+}

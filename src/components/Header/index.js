@@ -30,7 +30,7 @@ export default function Components() {
     let location = useLocation();
 
 
-    const itabau = ['Nossa Historia', 'Historia do Sorvete', 'Galeria de Fotos', 'Pesquisa de Opinião']
+    const itabau = ['Nossa História', 'História do Sorvete', 'Galeria de Fotos', 'Pesquisa de Opinião']
     const optionItabau = ['historia', 'historia-sorvete', 'galeria', 'opiniao']
 
     const sorvetes = ['Lançamentos', 'Picolés', 'Massa Premium']

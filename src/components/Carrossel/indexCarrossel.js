@@ -20,6 +20,7 @@ export default function Parallax(props) {
                     props.images.map((image, index) => (
                         <img
                             src={image}
+                            className="carrossel"
                             style={{
                                 ...contentStyle,
                             }}
