@@ -188,7 +188,7 @@ body {
 
 .container-ice::before {
   display: none;
-}
+} margin
 
 .animated .right[data-about] {
   opacity: 0;
@@ -213,9 +213,9 @@ body {
   transition: 1s ease-in-out;
 }
 
-.margin, .carrossel {
-  height: 430px;
-  width: 100%;
+.margin{
+    height: 30vw;
+  width: 80%;
 }
 
 /*video*/

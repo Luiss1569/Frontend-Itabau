@@ -3,34 +3,34 @@ import AliceCarousel from 'react-alice-carousel';
 
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import s1 from '../../assets/img/slideshow/s1.jpg'
-import s2 from '../../assets/img/slideshow/s2.jpg'
-import s3 from '../../assets/img/slideshow/s3.jpg'
-import s4 from '../../assets/img/slideshow/s4.jpg'
-import s5 from '../../assets/img/slideshow/s5.jpg'
-import s6 from '../../assets/img/slideshow/s6.jpg'
-import s7 from '../../assets/img/slideshow/s7.jpg'
-import s8 from '../../assets/img/slideshow/s8.jpg'
-import s9 from '../../assets/img/slideshow/s9.jpg'
-import s10 from '../../assets/img/slideshow/s10.jpg'
-import s11 from '../../assets/img/slideshow/s11.jpg'
-import s12 from '../../assets/img/slideshow/s12.jpg'
-import s13 from '../../assets/img/slideshow/s13.jpg'
-import s14 from '../../assets/img/slideshow/s14.jpg'
-import s15 from '../../assets/img/slideshow/s15.jpg'
-import s16 from '../../assets/img/slideshow/s16.jpg'
-import s17 from '../../assets/img/slideshow/s17.jpg'
-import s18 from '../../assets/img/slideshow/s18.jpg'
-import s19 from '../../assets/img/slideshow/s19.jpg'
-import s21 from '../../assets/img/slideshow/s21.jpg'
-import s22 from '../../assets/img/slideshow/s22.jpg'
-import s23 from '../../assets/img/slideshow/s23.jpg'
+
+
+import r1 from '../../assets/img/slideshow/r1.jpg'
+import r2 from '../../assets/img/slideshow/r2.jpg'
+import r3 from '../../assets/img/slideshow/r3.jpg'
+import r4 from '../../assets/img/slideshow/r4.jpg'
+import r5 from '../../assets/img/slideshow/r5.jpg'
+import r6 from '../../assets/img/slideshow/r6.jpg'
+import r7 from '../../assets/img/slideshow/r7.jpg'
+import r8 from '../../assets/img/slideshow/r8.jpg'
+import r9 from '../../assets/img/slideshow/r9.jpg'
+import r10 from '../../assets/img/slideshow/r10.jpg'
+import r11 from '../../assets/img/slideshow/r11.jpg'
+import r12 from '../../assets/img/slideshow/r12.jpg'
+import r13 from '../../assets/img/slideshow/r13.jpg'
+import r14 from '../../assets/img/slideshow/r14.jpg'
+import r15 from '../../assets/img/slideshow/r15.jpg'
+import r16 from '../../assets/img/slideshow/r16.jpg'
+import r17 from '../../assets/img/slideshow/r17.jpg'
+import r18 from '../../assets/img/slideshow/r18.jpg'
+import r19 from '../../assets/img/slideshow/r19.jpg'
+import r20 from '../../assets/img/slideshow/r20.jpg'
 
 import './style.css'
 
 function Gallery() {
 
-    const images = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s21,s22,s23]
+    const images = [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20]
 
     return (
         <AliceCarousel

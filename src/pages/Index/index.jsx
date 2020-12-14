@@ -21,11 +21,12 @@ import i3 from "../../assets/img/index/i3.jpg";
 import i4 from "../../assets/img/index/i5.jpg";
 import familia from "../../assets/img/index/familia.png";
 
-import c1 from "../../assets/img/carrossel/c1.jpg";
-import c2 from "../../assets/img/carrossel/c2.jpg";
-import c3 from "../../assets/img/carrossel/c3.jpg";
-import c4 from "../../assets/img/carrossel/c4.jpg";
-import c5 from "../../assets/img/carrossel/c5.jpg";
+import c1 from "../../assets/img/carrossel/01.png";
+import c2 from "../../assets/img/carrossel/02.png";
+import c3 from "../../assets/img/carrossel/03.png";
+import c4 from "../../assets/img/carrossel/04.png";
+import c5 from "../../assets/img/carrossel/05.png";
+import c6 from "../../assets/img/carrossel/06.png";
 
 import "./styles.css";
 import { Link } from "react-router-dom";
@@ -106,7 +107,7 @@ function Index() {
   return (
     <>
       <Header />
-      <Carrossel images={[c1, c2, c3, c4, c5]} />
+      <Carrossel images={[c1, c2, c3, c4, c5, c6]} />
       <div className={"margin"} />
 
       <div className={"container-ice"} visible="true">
@@ -124,7 +125,7 @@ function Index() {
         />
       </div>
 
-      <div className="container animated">
+      <div className="container animated" style={{marginTop: '-1vw'}}>
         <div className="content-img left " prime="true" data-about="true">
           <img src={i3} alt="picoles sem açucar" />
         </div>
@@ -219,9 +220,9 @@ function Index() {
 
         <div className="content-itens right" data-about="true">
           <h3>Massa Premium</h3>
-          <label>Pra você que não abre mão da qualidade</label>
+          <label>TRADICIONAIS – VEGANOS – ZERO AÇÚCAR</label>
           <p>
-            Uma linha especial de Sorvetes no formato Massa Premium, com uma
+            Pra quem não abre mão da qualidade, uma linha especial de Sorvetes no formato Massa Premium, com uma
             grande variedade de deliciosos sabores, são feitos com produtos
             selecionados e de alta qualidade. Em sua calda base não é adicionado
             nenhum tipo de gordura vegetal e todos tem em sua composição açúcar
@@ -280,7 +281,7 @@ function Index() {
             style={{ paddingBottom: 70, paddingTop: 100, marginTop: -5 }}
           >
             <div className="content-itens left" data-about>
-              <h3>Locais Proximos</h3>
+              <h3>Locais Próximos</h3>
             </div>
             <div
               className="content-location  galery right"

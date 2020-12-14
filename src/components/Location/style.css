@@ -88,6 +88,10 @@
     font-family: "Philosopher", sans-serif;
     color: #e0cc73;
   }
+  #heLocation .amareloLink {
+    font-family: "Philosopher", sans-serif;
+    color: #38a38d;
+  }
 
 @media only screen and (min-width: 1900px) and (max-width: 2499px){
      .content {

@@ -15,6 +15,13 @@
   align-items: center;
 }
 
+.ant-carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 @media only screen and (min-width: 1024px) {
   .parallax {
     height: 430;
