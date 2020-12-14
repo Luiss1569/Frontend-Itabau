@@ -10,7 +10,6 @@ import r2 from '../../assets/img/slideshow/r2.jpg'
 import r3 from '../../assets/img/slideshow/r3.jpg'
 import r4 from '../../assets/img/slideshow/r4.jpg'
 import r5 from '../../assets/img/slideshow/r5.jpg'
-import r6 from '../../assets/img/slideshow/r6.jpg'
 import r7 from '../../assets/img/slideshow/r7.jpg'
 import r8 from '../../assets/img/slideshow/r8.jpg'
 import r9 from '../../assets/img/slideshow/r9.jpg'
@@ -30,7 +29,7 @@ import './style.css'
 
 function Gallery() {
 
-    const images = [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20]
+    const images = [r1,r2,r3,r4,r5,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20]
 
     return (
         <AliceCarousel
