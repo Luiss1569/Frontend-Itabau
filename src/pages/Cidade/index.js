@@ -207,8 +207,12 @@ function Cidade() {
         <Header />
         <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Conheça nossa cidade</h3></Carrossel>
         <div className={'margin'} />
-        <div className='container container-historia animated'>
-            <div className='content-itens left' data-about>
+        <div className='container animated'>
+            <div className='content-img  box-img right' data-about>
+                <img src={c1} alt='São Bento' />
+                <p>Fundação: 16 de agosto de 1832.</p>
+            </div>
+              <div className='content-itens left' data-about>
                 <h3>São Bento do Sapucaí-SP</h3>
                 <p>O Município da Estância Climática de São Bento do Sapucaí situa-se ao leste do Estado de São
                 Paulo, nos contrafortes da Serra da Mantiqueira, Região Vale do Paraíba, mais especificamente
@@ -217,10 +221,6 @@ function Cidade() {
                 urbana e 55,2% na zona rural. Seu clima é ameno e saudável e o solo fértil permite uma
                 agricultura diversificada que, ao lado da pecuária, forma a base econômica do Município que
                         também produz hortifrutigranjeiros.</p>
-            </div>
-            <div className='content-img  box-img right' data-about>
-                <img src={c1} alt='São Bento' />
-                <h3>Fundação: 16 de agosto de 1832.</h3>
             </div>
         </div>
 
@@ -237,20 +237,13 @@ function Cidade() {
             </div>
         </div>
 
-        <div className='container container-historia animated'>
-            <div className='content-itens left' style={{ marginBottom: 30 }} data-about>
-                <h3>Pedra do Baú</h3>
+        <div className='container container-reverse animated'>
+             <div className='content-img box-img right' data-about>
+                <img src={c2} alt='São Bento' style={{maxHeight: '400px'}}/>
+                <p>Monumento Natural Pedra do Baú - Foto: Cirilo</p>
             </div>
-
-            <div className='content-img box-img right' data-about>
-                <img src={c2} alt='São Bento' />
-                <h3>Monumento Natural Pedra do Baú</h3>
-            </div>
-        </div>
-
-        <div className='container container-historia animated'>
-            <div className='content-itens left' data-about>
-                <h4>A Saga do Baú</h4>
+            <div className='content-itens left' data-about style={{ marginRight: 20 }}>
+                 <h3>Pedra do Baú</h3>
                 <p>Conhecida e admirada por muitos viajantes desde tempos remotos, a Pedra do Baú sempre chamou a
                 atenção na paisagem por seu contorno único e beleza cênica. Atingindo 1950m de altitude em seu topo,
                 em plena Mantiqueira Paulista, a Pedra e seu entorno está envolta não apenas na cerração da manhã e dos dias
@@ -263,7 +256,11 @@ function Cidade() {
             </div>
         </div>
 
-        <div className='container container-historia animated'>
+        <div className='container animated'>
+            <div className='content-img box-img right' data-about>
+                <img src={c3} alt='São Bento' />
+                <p>Bloco Zé Pereira</p>
+            </div>
             <div className='content-itens left' data-about>
                 <h3>Família Zé Pereira</h3>
                 <p>No início do Século XX surge um boneco pelas ruas de São Bento do Sapucaí, seu nome é Zé
@@ -271,10 +268,6 @@ function Cidade() {
                 Para conhecer mais essa família super animada acesse:
                <a href=' https://www.saobentodosapucai.sp.gov.br/site/ze-pereira/'>Acessar aqui</a>
                 .Conheça o museu:<a href='https://www.saobentodosapucai.sp.gov.br/site/museu-do-ze-pereira/'>Museu</a> </p>
-            </div>
-            <div className='content-img box-img right' data-about>
-                <img src={c3} alt='São Bento' />
-                <h3>Bloco Zé Pereira</h3>
             </div>
         </div>
 
@@ -292,7 +285,7 @@ function Cidade() {
                             style={{height: '60vh'}}
                             alt="..." />
                     </a>
-                    <a href="https://instagram.com/arteben.sbs"><h3>@arteben.sbs</h3></a>
+                    <a href="https://instagram.com/arteben.sbs"><p>@arteben.sbs</p></a>
                 </div>
             </div>
              <div className='content-img   left'>
@@ -302,7 +295,7 @@ function Cidade() {
                                 src={c5}
                                 alt="..." />
                         </a>
-                        <a href="https://instagram.com/artenoquilombo"><h3>@artenoquilombo </h3></a>
+                        <a href="https://instagram.com/artenoquilombo"><p>@artenoquilombo </p></a>
                     </div>
                 </div>
         </div>

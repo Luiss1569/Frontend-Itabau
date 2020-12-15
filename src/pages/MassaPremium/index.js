@@ -6,7 +6,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
-import bg from '../../assets/img/lancamentos/bg.jpg'
+import bg from '../../assets/img/massa/bg.jpg'
 import logo from '../../assets/img/logo-itabau-massa.png'
 
 import p1 from '../../assets/img/massa/p1.jpg'
@@ -37,7 +37,7 @@ function Picoles() {
         <div className='container container-historia animated' >
             <div className='content-itens left' prime data-about>
             </div>
-            <div className='content-img  galery left' style={{ marginTop: 100 }} data-about>
+            <div className='content-img  galery-massa left' style={{ marginTop: 100 }} data-about>
                 <div className='box-img'>
                     <Link to='/picoles/organicos'>
                         <img

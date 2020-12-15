@@ -213,9 +213,13 @@ body {
   transition: 1s ease-in-out;
 }
 
-.margin, .carrossel {
+.margin {
   height: 430px;
   width: 100%;
+}
+
+.margin1{
+    margin-top: 0;
 }
 
 /*video*/
@@ -285,7 +289,7 @@ body {
 .container-social{
   padding-top: 100px;
   padding-bottom: 0;
-}
+} .carrossel
 
 
 .container-social .content-itens{
@@ -324,9 +328,14 @@ body {
   .margin {
     height: 430;
   }
-  .carrossel{
-       height: 430;
-  }
+
+  .container .content-img {
+  width: 37%;
+}
+
+.margin1{
+    margin-top: 5%;
+}
 
 }
 

@@ -45,7 +45,7 @@ export default function Components() {
                 rightLinks={
                     <List className={classesNav.list}>
                         <Link to='/home' className={classesNav.listItem} style={{ marginRight: 30 }} >
-                            <Button className={classesNav.listItem} >Inicial</Button>
+                            <Button className={classesNav.listItem} >Home</Button>
                         </Link>
 
                         <div className={classesNav.listItem} style={{ marginRight: 30 }}>
@@ -97,7 +97,7 @@ export default function Components() {
                             selected={location.pathname === '/'}
                         >
                             <Link to={'/home'} style={{ textDecoration: 'none', color: 'black', width: '200%', height: '200%' }}>
-                                <ListItemText primary="Inicial" />
+                                <ListItemText primary="Home" />
                             </Link>
                         </ListItem>
                         <Divider />
@@ -195,7 +195,7 @@ export default function Components() {
 
             />
             <div>
-                <Link to='/home'><img src={logo} alt='logo' style={{ position: 'fixed', zIndex: 1111, top: 3, left: '5%', width: 'clamp(65px, 1vw + 10px, 100px)' }} /></Link>
+                <Link to='/home'><img src={logo} alt='logo' style={{ position: 'fixed', zIndex: 1111, top: 3, left: '5%', width: 'clamp(65px, 1vh + 4vw, 250px)'}} /></Link>
             </div>
             <button className='floatButton' novisible='true' onClick={() => { window.scroll({ top: 0, left: 0, behavior: 'smooth' }) }}>
                 <div className={'iceAnimated'} >

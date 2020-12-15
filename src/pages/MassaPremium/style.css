@@ -22,19 +22,38 @@
     width: fit-content;
 }
 
-.container-massa .content-itens ul li {
-  font-family: "Philosopher", sans-serif;
-  color: #135749;
-  font-style: italic;
-  text-align: justify;
-   font-size: clamp(16px, 1vw + 5px, 25px);
-  line-height: 30px;
+.container-historia .galery-massa {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.container-massa .content-itens h4{
-  font-family:"Philosopher", sans-serif;
-  color: #135749;
-  margin-top: 35px;
-   font-size: clamp(16px, 1vw + 6px, 25px);
-  margin-right: 10px;
+.container-historia .galery-massa[data-about]{
+  width: 45%;
 }
+
+.container-historia .content-itens[data-about]{
+  width: 60%;
+}
+
+.container-historia .galery-massa .box-img{
+  width: 18%;
+}
+
+.container-historia .galery-massa .box-img img{
+    height: 100%;
+}
+
+/* margin on small screens */
+@media only screen and (max-width: 767px) {
+  .container-historia .galery-massa .box-img{
+  width: 45%;
+}
+}
+
+
+

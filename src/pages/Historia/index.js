@@ -59,8 +59,8 @@ function Historia() {
 
         <div className="container container-reverse-hist animated">
             <div className="content-img left " data-about="true">
-                <img src={f1} alt="proprietarios" />
-                <p>1º SORVETERIA ITABAÚ  - NO  CENTRO DA CIDADE DE SÃO BENTO </p>
+                <img src={f2} alt="proprietarios" />
+                <p>CHALÉ ITABAÚ</p>
             </div>
 
             <div className="content-itens right " data-about="true" style={{ marginRight: 10 }}>
@@ -76,10 +76,9 @@ function Historia() {
 
         <div className="container animated">
             <div className="content-img left " data-about="true">
-                <img src={f2} alt="proprietarios" />
-                <p>CHALÉ ITABAÚ</p>
+                <img src={f1} alt="proprietarios" />
+                <p>1º SORVETERIA ITABAÚ  - NO  CENTRO DA CIDADE DE SÃO BENTO </p>
             </div>
-
             <div className="content-itens right " data-about="true">
                 <p>
                     A empresa continua de cunho familiar e procura firmar uma

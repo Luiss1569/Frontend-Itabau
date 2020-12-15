@@ -6,7 +6,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
-import bg from '../../assets/img/lancamentos/bg.jpg'
+import bg from '../../assets/img/picoles/bg.jpg'
 
 import p1 from '../../assets/img/picoles/p1.jpg'
 import p2 from '../../assets/img/picoles/p2.jpg'

@@ -14,7 +14,7 @@ import './styles.css'
 const useStyles = makeStyles(styles);
 
 export default function Parallax(props) {
-  const { filter, className, children, images, style, small } = props;
+  const { filter, className, images, style, small } = props;
 
   let windowScrollTop;
   if (window.innerWidth >= 768) {
@@ -57,7 +57,7 @@ export default function Parallax(props) {
           transform: transform
         }}
       >
-        {children}
+        {/* {props.children} */}
       </div>
     </Slide>
   );

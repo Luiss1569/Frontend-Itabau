@@ -7,7 +7,7 @@ import PicolesTab from '../../../../components/PicolesTab'
 import Hidden from "@material-ui/core/Hidden";
 
 import logo from '../../../../assets/img/logo-itabau-picole.png'
-import bg from '../../../../assets/img/massa/bg.jpg'
+import bg from '../../../../assets/img/picoles/acucar/bg.jpg'
 
 import organicos from './data/organico.json'
 import naturais from './data/naturais.json'

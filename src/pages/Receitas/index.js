@@ -9,7 +9,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import bg from '../../assets/img/lancamentos/bg.jpg'
+import bg from '../../assets/img/receitas/bg.jpg'
 import r1 from '../../assets/img/receitas/r1.jpg'
 import r2 from '../../assets/img/receitas/r2.jpg'
 import r3 from '../../assets/img/receitas/r3.jpg'
@@ -19,7 +19,6 @@ import r6 from '../../assets/img/receitas/r6.jpg'
 import r8 from '../../assets/img/receitas/r8.jpg'
 import r9 from '../../assets/img/receitas/r9.jpg'
 import r10 from '../../assets/img/receitas/r10.jpg'
-import r11 from '../../assets/img/receitas/r5.jpg'
 
 import './style.css'
 
@@ -117,7 +116,7 @@ function Receitas() {
     {
         title: 'Pavê com panettone com sorvete',
         info: 'Ingredientes: 1 Panettone 1 Litro de sorvete de creme Itabaú 1 Barra de 130 g de chocolate meio amargo 1 Lata de creme de leite 150ml de calda de caramelo 150 g de amêndoas moídas 1 1/2 xícaras de vinho tinto Modo de preparo: Tire todo o papel em volta do panettone Com uma faca grande de serra, corte o panettone em rodelas de aproximadamente 1,5 cm um total aproximado de 6 rodelas. Reserve. Para o ganache: Pique o chocolate em pedaços pequenos em uma travessa funda de vidro por dois minutos no microondas em potência máxima, ou em banho maria até não ter mais pedaços inteiros, mexa bem para que fique com uma textura brilhante e liso. Acrescente a lata de creme de leite, sem o soro e mexa bem. Reserve. Para o caramelo: Dissolva 1 xícara de açucar em fogo médio até o ponto de caramelo, acrescente um pouco de água para ficar mais ralinho, após a fervura baixar acrescente 1/2 xícara de vinho para aromatizar (opcional) Montagem: Utilize uma vasinha de vidro, alta, de preferencia transparente para o prato ficar mais bonito. Coloque no fundo a rodela da parte inferior do panettone, regue com um pouco de vinho, acrescente uma boa camada de sorvete de creme Itabaú, espalhe bem. Espalhe o caramelo em fios, não precisa cobrir todo o sorvete, apenas para dar sabor. Espalhe parte das amêndoas. Coloque outra camada de panettone, pode ser que tenha que partir ao meio uma rodela para completar esta camada, se a travessa não for cilindrica. Espalhe novamente o sorvete, o caramelo e amêndoas. Faça outra camada com o panettone, e regue esta com vinho também. Distribua o sorvete, o caramelo e as amêndoas. Coloque a ultima camada com panettone, e cubra com o ganache do chocolote. Decore com amêndoas inteiras. Fonte: www.globo.com/maisvoce',
-        img: r11
+        img: null
     },
     ]
 

@@ -8,7 +8,7 @@ import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 import SnackBar from '../../components/SnackBar'
 
-import bg from '../../assets/img/matriz/bg.jpg'
+import bg from '../../assets/img/pesquisa/bg.jpg'
 
 import animationSend from '../../assets/animations/sendMensage.json'
 

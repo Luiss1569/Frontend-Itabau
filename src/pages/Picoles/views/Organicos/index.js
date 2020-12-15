@@ -6,7 +6,7 @@ import Carrossel from '../../../../components/Carrossel'
 import PicolesTab from '../../../../components/PicolesTab'
 import LogoCarrossel from "../../../../components/LogoPicoleCarrossel";
 
-import bg from '../../../../assets/img/massa/bg.jpg'
+import bg from '../../../../assets/img/picoles/organicos/bg.jpg'
 
 import organicos from './data/organicos.json'
 import vegano from './data/vegano.json'

@@ -6,7 +6,7 @@ import Carrossel from '../../../../components/Carrossel'
 import PicolesTab from '../../../../components/PicolesTab'
 import LogoCarrossel from "../../../../components/LogoPicoleCarrossel";
 
-import bg from '../../../../assets/img/massa/bg.jpg'
+import bg from '../../../../assets/img/picoles/naturais/bg.jpg'
 
 import sem_gluten from './data/sem_gluten.json'
 import gluten from './data/gluten.json'
