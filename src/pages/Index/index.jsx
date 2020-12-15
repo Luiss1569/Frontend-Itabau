@@ -21,12 +21,12 @@ import i3 from "../../assets/img/index/i3.jpg";
 import i4 from "../../assets/img/index/i5.jpg";
 import familia from "../../assets/img/index/familia.png";
 
-import c1 from "../../assets/img/carrossel/01.png";
-import c2 from "../../assets/img/carrossel/02.png";
-import c3 from "../../assets/img/carrossel/03.png";
-import c4 from "../../assets/img/carrossel/04.png";
-import c5 from "../../assets/img/carrossel/05.png";
-import c6 from "../../assets/img/carrossel/06.png";
+import c1 from "../../assets/img/carrossel/01.jpg";
+import c2 from "../../assets/img/carrossel/02.jpg";
+import c3 from "../../assets/img/carrossel/03.jpg";
+import c4 from "../../assets/img/carrossel/04.jpg";
+import c5 from "../../assets/img/carrossel/05.jpg";
+import c6 from "../../assets/img/carrossel/06.jpg";
 
 import "./styles.css";
 import { Link } from "react-router-dom";
