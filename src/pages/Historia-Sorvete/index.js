@@ -23,7 +23,7 @@ function HistoriaSorvete() {
     return (<>
 
         <Header />
-        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>Historia do Sorvete</h3></Carrossel>
+        <Carrossel style={{ backgroundSize: 'cover ' }} images={[bg]}><h3>História do Sorvete</h3></Carrossel>
         <div className={'margin'} />
         <div className='container container-historia animated'>
             <div className='content-itens left' prime data-about>
