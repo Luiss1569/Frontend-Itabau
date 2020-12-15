@@ -262,6 +262,7 @@ body {
 .container-familia{
   background-image: url('../../assets//img/index/fundo-familia.jpg');
   margin-top: 0;
+  background-size: cover;
   padding-top: 90px;
   padding-bottom: 50px;
 }

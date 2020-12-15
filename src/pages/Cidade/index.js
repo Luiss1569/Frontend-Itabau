@@ -240,7 +240,7 @@ function Cidade() {
         <div className='container container-reverse animated'>
              <div className='content-img box-img right' data-about>
                 <img src={c2} alt='São Bento' style={{maxHeight: '400px'}}/>
-                <p>Monumento Natural Pedra do Baú - Foto: Cirilo</p>
+                <p>Monumento Natural Pedra do Baú</p>
             </div>
             <div className='content-itens left' data-about style={{ marginRight: 20 }}>
                  <h3>Pedra do Baú</h3>
@@ -253,6 +253,7 @@ function Cidade() {
                 “aumentados”. Fonte de inspiração ainda de sonetos, como “A mágoa do granito” (Affonso José de Carvalho,
                       1918), “Pedra do Bahú” (Plínio Salgado, 1915) e “Pedra do Baú” (Bento Cortez, 1962).</p>
                 <p>E aí ficou interessado nessa história fantástica dos três irmão?! Clique no link a seguir e viaje no tempo: <a href='https://www.saobentodosapucai.sp.gov.br/site/historia-pedra-do-bau/' target='_blank' rel="noreferrer">Clique aqui</a></p>
+                <p>Foto feita por : <a href='https://instagram.com/drone.cyrillo' target='_blank' rel="noreferrer">@drone.cyrillo</a></p>
             </div>
         </div>
 
@@ -273,11 +274,12 @@ function Cidade() {
 
         <div className='container container-historia animated' style={{ marginTop: 0 }}>
             <div className='content-itens right' data-about>
-                <h3>Conheça os Artesanatos da Cidade (ARTEBEN – ARTE NO QUILOMBO)</h3>
+                <h3>Conheça os Artesanatos da Cidade</h3>
             </div></div>
 
         <div className='container animated' style={{ marginTop: 0 }}>
             <div className='content-img   left' style={{ marginRight: 20}} >
+                <h3>Arteben</h3>
                 <div className='box-img'>
                     <a href='https://www.facebook.com/arteben.sbs' target='_blank' rel="noreferrer">
                         <img
@@ -289,6 +291,7 @@ function Cidade() {
                 </div>
             </div>
              <div className='content-img   left'>
+                 <h3>Arte no Quilombo</h3>
                     <div className='box-img'>
                         <a href='https://www.facebook.com/artenoquilombo/' target='_blank' rel="noreferrer">
                             <img
