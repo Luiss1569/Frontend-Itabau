@@ -61,7 +61,7 @@ function HistoriaSorvete() {
 
         <div className='container container-historia animated'>
             <div className='content-itens left' data-about>
-                <h3>Historia do Sorvete no Brasil</h3>
+                <h3>História do Sorvete no Brasil</h3>
                 <p>Vem do Rio de Janeiro a notícia do primeiro sorvete vendido no Brasil. Um navio americano
                 chamado Madagascar aportou na cidade em agosto de 1834 com 217 toneladas de gelo.
                 Dois comerciantes cariocas compraram a carga e em 23 de agosto começaram a vender sorvetes de
