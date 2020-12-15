@@ -1,3 +1,11 @@
 .content-img.box-img p, .content-img .box-img p{
     font-size: clamp(16px, 1vw + 5px, 25px);
 }
+
+.container .content-img  h3{
+    font-size: clamp(30px, 1vw - 10px, 60px);
+    text-transform: capitalize;
+  font-family: "Philosopher", sans-serif;
+  color: #135749;
+  text-align: center;
+}
