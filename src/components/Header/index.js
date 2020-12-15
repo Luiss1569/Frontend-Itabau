@@ -33,8 +33,8 @@ export default function Components() {
     const itabau = ['Nossa História', 'História do Sorvete', 'Galeria de Fotos', 'Pesquisa de Opinião']
     const optionItabau = ['historia', 'historia-sorvete', 'galeria', 'opiniao']
 
-    const sorvetes = ['Lançamentos', 'Picolés', 'Massa Premium']
-    const optionSorvetes = ['lancamentos', 'picoles', 'massa']
+    const sorvetes = ['Picolés', 'Massa Premium']
+    const optionSorvetes = ['picoles', 'massa']
 
     const saibaMais = ['Receitas', 'Certificação Orgânica', 'Conheça as Frutas', 'Vídeos', 'Nossos Ingredientes']
     const optionSaibaMais = ['receitas', 'selos', 'frutas', 'videos', 'ingredientes']
