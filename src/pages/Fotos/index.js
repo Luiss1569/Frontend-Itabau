@@ -22,7 +22,6 @@ import f12 from '../../assets/img/fotos/f12.jpg'
 import f13 from '../../assets/img/fotos/f13.jpg'
 import f14 from '../../assets/img/fotos/f14.jpg'
 import f15 from '../../assets/img/fotos/f15.jpg'
-import f16 from '../../assets/img/fotos/f16.jpg'
 import f18 from '../../assets/img/fotos/f18.jpg'
 import f19 from '../../assets/img/fotos/f19.jpg'
 import f20 from '../../assets/img/fotos/f20.jpg'
@@ -160,10 +159,6 @@ function Fotos() {
         {
             src: f15,
             thumbnail: f15,
-        },
-        {
-            src: f16,
-            thumbnail: f16,
         },
         {
             src: f18,
