@@ -83,9 +83,9 @@ function MassaPremium() {
                     height={75}
                     width={75} />
                 </div>
-                 <List title="Sem Açucar" data={acucar}/>
+                 <List title="Sem Açúcar" data={acucar}/>
                  <List title="Veganos" data={veganos}/>
-                 <List title="Açai e Cupuaçu" data={["Açai", "Cupuaçu"]}/>
+                 <List title="Açaí e Cupuaçu" data={["Açaí", "Cupuaçu"]}/>
             </div>
         </div>
 
