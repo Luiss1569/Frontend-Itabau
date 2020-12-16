@@ -43,7 +43,7 @@ function MassaPremium() {
         </div>
         <div className='container container-massa animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
-                <List title="Sabores" data={["Açaí", "Cupuaçu", "Açaí(Zero Açúcar)"]}/>
+                <List title="Sabores" data={["Açaí", "Cupuaçu", "Açaí(Zero Açúcar)"]} color="rgba(151,105,149, 0.1)" colorTitle="rgb(82,5,79)"/>
             </div>
         </div>
 

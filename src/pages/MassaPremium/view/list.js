@@ -1,11 +1,16 @@
 import React from 'react';
 
-import { List, Typography, Divider } from 'antd';
+import { List, Divider } from 'antd';
 
 function MassaPremium(props) {
     return (<>
-    <Divider orientation="left">{props.title}</Divider>
+    <Divider orientation="left"><h4 style={{color: props.colorTitle}}>{props.title}</h4></Divider>
     <List
+    style={{
+        backgroundColor:props.color
+    }}
+    itemLayout='vertical'
+    split={0}
     grid={{ gutter: 20, xs: 1,
       sm: 2,
       md: 2,
@@ -13,10 +18,11 @@ function MassaPremium(props) {
       xl: 3,
       xxl: 3 }}
       bordered
+      footer={props.footer}
       dataSource={props.data}
       renderItem={item => (
         <List.Item>
-          <Typography.Text mark></Typography.Text> {item}
+            <h5 style={{color: props.colorTitle}}>{item}</h5>
         </List.Item>
       )}
     />

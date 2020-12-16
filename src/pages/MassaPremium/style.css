@@ -55,14 +55,12 @@
 }
 }
 
-.ant-list-item{
+.ant-list-item h5{
     font-size: clamp(16px, 1vw + 3px, 25px);
     font-family: "Philosopher", sans-serif;
-  color: #135749;
 }
 
-.ant-divider-inner-text{
+.ant-divider-inner-text h4{
     font-size: clamp(19px, 1vw + 10px, 32px);
     font-family: "Philosopher", sans-serif;
-  color: #135749;
 }

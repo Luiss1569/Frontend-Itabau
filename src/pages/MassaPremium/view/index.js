@@ -56,8 +56,8 @@ function MassaPremium() {
         </div>
         <div className='container container-massa animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
-               <List title="Tradicionais" data={tradicionais}/>
-               <div style={{display: 'flex', flexDirection: 'row', width: 'fit-content', margin: 'auto'}}>
+               <List title="Tradicionais" data={tradicionais} color="rgba(199,210,162, 0.1)" colorTitle="rgb(162,180,99)" footer={
+                    <div style={{display: 'flex', flexDirection: 'row', width: 'fit-content', height: 'fit-content', margin: 'auto'}}>
                     <Lottie options={{
                     loop: true,
                     autoplay: true,
@@ -68,9 +68,9 @@ function MassaPremium() {
                 }}
                     height={75}
                     width={75} />
-                    <div className="ant-list-item" style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>
-                        Panettone e Chocotone 
-                        <h6 style={{fontSize: 'clamp(12px, 1vw -3px, 21px)', color: 'tomato', marginTop: -2}}>Edição limitada em Novembro e Dezembro</h6>
+                    <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+                        <h5 style={{color: 'rgb(162,180,99)', margin: 0 , fontSize: 'clamp(16px, 1vw + 3px, 25px)' }}>Panettone e Chocotone</h5>
+                        <h6 style={{fontSize: 'clamp(14px, 1vw - 2px, 21px)', color: 'tomato', marginTop: -2}}>Edição limitada em Novembro e Dezembro</h6>
                     </div>
                      <Lottie options={{
                     loop: true,
@@ -83,9 +83,12 @@ function MassaPremium() {
                     height={75}
                     width={75} />
                 </div>
-                 <List title="Sem Açúcar" data={acucar}/>
-                 <List title="Veganos" data={veganos}/>
-                 <List title="Açaí e Cupuaçu" data={["Açaí", "Cupuaçu", "Açai(Zero Açúcar)"]}/>
+              
+
+               }/>
+                 <List title="Sem Açúcar" data={acucar}  color="rgba(216,154,136, 0.1)" colorTitle="rgb(57,86,190)"/>
+                 <List title="Veganos" data={veganos}  color="rgba(236,183,103, 0.1)" colorTitle="rgb(223,183,103)" />
+                 <List title="Açaí e Cupuaçu" data={["Açaí", "Cupuaçu", "Açai(Zero Açúcar)"]}  color="rgba(151,105,149, 0.1)" colorTitle="rgb(82,5,79)"/>
             </div>
         </div>
 
