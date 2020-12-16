@@ -57,9 +57,6 @@ function MassaPremium() {
                  <List title="Sem Açucar" data={acucar}/>
                  <List title="Veganos" data={veganos}/>
                  <List title="Açai e Cupuaçu" data={["Açai", "Cupuaçu"]}/>
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <h4>Validade:</h4><p>1 anos após a data de fabricação.</p>
-                </div>
             </div>
         </div>
 
