@@ -4,9 +4,8 @@ import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 
-import bg from '../../../assets/img/massa/bg3.jpg'
+import bg from '../../../assets/img/massa/bg.jpg'
 import logo from '../../../assets/img/logo-itabau-massa.png'
-
 
 import List from './list'
 
@@ -21,9 +20,16 @@ function MassaPremium() {
         }
       },[])
 
+    const tradicionais = ["Abacaxi com Hortelã", "Abacaxi Suiço(ao Leite)", "Brigadeiro", "Cappucino", "Chocolate", "Chocolate Alemão(com amendoim)", "Chocolate Branco", 
+    "Chocolate Branco c/ Tangerina", "Chocolate Suiço", "Coco", "Coco com Abobora", "Coco Queimado", "Coco Queimado", "Coco Mestiço", "Creme", "Creme com Ameixa", 
+    "Cupuaçu", "Doce de Leite", "Flocos", "Frutas Vermelhas", "Iogurte Natural", "Iogurte com Amora Preta", "Iogurte com Damasco", "Leite Condensado", 
+    "Leite Cond. com Amarula(com teor alcoólico)", "Leite Cond. com Morango", "Limão Suíço com Mel", " Menta com Flocos de Chocolate", "Milho Verde", "Morango", 
+    "Mousse de Limão", "Maracujá Trufado", "Negresco", "Ninho Trufado", "Ovomaltine", "Passas ao Rum", "Pé de Moleque", "Pistache (com castanha de cajú)", "Queijo", 
+    "Romeu & Julieta", "Sensação", "Uva ao Creme", "Yakult" ]
 
     const veganos = ["Açaí", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão", "Tangerina", "Uva"]
 
+    const acucar = ["Açaí vegano", "Baunilha com creme de avelã e cacau", "Chocolate", "Coco", "Coco Queimado", "Leite Condensado com Amora", "Maracujá Vegano", "Morango"]
 
     return (<>
 
@@ -47,7 +53,13 @@ function MassaPremium() {
         </div>
         <div className='container container-massa animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
-               <List title="Sabores" data={veganos}/>
+               <List title="Tradicionais" data={tradicionais}/>
+                 <List title="Sem Açucar" data={acucar}/>
+                 <List title="Veganos" data={veganos}/>
+                 <List title="Açai e Cupuaçu" data={["Açai", "Cupuaçu"]}/>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <h4>Validade:</h4><p>1 anos após a data de fabricação.</p>
+                </div>
             </div>
         </div>
 

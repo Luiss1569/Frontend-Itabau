@@ -4,7 +4,7 @@ import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 
-import bg from '../../../assets/img/massa/bg3.jpg'
+import bg from '../../../assets/img/massa/bg4.jpg'
 import logo from '../../../assets/img/logo-itabau-massa.png'
 
 
@@ -21,9 +21,7 @@ function MassaPremium() {
         }
       },[])
 
-
-    const veganos = ["Açaí", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão", "Tangerina", "Uva"]
-
+    const acucar = ["Açaí vegano", "Baunilha com creme de avelã e cacau", "Chocolate", "Coco", "Coco Queimado", "Leite Condensado com Amora", "Maracujá Vegano", "Morango"]
 
     return (<>
 
@@ -47,7 +45,7 @@ function MassaPremium() {
         </div>
         <div className='container container-massa animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
-               <List title="Sabores" data={veganos}/>
+               <List title="Sabores" data={acucar}/>
             </div>
         </div>
 

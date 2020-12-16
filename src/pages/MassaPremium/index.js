@@ -39,7 +39,7 @@ function Picoles() {
             </div>
             <div className='content-img  galery-massa left' style={{ marginTop: 100 }} data-about>
                 <div className='box-img'>
-                    <Link to='/picoles/organicos'>
+                    <Link to='/massa/all'>
                         <img
                             className='buttonImg'
                             src={p1}
@@ -47,7 +47,7 @@ function Picoles() {
                     </Link>
                 </div>
                 <div className='box-img'>
-                    <Link to='/picoles/acucar'>
+                    <Link to='/massa/tradicionais'>
                         <img
                             className='buttonImg'
                             src={p2}
@@ -55,7 +55,7 @@ function Picoles() {
                     </Link>
                 </div>
                 <div className='box-img'>
-                    <Link to='/picoles/naturais'>
+                    <Link to='/massa/vegano'>
                         <img
                             className='buttonImg'
                             src={p3}
@@ -63,7 +63,7 @@ function Picoles() {
                     </Link>
                 </div>
                 <div className='box-img'>
-                    <Link to='/picoles/recheados'>
+                    <Link to='/massa/acucar'>
                         <img
                             className='buttonImg'
                             src={p4}
@@ -71,7 +71,7 @@ function Picoles() {
                     </Link>
                 </div>
                  <div className='box-img'>
-                    <Link to='/picoles/recheados'>
+                    <Link to='/massa/acai'>
                         <img
                             className='buttonImg'
                             src={p5}

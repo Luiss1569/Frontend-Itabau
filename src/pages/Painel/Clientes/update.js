@@ -140,7 +140,7 @@ function UpdateCliente({ match, history }) {
                         <form className='' autoComplete="off" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={nome} onChange={e => { setNome(e.target.value) }} label="Nome" required variant="outlined" fullWidth />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={cidade} label="Cidade" onChange={e => { setCidade(e.target.value) }} required fullWidth variant="outlined" />
-                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} required type='tel' fullWidth variant="outlined" />
+                            <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={telefone} label="Telefone ( 00-12345-1234)" onChange={e => { setTelefone(e.target.value) }} type='tel' fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={rua} label="Rua" onChange={e => { setRua(e.target.value) }} required fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={bairro} label="Bairro" onChange={e => { setBairro(e.target.value) }} required fullWidth variant="outlined" />
                             <TextField id="outlined-basic" style={{ marginBottom: 20 }} value={lat} label="Latitude" onChange={e => { setLat(e.target.value) }} required type='number' fullWidth variant="outlined" />

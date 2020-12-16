@@ -21,9 +21,12 @@ function MassaPremium() {
         }
       },[])
 
-
-    const veganos = ["Açaí", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão", "Tangerina", "Uva"]
-
+    const tradicionais = ["Abacaxi com Hortelã", "Abacaxi Suiço(ao Leite)", "Brigadeiro", "Cappucino", "Chocolate", "Chocolate Alemão(com amendoim)", "Chocolate Branco", 
+    "Chocolate Branco c/ Tangerina", "Chocolate Suiço", "Coco", "Coco com Abobora", "Coco Queimado", "Coco Queimado", "Coco Mestiço", "Creme", "Creme com Ameixa", 
+    "Cupuaçu", "Doce de Leite", "Flocos", "Frutas Vermelhas", "Iogurte Natural", "Iogurte com Amora Preta", "Iogurte com Damasco", "Leite Condensado", 
+    "Leite Cond. com Amarula(com teor alcoólico)", "Leite Cond. com Morango", "Limão Suíço com Mel", " Menta com Flocos de Chocolate", "Milho Verde", "Morango", 
+    "Mousse de Limão", "Maracujá Trufado", "Negresco", "Ninho Trufado", "Ovomaltine", "Passas ao Rum", "Pé de Moleque", "Pistache (com castanha de cajú)", "Queijo", 
+    "Romeu & Julieta", "Sensação", "Uva ao Creme", "Yakult" ]
 
     return (<>
 
@@ -47,7 +50,7 @@ function MassaPremium() {
         </div>
         <div className='container container-massa animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
-               <List title="Sabores" data={veganos}/>
+                <List title="Sabores" data={tradicionais}/>
             </div>
         </div>
 
