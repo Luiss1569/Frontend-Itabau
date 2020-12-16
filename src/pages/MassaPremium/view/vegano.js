@@ -22,7 +22,7 @@ function MassaPremium() {
       },[])
 
 
-    const veganos = ["Açaí", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão", "Tangerina", "Uva", "Maracujá(Zero Açúcar)", "Açaí(Zero Açúcar)"]
+    const veganos = ["Açaí", "Açaí(Zero Açúcar)", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão",  "Maracujá(Zero Açúcar)", "Tangerina", "Uva"]
 
 
     return (<>

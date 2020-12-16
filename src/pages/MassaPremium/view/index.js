@@ -30,7 +30,7 @@ function MassaPremium() {
     "Mousse de Limão", "Maracujá Trufado", "Negresco", "Ninho Trufado", "Ovomaltine", "Passas ao Rum", "Pé de Moleque", "Pistache (com castanha de cajú)", "Queijo", 
     "Romeu & Julieta", "Sensação", "Uva ao Creme", "Yakult" ]
 
-    const veganos = ["Açaí", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão", "Tangerina", "Uva", "Maracujá(Zero Açúcar)", "Açaí(Zero Açúcar)"]
+    const veganos = ["Açaí","Açaí(Zero Açúcar)", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão",  "Maracujá(Zero Açúcar)", "Tangerina", "Uva"]
 
     const acucar = ["Açaí vegano", "Baunilha com creme de avelã e cacau", "Chocolate", "Coco", "Coco Queimado", "Leite Condensado com Amora", "Maracujá Vegano", "Morango"]
 
@@ -88,7 +88,7 @@ function MassaPremium() {
                }/>
                  <List title="Sem Açúcar" data={acucar}  color="rgba(216,154,136, 0.1)" colorTitle="rgb(57,86,190)"/>
                  <List title="Veganos" data={veganos}  color="rgba(236,183,103, 0.1)" colorTitle="rgb(223,183,103)" />
-                 <List title="Açaí e Cupuaçu" data={["Açaí", "Cupuaçu", "Açai(Zero Açúcar)"]}  color="rgba(151,105,149, 0.1)" colorTitle="rgb(82,5,79)"/>
+                 <List title="Açaí e Cupuaçu" data={["Açaí", "Açai(Zero Açúcar)", "Cupuaçu"]}  color="rgba(151,105,149, 0.1)" colorTitle="rgb(82,5,79)"/>
             </div>
         </div>
 
