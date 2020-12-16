@@ -3,7 +3,6 @@ import React from 'react';
 import { List, Typography, Divider } from 'antd';
 
 function MassaPremium(props) {
-
     return (<>
     <Divider orientation="left">{props.title}</Divider>
     <List

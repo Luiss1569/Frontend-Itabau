@@ -30,7 +30,7 @@ function MassaPremium() {
     "Mousse de Limão", "Maracujá Trufado", "Negresco", "Ninho Trufado", "Ovomaltine", "Passas ao Rum", "Pé de Moleque", "Pistache (com castanha de cajú)", "Queijo", 
     "Romeu & Julieta", "Sensação", "Uva ao Creme", "Yakult" ]
 
-    const veganos = ["Açaí", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão", "Tangerina", "Uva"]
+    const veganos = ["Açaí", "Amora", "Chocolate 70% Cacau", "Coco", "Framboesa", "Limão", "Tangerina", "Uva", "Maracujá(Zero Açúcar)", "Açaí(Zero Açúcar)"]
 
     const acucar = ["Açaí vegano", "Baunilha com creme de avelã e cacau", "Chocolate", "Coco", "Coco Queimado", "Leite Condensado com Amora", "Maracujá Vegano", "Morango"]
 
@@ -85,7 +85,7 @@ function MassaPremium() {
                 </div>
                  <List title="Sem Açúcar" data={acucar}/>
                  <List title="Veganos" data={veganos}/>
-                 <List title="Açaí e Cupuaçu" data={["Açaí", "Cupuaçu"]}/>
+                 <List title="Açaí e Cupuaçu" data={["Açaí", "Cupuaçu", "Açai(Zero Açúcar)"]}/>
             </div>
         </div>
 
