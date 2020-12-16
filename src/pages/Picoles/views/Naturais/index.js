@@ -67,7 +67,7 @@ function Naturais() {
 
         <div className='container container-historia container-picoles animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
-                <h4>Sem Açúcar - Veganos, Sem Glúten e Com Lactose</h4>
+                <h4>Sem Açúcar - Veganos, Sem Glúten e Sem Lactose</h4>
             </div>
         </div>
         <PicolesTab  picoles={sem_acucar}/>

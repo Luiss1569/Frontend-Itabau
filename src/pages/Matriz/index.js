@@ -221,7 +221,10 @@ function Matriz() {
                 </p>
                 <label>Estrada Benedito Gomes de Souza, KM 4,6 Bairro: Paiol Grande</label><br />
                 <label>CEP: 12490-000 São Bento do Sapucaí SP</label><br />
-                <label>Caixa Postal 19</label>
+                <label>Caixa Postal 19</label><br /><br/>
+                <label>Segunda a Quinta das 6h30 as 11h e 13h as 16h</label><br />
+                <label>Sexta Feira 6h30 as 11h e 13h as 15h</label><br />
+                <label>Final de semana e Feriados estamos fechados</label>
                 <p>
                     <a href="mailto:contato@itabau.com.br"
 

@@ -185,11 +185,10 @@ export default function Components() {
                         <div style={{ width: '100%', height: 5 }} />
                     </List>
                 }
-
                 fixed
-                color="transparent"
+                color="success"
                 changeColorOnScroll={{
-                    height: 330,
+                    height: 300,
                     color: "black"
                 }}
 
