@@ -93,7 +93,7 @@ export default function Index({history}) {
             <div className='content-itens left' style={{paddingBottom:30}} data-about>
                 <h3><Link to='/painel/home' ><ArrowBackIcon /></Link>Clientes <Link style={{ position: 'absolute', right: 30 }} to='/painel/cliente/create'><AddCircleOutlineIcon style={{ color: 'green', fontSize: 40 }} /></Link></h3>
             </div>
-            <div style={{ height: 400, width: '100%' }}>
+            <div style={{ width: '100%' }}>
                 <DataTable data={mensagens} handleDelete={handleDelete}/>
             </div>      
              </div>
