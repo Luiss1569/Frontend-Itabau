@@ -7,6 +7,8 @@ import Carrossel from '../../../components/Carrossel'
 import bg from '../../../assets/img/massa/bg3.jpg'
 import logo from '../../../assets/img/logo-itabau-massa.png'
 
+import Lottie from 'react-lottie';
+import animationNatal from '../../../assets/animations/natal.json'
 
 import List from './list'
 
@@ -51,6 +53,32 @@ function MassaPremium() {
         <div className='container container-massa animated'>
             <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
                 <List title="Sabores" data={tradicionais}/>
+                <div style={{display: 'flex', flexDirection: 'row', width: 'fit-content', margin: 'auto'}}>
+                    <Lottie options={{
+                    loop: true,
+                    autoplay: true,
+                    animationData: animationNatal,
+                    rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid slice'
+                    }
+                }}
+                    height={75}
+                    width={75} />
+                    <div className="ant-list-item" style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+                        Panettone e Chocotone 
+                        <h6 style={{fontSize: 'clamp(12px, 1vw -3px, 21px)', color: 'tomato', marginTop: -2}}>Edição limitada em Novembro e Dezembro</h6>
+                    </div>
+                     <Lottie options={{
+                    loop: true,
+                    autoplay: true,
+                    animationData: animationNatal,
+                    rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid slice'
+                    }
+                }}
+                    height={75}
+                    width={75} />
+                </div>
             </div>
         </div>
 
