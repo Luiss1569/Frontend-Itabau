@@ -188,7 +188,7 @@ export default function Components() {
                 fixed
                 color="success"
                 changeColorOnScroll={{
-                    height: 300,
+                    height: 380,
                     color: "black"
                 }}
 

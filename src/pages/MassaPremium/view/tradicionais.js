@@ -4,7 +4,7 @@ import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 
-import bg from '../../../assets/img/massa/bg3.jpg'
+import bg from '../../../assets/img/massa/bg2.jpg'
 import logo from '../../../assets/img/logo-itabau-massa.png'
 
 import Lottie from 'react-lottie';

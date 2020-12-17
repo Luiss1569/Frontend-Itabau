@@ -86,7 +86,7 @@ function MassaPremium() {
               
 
                }/>
-                 <List title="Sem Açúcar" data={acucar}  color="rgba(216,154,136, 0.1)" colorTitle="rgb(57,86,190)"/>
+                 <List title="Sem Açúcar" data={acucar}  color="rgba(216,154,136, 0.1)" colorTitle="rgb(190,86,57)"/>
                  <List title="Veganos" data={veganos}  color="rgba(236,183,103, 0.1)" colorTitle="rgb(223,183,103)" />
                  <List title="Açaí e Cupuaçu" data={["Açaí", "Açai(Zero Açúcar)", "Cupuaçu"]}  color="rgba(151,105,149, 0.1)" colorTitle="rgb(82,5,79)"/>
             </div>
