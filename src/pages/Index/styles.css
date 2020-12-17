@@ -307,19 +307,12 @@ body {
 .container-social{
   padding-top: 100px;
   padding-bottom: 0;
-} .carrossel
+} 
 
-
-.container-social .content-itens[data-about]{
-  width: 50%;
-  transition: 1s;
-}
 
 .container-social .content-itens{
-    width: 90%;
-    max-width: 1000px;
-    transition: 1s;
-}   
+  width: 67%;
+}
 
 .container-social .content-itens p, .container-social .content-itens h3{
   text-align: center;
