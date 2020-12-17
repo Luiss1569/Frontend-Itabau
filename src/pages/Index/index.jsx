@@ -333,7 +333,7 @@ function Index() {
       </div>
 
       <div className="container container-social animated">
-        <div className="content-itens left" data-about="true">
+        <div className="content-itens left" data-about="true" style={{width: '90%', maxWidth: 1000}}>
           <h3>Junte-se à família Itabaú</h3>
           <p>
             Curta e acompanhe a Itabaú nas principais redes sociais, mande seus
