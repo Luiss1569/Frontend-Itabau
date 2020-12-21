@@ -22,7 +22,7 @@ function Footer() {
                 <Link to='/matriz' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>NOSSA CIDADE</Link>
                 <Link to='/painel' style={{ textDecoration: 'none', color: '#f5f5f5', fontSize: 12 }}>PAINEL</Link>
             </div>
-            <span>Copyright &copy; {1900 + new Date().getYear()} , todos os direitos reservados Itabaú - Site Desenvolvido por <a href='https://luisricardo.me' target='_blank' rel="noreferrer">Luis Ricardo</a></span>
+            <span>Copyright &copy; {1900 + new Date().getYear()} , todos os direitos reservados Itabaú - Site Desenvolvido por <a href='https://luiss1569.github.io/Portifolio' target='_blank' rel="noreferrer">Luis Ricardo</a></span>
         </div>
     </>;
 }
