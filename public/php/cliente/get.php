@@ -11,7 +11,7 @@
         //http://localhost/php/cliente/get.php?lat=-22.6880019&long=-45.7321654
         $query = "SELECT *, (6371 * acos( cos( radians($lat) ) * cos( radians( LATITUDE ) ) * cos( radians( LONGITUDE ) - 
         radians($long) ) + sin( radians($lat) ) * sin( radians( LATITUDE ) ) ) ) AS distancia FROM clientes 
-        HAVING distancia < 50 ORDER BY distancia ASC LIMIT $limit";   
+        HAVING distancia < 30 ORDER BY distancia ASC LIMIT $limit";   
 		 
 		$result = mysqli_query($link, $query);
         

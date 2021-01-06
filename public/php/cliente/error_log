@@ -1,0 +1,4 @@
+[08-Dec-2020 14:25:02 America/Fortaleza] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home4/itabauco/public_html/php/conexao.php on line 8
+[08-Dec-2020 14:25:13 America/Fortaleza] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home4/itabauco/public_html/php/conexao.php on line 8
+[08-Dec-2020 14:26:00 America/Fortaleza] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home4/itabauco/public_html/php/conexao.php on line 8
+[08-Dec-2020 14:26:32 America/Fortaleza] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home4/itabauco/public_html/php/conexao.php on line 8

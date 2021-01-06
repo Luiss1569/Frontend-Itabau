@@ -1,9 +1,9 @@
 <?php
 
 $HOST = "localhost";
-$USER = "root";
-$PASSWORD = "";
-$BD = "itabau";
+$USER = "itabauco_web";
+$PASSWORD = "TuOp+nd^Wpv%";
+$BD = "itabauco_web";
 
 $link = mysqli_connect($HOST, $USER, $PASSWORD, $BD);
 
