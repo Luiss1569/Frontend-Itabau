@@ -36,12 +36,12 @@ function Organicos() {
                 <p>Produto orgânico é um alimento sadio, limpo, cultivado sem agrotóxicos e sem fertilizantes
                 químicos. Eles provêm de sistemas agrícolas baseados em processos naturais, que não agridem
                 a natureza e mantêm a vida do solo intacta. Quer saber mais acesse nossa fonte a seguir
-                    <a href=' http://somostodosum.ig.com.br/artigos/corpo-e-mente/o-que-sao-produtos-organicos-1848.html.'
+                    <a href='https://www.organicsnet.com.br/certificacao/manual-certificacao/'
                         rel="noreferrer" target='_blank' style={{ marginLeft: 5 }}>Acessar site</a>
                 </p>
                 <p>Nós somos auditados pela empresa IBD, onde o mesmo no concede o selo SISORG que é obrigatorio
                 em todos os produtos orgânicos. Saiba mais sobre os selos,
-                    <a style={{ marginLeft: 5 }} href=' http://somostodosum.ig.com.br/artigos/corpo-e-mente/o-que-sao-produtos-organicos-1848.html.' rel="noreferrer" target='_blank'>Aqui</a></p>
+                    <a style={{ marginLeft: 5 }} href='https://www.organicsnet.com.br/certificacao/manual-certificacao/' rel="noreferrer" target='_blank'>Aqui</a></p>
             </div>
         </div>
         <div className='container container-historia container-picoles animated'>
