@@ -55,7 +55,7 @@ function Lançamento() {
         async function getLocations() {
             if (lat & long) {
                 const response = await fetch(
-                    `${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=10`,
+                    `${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=40`,
                     {
                         method: "get",
                     }
@@ -94,7 +94,7 @@ function Lançamento() {
             const long = data.results[0].geometry.location.lng
             console.log(lat, long);
             if (lat & long) {
-                const response = await fetch(`${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=15`, {
+                const response = await fetch(`${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=50`, {
                     method: 'get',
                 }).then(function (response) {
                     return response.json();
