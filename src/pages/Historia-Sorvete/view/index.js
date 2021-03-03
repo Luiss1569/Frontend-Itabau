@@ -3,16 +3,16 @@ import React from 'react';
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
-
-import bg from '../../../assets/img/curiosidades/bg.jpg'
-import c1 from '../../../assets/img/historia_sorvete/c1.jpg'
-import c2 from '../../../assets/img/historia_sorvete/c2.png'
-import c3 from '../../../assets/img/historia_sorvete/c3.jpg'
-import c4 from '../../../assets/img/historia_sorvete/c4.jpg'
-import c5 from '../../../assets/img/historia_sorvete/c5.jpg'
-import c6 from '../../../assets/img/historia_sorvete/c6.jpg'
-
 import '../style.css'
+
+const bg = `${window.location.origin}/img/curiosidades/bg.jpg`
+const c1 = `${window.location.origin}/img/historia_sorvete/c1.jpg`
+const c2 = `${window.location.origin}/img/historia_sorvete/c2.png`
+const c3 = `${window.location.origin}/img/historia_sorvete/c3.jpg`
+const c4 = `${window.location.origin}/img/historia_sorvete/c4.jpg`
+const c5 = `${window.location.origin}/img/historia_sorvete/c5.jpg`
+const c6 = `${window.location.origin}/img/historia_sorvete/c6.jpg`
+
 
 function Curiosidades() {
     React.useEffect(() => {

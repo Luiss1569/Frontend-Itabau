@@ -2,14 +2,14 @@ import React from 'react';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import './style.css'
 import Carrossel from '../../components/Carrossel'
 
-import bg from '../../assets/img/selos/bg.jpg'
+const bg = `${window.location.origin}/img/selos/bg.jpg`
 
-import s1 from '../../assets/img/selos/s1.jpg'
-import s2 from '../../assets/img/selos/s2.jpg'
+const s1 = `${window.location.origin}/img/selos/s1.jpg`
+const s2 = `${window.location.origin}/img/selos/s2.jpg`
 
-import './style.css'
 
 function Selos() {
 

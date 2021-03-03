@@ -6,13 +6,13 @@ import Carrossel from '../../../../components/Carrossel'
 import PicolesTab from '../../../../components/PicolesTab'
 import LogoCarrossel from "../../../../components/LogoPicoleCarrossel";
 
-import bg from '../../../../assets/img/picoles/organicos/bg.jpg'
 
 import organicos from './data/organicos.json'
 import vegano from './data/vegano.json'
 import xAcucar from './data/xAcucar.json'
 
 import './style.css'
+const bg = `${window.location.origin}/img/picoles/organicos/bg.jpg`
 
 function Organicos() {
     React.useEffect(() => {
@@ -45,7 +45,7 @@ function Organicos() {
             </div>
         </div>
         <div className='container container-historia container-picoles animated'>
-            <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
+            <div className='content-itens left' data-about>
                 <h4>Orgânicos - Sem Glúten e Com Lactose</h4>
             </div>
         </div>

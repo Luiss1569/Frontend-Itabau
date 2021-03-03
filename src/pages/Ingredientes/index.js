@@ -6,10 +6,10 @@ import Carrossel from '../../components/Carrossel'
 
 import { Link } from 'react-router-dom'
 
-import bg from '../../assets/img/ingredientes/bg.jpg'
-import i1 from '../../assets/img/ingredientes/s1.png'
-
 import './style.css'
+const bg = `${window.location.origin}/img/ingredientes/bg.jpg`
+const i1 = `${window.location.origin}/img/ingredientes/s1.png`
+
 
 function Ingredientes() {
     

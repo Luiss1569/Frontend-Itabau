@@ -1,27 +1,27 @@
 import React from 'react';
 
+import './style.css'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 import { Timeline } from 'antd';
 
-import bg from '../../assets/img/Historia/bg.jpg'
-import rme from '../../assets/img/Historia/rme.jpg'
-import f1 from '../../assets/img/Historia/f1.jpg'
-import f2 from '../../assets/img/Historia/f2.jpg'
+const bg = `${window.location.origin}/img/Historia/bg.jpg`
+const rme =  `${window.location.origin}/img/Historia/rme.jpg`
+const f1 = `${window.location.origin}/img/Historia/f1.jpg`
+const f2 = `${window.location.origin}/img/Historia/f2.jpg`
 
-import g1 from '../../assets/img/Historia/g1.jpg'
-import g2 from '../../assets/img/Historia/g2.jpg'
-import g3 from '../../assets/img/Historia/g3.jpg'
-import g4 from '../../assets/img/Historia/g4.jpg'
-import g5 from '../../assets/img/Historia/g5.jpg'
-import g6 from '../../assets/img/Historia/g6.jpg'
-import g7 from '../../assets/img/Historia/g7.jpg'
-import g8 from '../../assets/img/Historia/g8.jpg'
-import g9 from '../../assets/img/Historia/g9.jpg'
-import g10 from '../../assets/img/Historia/g10.jpg'
+const g1 = `${window.location.origin}/img/Historia/g1.jpg`
+const g2 = `${window.location.origin}/img/Historia/g2.jpg`
+const g3 = `${window.location.origin}/img/Historia/g3.jpg`
+const g4 = `${window.location.origin}/img/Historia/g4.jpg`
+const g5 = `${window.location.origin}/img/Historia/g5.jpg`
+const g6 = `${window.location.origin}/img/Historia/g6.jpg`
+const g7 = `${window.location.origin}/img/Historia/g7.jpg`
+const g8 = `${window.location.origin}/img/Historia/g8.jpg`
+const g9 = `${window.location.origin}/img/Historia/g9.jpg`
+const g10 =  `${window.location.origin}/img/Historia/g10.jpg`
 
-import './style.css'
 
 function Historia() {
     const geracoes = [g3, g4, g5, g6, g7, g8]

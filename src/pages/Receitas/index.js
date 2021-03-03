@@ -9,18 +9,18 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import bg from '../../assets/img/receitas/bg.jpg'
-import r1 from '../../assets/img/receitas/r1.jpg'
-import r2 from '../../assets/img/receitas/r2.jpg'
-import r3 from '../../assets/img/receitas/r3.jpg'
-import r4 from '../../assets/img/receitas/r4.jpg'
-import r5 from '../../assets/img/receitas/r5.jpg'
-import r6 from '../../assets/img/receitas/r6.jpg'
-import r8 from '../../assets/img/receitas/r8.jpg'
-import r9 from '../../assets/img/receitas/r9.jpg'
-import r10 from '../../assets/img/receitas/r10.jpg'
-
 import './style.css'
+const bg = `${window.location.origin}/img/receitas/bg.jpg`
+const r1 = `${window.location.origin}/img/receitas/r1.jpg`
+const r2 = `${window.location.origin}/img/receitas/r2.jpg`
+const r3 = `${window.location.origin}/img/receitas/r3.jpg`
+const r4 = `${window.location.origin}/img/receitas/r4.jpg`
+const r5 = `${window.location.origin}/img/receitas/r5.jpg`
+const r6 = `${window.location.origin}/img/receitas/r6.jpg`
+const r8 = `${window.location.origin}/img/receitas/r8.jpg`
+const r9 = `${window.location.origin}/img/receitas/r9.jpg`
+const r10 = `${window.location.origin}/img/receitas/r10.jpg`
+
 
 function Receitas() {
     window.scrollTo(0, 0)

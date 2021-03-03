@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import bg from '../../../assets/img/historia_sorvete/bg.jpg'
+const bg = `${window.location.origin}/img/historia_sorvete/bg.jpg`
 
 function PainelMatriz({history}) {
     const [mensagens, setMensagens] = useState([])

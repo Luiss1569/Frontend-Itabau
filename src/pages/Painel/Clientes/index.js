@@ -15,7 +15,7 @@ import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import bg from '../../../assets/img/Historia/bg.jpg'
+const bg = `${window.location.origin}/img/Historia/bg.jpg`
 
 export default function Index({history}) {
 

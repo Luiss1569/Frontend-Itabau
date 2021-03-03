@@ -1,32 +1,32 @@
 import React from 'react';
 
+import './style.css'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
-import bg from '../../assets/img/frutas/bg.jpg'
-import f1 from '../../assets/img/frutas/f1.jpg'
-import f2 from '../../assets/img/frutas/f2.jpg'
-import f3 from '../../assets/img/frutas/f3.jpg'
-import f4 from '../../assets/img/frutas/f4.jpg'
-import f5 from '../../assets/img/frutas/f5.jpg'
-import f6 from '../../assets/img/frutas/f6.jpg'
-import f7 from '../../assets/img/frutas/f7.jpg'
-import f8 from '../../assets/img/frutas/f8.jpg'
-import f9 from '../../assets/img/frutas/f9.jpg'
-import f10 from '../../assets/img/frutas/f10.jpg'
-import f11 from '../../assets/img/frutas/f11.jpg'
-import f12 from '../../assets/img/frutas/f12.jpg'
-import f13 from '../../assets/img/frutas/f13.jpg'
-import f14 from '../../assets/img/frutas/f14.jpg'
-import f15 from '../../assets/img/frutas/f15.jpg'
-import f16 from '../../assets/img/frutas/f16.jpg'
-import f17 from '../../assets/img/frutas/f17.jpg'
-import f18 from '../../assets/img/frutas/f18.jpg'
-import f19 from '../../assets/img/frutas/f19.jpg'
-import f20 from '../../assets/img/frutas/f20.jpg'
+const bg  = `${window.location.origin}/img/frutas/bg.jpg`
+const f1  = `${window.location.origin}/img/frutas/f1.jpg`
+const f2  = `${window.location.origin}/img/frutas/f2.jpg`
+const f3  = `${window.location.origin}/img/frutas/f3.jpg`
+const f4  = `${window.location.origin}/img/frutas/f4.jpg`
+const f5  = `${window.location.origin}/img/frutas/f5.jpg`
+const f6  = `${window.location.origin}/img/frutas/f6.jpg`
+const f7  = `${window.location.origin}/img/frutas/f7.jpg`
+const f8  = `${window.location.origin}/img/frutas/f8.jpg`
+const f9  = `${window.location.origin}/img/frutas/f9.jpg`
+const f10 =  `${window.location.origin}/img/frutas/f10.jpg`
+const f11 =  `${window.location.origin}/img/frutas/f11.jpg`
+const f12 =  `${window.location.origin}/img/frutas/f12.jpg`
+const f13 =  `${window.location.origin}/img/frutas/f13.jpg`
+const f14 =  `${window.location.origin}/img/frutas/f14.jpg`
+const f15 =  `${window.location.origin}/img/frutas/f15.jpg`
+const f16 =  `${window.location.origin}/img/frutas/f16.jpg`
+const f17 =  `${window.location.origin}/img/frutas/f17.jpg`
+const f18 =  `${window.location.origin}/img/frutas/f18.jpg`
+const f19 =  `${window.location.origin}/img/frutas/f19.jpg`
+const f20 =  `${window.location.origin}/img/frutas/f20.jpg`
 
-import './style.css'
 
 function Frutas() {
 

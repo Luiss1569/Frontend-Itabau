@@ -14,7 +14,6 @@ import animationEmail from '../../assets/animations/email.json'
 import animationPhone from '../../assets/animations/phone.json'
 import animationSend from '../../assets/animations/sendMensage.json'
 
-import bg from '../../assets/img/matriz/bg.jpg'
 
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';
@@ -27,6 +26,7 @@ import { Tooltip } from 'antd';
 import Recaptcha from 'react-recaptcha'
 
 import './style.css'
+const bg = `${window.location.origin}/img/matriz/bg.jpg`
 
 function Matriz() {
 

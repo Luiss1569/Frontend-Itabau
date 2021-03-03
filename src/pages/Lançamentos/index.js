@@ -4,10 +4,10 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 import api from '../../services/api'
-
-import bg from '../../assets/img/lancamentos/bg.jpg'
-
 import './style.css'
+
+const bg = `${window.location.origin}/img/matriz/bg.jpg`
+
 
 function Lançamento() {
 

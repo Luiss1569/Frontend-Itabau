@@ -3,19 +3,19 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 
 import Header from '../../components/Header'
+import './style.css'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
-import bg from '../../assets/img/massa/bg.jpg'
-import logo from '../../assets/img/logo-itabau-massa.png'
+const bg  = `${window.location.origin}/img/massa/bg.jpg`
+const logo = `${window.location.origin}/img/logo-itabau-massa.png`
 
-import p1 from '../../assets/img/massa/p1.jpg'
-import p2 from '../../assets/img/massa/p2.jpg'
-import p3 from '../../assets/img/massa/p3.jpg'
-import p4 from '../../assets/img/massa/p4.jpg'
-import p5 from '../../assets/img/massa/p5.jpg'
+const p1  = `${window.location.origin}/img/massa/p1.jpg`
+const p2  = `${window.location.origin}/img/massa/p2.jpg`
+const p3  = `${window.location.origin}/img/massa/p3.jpg`
+const p4  = `${window.location.origin}/img/massa/p4.jpg`
+const p5  = `${window.location.origin}/img/massa/p5.jpg`
 
-import './style.css'
 
 function Picoles() {
     React.useEffect(() => {

@@ -3,29 +3,29 @@ import AliceCarousel from 'react-alice-carousel';
 
 import "react-alice-carousel/lib/alice-carousel.css";
 
-
-
-import r1 from '../../assets/img/slideshow/r1.jpg'
-import r2 from '../../assets/img/slideshow/r2.jpg'
-import r3 from '../../assets/img/slideshow/r3.jpg'
-import r4 from '../../assets/img/slideshow/r4.jpg'
-import r5 from '../../assets/img/slideshow/r5.jpg'
-import r7 from '../../assets/img/slideshow/r7.jpg'
-import r8 from '../../assets/img/slideshow/r8.jpg'
-import r9 from '../../assets/img/slideshow/r9.jpg'
-import r10 from '../../assets/img/slideshow/r10.jpg'
-import r11 from '../../assets/img/slideshow/r11.jpg'
-import r12 from '../../assets/img/slideshow/r12.jpg'
-import r13 from '../../assets/img/slideshow/r13.jpg'
-import r14 from '../../assets/img/slideshow/r14.jpg'
-import r15 from '../../assets/img/slideshow/r15.jpg'
-import r16 from '../../assets/img/slideshow/r16.jpg'
-import r17 from '../../assets/img/slideshow/r17.jpg'
-import r18 from '../../assets/img/slideshow/r18.jpg'
-import r19 from '../../assets/img/slideshow/r19.jpg'
-import r20 from '../../assets/img/slideshow/r20.jpg'
-
 import './style.css'
+
+
+const r1 = `${window.location.origin}/img/slideshow/r1.jpg`
+const r2 = `${window.location.origin}/img/slideshow/r2.jpg`
+const r3 = `${window.location.origin}/img/slideshow/r3.jpg`
+const r4 = `${window.location.origin}/img/slideshow/r4.jpg`
+const r5 = `${window.location.origin}/img/slideshow/r5.jpg`
+const r7 = `${window.location.origin}/img/slideshow/r7.jpg`
+const r8 = `${window.location.origin}/img/slideshow/r8.jpg`
+const r9 = `${window.location.origin}/img/slideshow/r9.jpg`
+const r10 = `${window.location.origin}/img/slideshow/r10.jpg`
+const r11 = `${window.location.origin}/img/slideshow/r11.jpg`
+const r12 = `${window.location.origin}/img/slideshow/r12.jpg`
+const r13 = `${window.location.origin}/img/slideshow/r13.jpg`
+const r14 = `${window.location.origin}/img/slideshow/r14.jpg`
+const r15 = `${window.location.origin}/img/slideshow/r15.jpg`
+const r16 = `${window.location.origin}/img/slideshow/r16.jpg`
+const r17 = `${window.location.origin}/img/slideshow/r17.jpg`
+const r18 = `${window.location.origin}/img/slideshow/r18.jpg`
+const r19 = `${window.location.origin}/img/slideshow/r19.jpg`
+const r20 = `${window.location.origin}/img/slideshow/r20.jpg`
+
 
 function Gallery() {
 

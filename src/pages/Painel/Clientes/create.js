@@ -8,10 +8,10 @@ import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 import SnackBar from '../../../components/SnackBar'
 
-import bg from '../../../assets/img/matriz/bg.jpg'
-
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+
+const bg = `${window.location.origin}/img/matriz/bg.jpg`
 
 function CreateCliente({ history }) {
 

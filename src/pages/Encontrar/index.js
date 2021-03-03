@@ -12,10 +12,10 @@ import PlacesAutoComplete from '../../components/PlacesAutoComplete'
 import Lottie from 'react-lottie';
 
 import animationLocation from '../../assets/animations/location-finding.json'
-
-import bg from '../../assets/img/encontrar/bg.jpg'
-
 import './style.css'
+
+const bg = `${window.location.origin}/img/encontrar/bg.jpg`
+
 
 function Lançamento() {
     const cont = [0, 1, 2]

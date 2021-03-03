@@ -11,12 +11,12 @@ import SnackBar from '../../../components/SnackBar'
 import BackspaceIcon from '@material-ui/icons/Backspace';
 import Camera from '@material-ui/icons/AddAPhoto';
 
-import bg from '../../../assets/img/matriz/bg.jpg'
-
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 import '../style.css'
+
+const bg = `${window.location.origin}/img/matriz/bg.jpg`
 
 function UpdateCliente({ match, history }) {
 

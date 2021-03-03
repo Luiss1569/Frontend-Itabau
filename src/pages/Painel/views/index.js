@@ -5,7 +5,7 @@ import Footer from '../../../components/Footer'
 import Carrossel from '../../../components/Carrossel'
 import { Link } from 'react-router-dom'
 
-import bg from '../../../assets/img/matriz/bg.jpg'
+const bg = `${window.location.origin}/img/matriz/bg.jpg`
 
 function Lançamento({history}) {
     React.useEffect(()=>{

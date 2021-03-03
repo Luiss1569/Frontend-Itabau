@@ -8,7 +8,6 @@ import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 import SnackBar from '../../components/SnackBar'
 
-import bg from '../../assets/img/pesquisa/bg.jpg'
 
 import animationSend from '../../assets/animations/sendMensage.json'
 
@@ -20,6 +19,8 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Button from '@material-ui/core/Button';
 
 import './style.css'
+
+const bg = `${window.location.origin}/img/pesquisa/bg.jpg`
 
 function Pesquisa() {
 

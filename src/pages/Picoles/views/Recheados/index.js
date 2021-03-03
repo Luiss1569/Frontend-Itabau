@@ -6,12 +6,12 @@ import Carrossel from '../../../../components/Carrossel'
 import PicolesTab from '../../../../components/PicolesTab'
 import LogoCarrossel from "../../../../components/LogoPicoleCarrossel";
 
-import bg from '../../../../assets/img/picoles/recheado/bg.jpg'
 
 import recheados from './data/recheados.json'
 
 import './style.css'
 
+const bg =  `${window.location.origin}/img/picoles/recheado/bg.jpg`
 function Recheados() {
     window.scrollTo(0, 0)
 

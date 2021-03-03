@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import bg from '../../../assets/img/massa/bg.jpg'
+const bg = `${window.location.origin}/img/matriz/bg.jpg`
 
 function PainelPesquisa({history}) {
     const [mensagens, setMensagens] = useState([])

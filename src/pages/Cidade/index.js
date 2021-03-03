@@ -4,52 +4,50 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 import Galery from '../../components/Galery'
-
-import bg from '../../assets/img/cidade/bg.jpg'
-
-import c1 from '../../assets/img/cidade/c1.jpg'
-import c2 from '../../assets/img/cidade/c2.jpg'
-import c3 from '../../assets/img/cidade/c3.jpg'
-import c4 from '../../assets/img/cidade/c4.jpg'
-import c5 from '../../assets/img/cidade/c5.jpg'
-
-import f1 from '../../assets/img/cidade/fotos/1.jpg'
-import f2 from '../../assets/img/cidade/fotos/2.jpg'
-import f3 from '../../assets/img/cidade/fotos/3.jpg'
-import f4 from '../../assets/img/cidade/fotos/4.jpg'
-import f5 from '../../assets/img/cidade/fotos/5.jpg'
-import f6 from '../../assets/img/cidade/fotos/6.jpg'
-import f7 from '../../assets/img/cidade/fotos/7.jpg'
-import f8 from '../../assets/img/cidade/fotos/8.jpg'
-import f9 from '../../assets/img/cidade/fotos/9.jpg'
-import f10 from '../../assets/img/cidade/fotos/10.jpg'
-import f11 from '../../assets/img/cidade/fotos/1.jpg'
-import f12 from '../../assets/img/cidade/fotos/12.jpg'
-import f13 from '../../assets/img/cidade/fotos/13.jpg'
-import f14 from '../../assets/img/cidade/fotos/14.jpg'
-import f15 from '../../assets/img/cidade/fotos/15.jpg'
-import f16 from '../../assets/img/cidade/fotos/16.jpg'
-import f17 from '../../assets/img/cidade/fotos/17.jpg'
-import f18 from '../../assets/img/cidade/fotos/18.jpg'
-import f19 from '../../assets/img/cidade/fotos/19.jpg'
-import f20 from '../../assets/img/cidade/fotos/20.jpg'
-import f21 from '../../assets/img/cidade/fotos/21.jpg'
-import f22 from '../../assets/img/cidade/fotos/22.jpg'
-import f23 from '../../assets/img/cidade/fotos/23.jpg'
-import f24 from '../../assets/img/cidade/fotos/24.jpg'
-import f25 from '../../assets/img/cidade/fotos/25.jpg'
-import f26 from '../../assets/img/cidade/fotos/1.jpg'
-import f27 from '../../assets/img/cidade/fotos/27.jpg'
-import f28 from '../../assets/img/cidade/fotos/28.jpg'
-import f30 from '../../assets/img/cidade/fotos/30.jpg'
-import f31 from '../../assets/img/cidade/fotos/31.jpg'
-import f32 from '../../assets/img/cidade/fotos/32.jpg'
-import f33 from '../../assets/img/cidade/fotos/33.jpg'
-import f34 from '../../assets/img/cidade/fotos/34.jpg'
-import f35 from '../../assets/img/cidade/fotos/35.jpg'
-
-
 import './style.css'
+
+const bg = `${window.location.origin}/img/cidade/bg.jpg`
+
+const c1 = `${window.location.origin}/img/cidade/c1.jpg`
+const c2 = `${window.location.origin}/img/cidade/c2.jpg`
+const c3 = `${window.location.origin}/img/cidade/c3.jpg`
+const c4 = `${window.location.origin}/img/cidade/c4.jpg`
+const c5 = `${window.location.origin}/img/cidade/c5.jpg`
+
+const f1 = `${window.location.origin}/img/cidade/fotos/1.jpg`
+const f2 = `${window.location.origin}/img/cidade/fotos/2.jpg`
+const f3 = `${window.location.origin}/img/cidade/fotos/3.jpg`
+const f4 = `${window.location.origin}/img/cidade/fotos/4.jpg`
+const f5 = `${window.location.origin}/img/cidade/fotos/5.jpg`
+const f6 = `${window.location.origin}/img/cidade/fotos/6.jpg`
+const f7 = `${window.location.origin}/img/cidade/fotos/7.jpg`
+const f8 = `${window.location.origin}/img/cidade/fotos/8.jpg`
+const f9 = `${window.location.origin}/img/cidade/fotos/9.jpg`
+const f10=  `${window.location.origin}/img/cidade/fotos/10.jpg`
+const f11=  `${window.location.origin}/img/cidade/fotos/1.jpg`
+const f12=  `${window.location.origin}/img/cidade/fotos/12.jpg`
+const f13=  `${window.location.origin}/img/cidade/fotos/13.jpg`
+const f14=  `${window.location.origin}/img/cidade/fotos/14.jpg`
+const f15=  `${window.location.origin}/img/cidade/fotos/15.jpg`
+const f16=  `${window.location.origin}/img/cidade/fotos/16.jpg`
+const f17=  `${window.location.origin}/img/cidade/fotos/17.jpg`
+const f18=  `${window.location.origin}/img/cidade/fotos/18.jpg`
+const f19=  `${window.location.origin}/img/cidade/fotos/19.jpg`
+const f20=  `${window.location.origin}/img/cidade/fotos/20.jpg`
+const f21=  `${window.location.origin}/img/cidade/fotos/21.jpg`
+const f22=  `${window.location.origin}/img/cidade/fotos/22.jpg`
+const f23=  `${window.location.origin}/img/cidade/fotos/23.jpg`
+const f24=  `${window.location.origin}/img/cidade/fotos/24.jpg`
+const f25=  `${window.location.origin}/img/cidade/fotos/25.jpg`
+const f26=  `${window.location.origin}/img/cidade/fotos/1.jpg`
+const f27=  `${window.location.origin}/img/cidade/fotos/27.jpg`
+const f28=  `${window.location.origin}/img/cidade/fotos/28.jpg`
+const f30=  `${window.location.origin}/img/cidade/fotos/30.jpg`
+const f31=  `${window.location.origin}/img/cidade/fotos/31.jpg`
+const f32=  `${window.location.origin}/img/cidade/fotos/32.jpg`
+const f33=  `${window.location.origin}/img/cidade/fotos/33.jpg`
+const f34=  `${window.location.origin}/img/cidade/fotos/34.jpg`
+const f35=  `${window.location.origin}/img/cidade/fotos/35.jpg`
 
 function Cidade() {
 

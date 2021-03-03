@@ -5,16 +5,17 @@ import {Link} from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
-
-import bg from '../../assets/img/picoles/bg.jpg'
-
-import p1 from '../../assets/img/picoles/p1.jpg'
-import p2 from '../../assets/img/picoles/p2.jpg'
-import p3 from '../../assets/img/picoles/p3.jpg'
-import p4 from '../../assets/img/picoles/p4.jpg'
-import logo from '../../assets/img/logo-itabau-picole.png'
-
 import './style.css'
+
+
+const bg = `${window.location.origin}/img/picoles/bg.jpg`
+
+const p1 = `${window.location.origin}/img/picoles/p1.jpg`
+const p2 = `${window.location.origin}/img/picoles/p2.jpg`
+const p3 = `${window.location.origin}/img/picoles/p3.jpg`
+const p4 = `${window.location.origin}/img/picoles/p4.jpg`
+const logo = `${window.location.origin}/img/logo-itabau-picole.png`
+
 
 function Picoles() {
     React.useEffect(() => {

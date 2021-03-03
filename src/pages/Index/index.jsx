@@ -9,6 +9,8 @@ import Location from "../../components/Location";
 import FlipCarrossel from "../../components/FlipCarrossel";
 
 import Lottie from "react-lottie";
+import "./styles.css";
+import { Link } from "react-router-dom";
 
 import animationLocation from "../../assets/animations/location-finding.json";
 import animationIce from "../../assets/animations/ice-cream.json";
@@ -16,20 +18,17 @@ import animationFacebook from "../../assets/animations/facebook.json";
 import animationInstagram from "../../assets/animations/instagram.json";
 import iceLoad from "../../assets/animations/iceLoad.json";
 
-import i1 from "../../assets/img/index/i1.jpg";
-import i3 from "../../assets/img/index/i3.jpg";
-import i4 from "../../assets/img/index/i5.jpg";
-import familia from "../../assets/img/index/familia.png";
+const i1 =  `${window.location.origin}/img/index/i1.jpg`;
+const i3 =  `${window.location.origin}/img/index/i3.jpg`;
+const i4 =  `${window.location.origin}/img/index/i5.jpg`;
+const familia = `${window.location.origin}/img/index/familia.png`;
 
-import c1 from "../../assets/img/carrossel/01.jpg";
-import c2 from "../../assets/img/carrossel/02.jpg";
-import c3 from "../../assets/img/carrossel/03.jpg";
-import c4 from "../../assets/img/carrossel/04.jpg";
-import c5 from "../../assets/img/carrossel/05.jpg";
-import c6 from "../../assets/img/carrossel/06.jpg";
-
-import "./styles.css";
-import { Link } from "react-router-dom";
+const c1 =  `${window.location.origin}/img/carrossel/01.jpg`;
+const c2 =  `${window.location.origin}/img/carrossel/02.jpg`;
+const c3 =  `${window.location.origin}/img/carrossel/03.jpg`;
+const c4 =  `${window.location.origin}/img/carrossel/04.jpg`;
+const c5 =  `${window.location.origin}/img/carrossel/05.jpg`;
+const c6 =  `${window.location.origin}/img/carrossel/06.jpg`;
 
 // const c1 = `${window.location.origin}/img/carrossel/c1.jpg`
 // const c2 = `${window.location.origin}/img/carrossel/c2.jpg`

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import logo from '../../assets/img/footer/logo_completo.png'
-
 import './styles.css';
+const logo  = `${window.location.origin}/img/footer/logo_completo.png`
+
 
 function Footer() {
 

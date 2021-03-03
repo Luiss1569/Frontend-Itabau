@@ -3,10 +3,10 @@ import React from 'react';
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
-
-import bg from '../../assets/img/fotos/bg.jpg'
-
 import './style.css'
+
+const bg = `${window.location.origin}/img/fotos/bg.jpg`
+
 
 function Video() {
     

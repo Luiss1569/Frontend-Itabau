@@ -4,11 +4,11 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Carrossel from '../../components/Carrossel'
 
-import bg from '../../assets/img/historia_sorvete/bg.jpg'
-
-import {Link} from 'react-router-dom'
-
 import './style.css'
+import {Link} from 'react-router-dom'
+const bg = `${window.location.origin}/img/historia_sorvete/bg.jpg`
+
+
 
 function HistoriaSorvete() {
     React.useEffect(() => {

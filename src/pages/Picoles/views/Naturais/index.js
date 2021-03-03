@@ -6,7 +6,6 @@ import Carrossel from '../../../../components/Carrossel'
 import PicolesTab from '../../../../components/PicolesTab'
 import LogoCarrossel from "../../../../components/LogoPicoleCarrossel";
 
-import bg from '../../../../assets/img/picoles/naturais/bg.jpg'
 
 import sem_gluten from './data/sem_gluten.json'
 import gluten from './data/gluten.json'
@@ -14,6 +13,7 @@ import vegano from './data/vegano.json'
 import sem_acucar from './data/sem_acucar.json'
 
 import './style.css'
+const bg  = `${window.location.origin}/img/picoles/naturais/bg.jpg`
 
 function Naturais() {
     window.scrollTo(0, 0)
@@ -38,7 +38,7 @@ function Naturais() {
             </div>
         </div>
         <div className='container container-historia container-picoles animated'>
-            <div className='content-itens left' style={{ backgroundColor: '#fff' }} data-about>
+            <div className='content-itens left' data-about>
                 <h4>Naturais - Sem Glúten e Com Lactosee</h4>
             </div>
         </div>
