@@ -89,17 +89,17 @@ export default function ScrollableTabsButtonAuto(props) {
                                     </div>
                                     {picole.contem ? (
                                         <div className="box">
-                                            <label><span>Contem:</span>{"  " + picole.contem}</label>
+                                            <label><span>Contém:</span>{"  " + picole.contem}</label>
                                         </div>
                                     ) : " "}
                                     {picole.alergicos ? (
                                         <div className="box">
-                                            <label><span>Alergicos:</span>{"  " + picole.alergicos}</label>
+                                            <label><span>Alérgicos:</span>{"  " + picole.alergicos}</label>
                                         </div>
                                     ) : " "}
                                     {picole.não_contem ? (
                                         <div className="box">
-                                            <label><span>Não Contem:</span>{"  " + picole.não_contem}</label>
+                                            <label><span>Não Contém:</span>{"  " + picole.não_contem}</label>
                                         </div>
                                     ) : " "}
                                     <div className="box">
