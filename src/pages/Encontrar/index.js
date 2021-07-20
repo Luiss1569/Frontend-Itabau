@@ -81,18 +81,7 @@ function Lançamento() {
 
         async function loadLocations() {
             setLoading(true)
-            const data = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDNsh5nO2nantURwxD1Amcg6G4Ldgqv7ug&address=${location}`, {
-                method: 'get',
-            }).then(function (response) {
-                return response.json();
-            })
-            if (data.status !== "OK") {
-                setLocations([])
-                return
-            }
-            const lat = data.results[0].geometry.location.lat
-            const long = data.results[0].geometry.location.lng
-            console.log(lat, long);
+            console.log("aqui", lat, long);
             if (lat & long) {
                 const response = await fetch(`${api}/php/cliente/get.php?lat=${lat}&long=${long}&limit=50`, {
                     method: 'get',
@@ -165,7 +154,7 @@ function Lançamento() {
             </div>
 
             <div className='content-itens left' data-about style={{ marginTop: 35, margin: 'auto' }}>
-                <PlacesAutoComplete setLocation={setLocation} />
+                <PlacesAutoComplete setLocation={setLocation} setLat={setLat} setLong={setLong}/>
             </div>
         </div>
 
