@@ -11,15 +11,26 @@ import {
 import "@reach/combobox/styles.css"
 import './style.css'
 import { useState } from "react";
-import { useMemo } from "react";
+import { useEffect } from "react";
 
 function PlacesAutocomplete(props) {
     const [value, setValue] = useState("");
     const [data, setData] = useState([]);
 
-    useMemo(()=>{
+    useEffect(()=>{
+
+        if(value === "") return;
+
         async function getLocation(){
-            const {data: response} = await api.get(`https://nominatim.openstreetmap.org/search?format=json&city=${value}&&limit=5`)
+            const response = await fetch(`${api}/php/cliente/like_city.php?city=${value}`, {
+                method: 'get'
+            }).then(function (response) {
+                return response.json();
+            }).catch(function (error) {
+                console.log('There has been a problem with your fetch operation: ' + error.message);
+                return []
+            });
+            console.log(response)
             const citys = response.map(city=>{
                 return { 
                     lat: city.lat, 
@@ -38,10 +49,22 @@ function PlacesAutocomplete(props) {
     };
 
     const handleSelect = (val) => {
-        const selected = data.filter(as => as.description === val)
-        props.setLat(selected[0].lat)
-        props.setLong(selected[0].long)
-        props.setLocation(val)
+        async function getLocation(){
+            const response = await fetch(`${api}/php/cliente/like_city.php?name=${val}`, {
+                method: 'get'
+            }).then(function (response) {
+                return response.json();
+            }).catch(function (error) {
+                console.log('There has been a problem with your fetch operation: ' + error.message);
+                return []
+            });
+            console.log(response)
+
+            //props.setLat(selected[0].lat)
+            //props.setLong(selected[0].long)
+            props.setLocation(val)
+        }
+        getLocation()
     };
 
     return (

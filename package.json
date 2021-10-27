@@ -44,7 +44,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
-    "server": "serve -s build -l 3000"
+    "server": "serve -s build -l 3000",
+    "php": "cd public/php && php -S localhost:3333"
   },
   "eslintConfig": {
     "extends": [
