@@ -29,9 +29,9 @@ function Lançamento() {
                 setTitle(response.TITULO)
                 setOptions(response.OPCOES.split(';'))
                 setImage(response.IMAGEM)
-                console.log(response);
+                 ;
             }
-            console.log(response);
+             ;
 
         }
         getMensagens()

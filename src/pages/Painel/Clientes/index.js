@@ -44,9 +44,9 @@ export default function Index({history}) {
             setMensagens([])
         } else {
             setMensagens(response)
-            console.log(response);
+             ;
         }
-        console.log(response);
+         ;
 
     }
 
@@ -66,7 +66,7 @@ export default function Index({history}) {
             return response.json();
         })
 
-        console.log(response);
+         ;
 
         if (response.result) {
             setOpen({

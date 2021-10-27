@@ -101,7 +101,7 @@ function UpdateCliente({ match, history }) {
             return {}
         });
 
-        console.log(response);
+         ;
 
         if (response.result) {
             setOpen({

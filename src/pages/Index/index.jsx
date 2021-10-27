@@ -96,7 +96,7 @@ function Index() {
         } else {
           setLocations(response);
         }
-        console.log(response);
+         ;
       }
     }
     getLocations();

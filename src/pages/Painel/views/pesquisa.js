@@ -33,9 +33,7 @@ function PainelPesquisa({history}) {
                 setMensagens([])
             } else {
                 setMensagens(response)
-                console.log(response);
             }
-            console.log(response);
 
         }
         getMensagens()

@@ -57,7 +57,7 @@ function UpdateCliente({ match, history }) {
                 setImage(response.IMAGEM)
                 console.log(response.IMAGEM);
             }
-            console.log(response);
+             ;
 
         }
         getMensagens()
@@ -107,7 +107,7 @@ function UpdateCliente({ match, history }) {
             return response.json();
         })
 
-        console.log(response);
+         ;
 
         if (response.result) {
             setOpen({

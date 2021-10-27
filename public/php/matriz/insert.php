@@ -39,7 +39,7 @@ $mail->Port = 465; // or 587
 $mail->IsHTML(true); 
 $mail->CharSet = 'UTF-8';
 $mail->Username = "site@itabau.com.br"; 
-$mail->Password = "Pedradobau1990@"; 
+$mail->Password = "pedradoBau1990@"; 
 $mail->SetFrom($email);
 $mail->Subject = (isset($assunto))?"SITE | " . $assunto: "SITE | Nova mensagem foi cadastrada!"; 
 $mail->AltBody = "Uma nova pesquisa foi enviada por " . $nome . ".\n" . " Acesse o site para visualizar em https://itabau.com.br/painel/pesquisa" ; 

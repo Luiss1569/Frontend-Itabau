@@ -116,7 +116,7 @@ function Matriz() {
             return {}
         });
 
-        console.log(response);
+         ;
 
         if (response.result) {
             setSend(true)

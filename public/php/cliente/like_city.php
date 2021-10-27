@@ -1,6 +1,6 @@
 <?php
 
-	//include '../conexao.php';
+	include '../conexao.php';
 
 	if ($_SERVER["REQUEST_METHOD"] == 'GET') {
 
@@ -9,17 +9,16 @@
 
 		$query = "";
 		if(empty($name)){
-			$query = "SELECT DISTINCT CIDADE FROM clientes WHERE LOWER( clientes.CIDADE ) LIKE  '%$city%' GROUP BY CIDADE LIMIT 10";  
+			$query = "SELECT DISTINCT CIDADE FROM clientes WHERE LOWER( clientes.CIDADE ) LIKE  '%$city%' LIMIT 10";  
 			echo $name;
 		}else{
 			$query = "SELECT LATITUDE, LONGITUDE FROM clientes WHERE LOWER( clientes.CIDADE ) =  '$name' LIMIT 1";  
 			echo $city;
 		}
 
-		echo $query;
-
-		return;
 		$result = mysqli_query($link, $query);
+
+		mysqli_close($link);
         
 		header("Access-Control-Allow-Origin: *");
 		header('Access-Control-Allow-Origin: *');

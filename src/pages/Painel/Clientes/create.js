@@ -100,7 +100,7 @@ function CreateCliente({ history }) {
             return {}
           });
 
-        console.log(response);
+         ;
 
         if (response.result) {
             setOpen({

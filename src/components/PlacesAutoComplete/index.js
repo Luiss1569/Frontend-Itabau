@@ -1,5 +1,5 @@
 import React from "react";
-import api from "axios"
+import api from "../../services/api"
 import {
     Combobox,
     ComboboxInput,
@@ -30,12 +30,15 @@ function PlacesAutocomplete(props) {
                 console.log('There has been a problem with your fetch operation: ' + error.message);
                 return []
             });
-            console.log(response)
-            const citys = response.map(city=>{
+
+            if(response.data){
+                setData([])
+                return;
+            }
+
+            const citys = response.map(({CIDADE})=>{
                 return { 
-                    lat: city.lat, 
-                    long: city.lon,
-                    description: city.display_name.split(",")[0]
+                    description: CIDADE
                 }
             })
             setData(citys)
@@ -58,11 +61,14 @@ function PlacesAutocomplete(props) {
                 console.log('There has been a problem with your fetch operation: ' + error.message);
                 return []
             });
-            console.log(response)
+             
 
-            //props.setLat(selected[0].lat)
-            //props.setLong(selected[0].long)
+            if(response?.length === 0) return
+
+            props.setLat(response[0].LATITUDE)
+            props.setLong(response[0].LONGITUDE)
             props.setLocation(val)
+            setValue(val)
         }
         getLocation()
     };

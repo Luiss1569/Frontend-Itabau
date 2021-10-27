@@ -97,7 +97,7 @@ function Lançamento() {
                     setLocations(response)
                 }
                 setLoading(false)
-                console.log(response);
+                 ;
             }
         }
         loadLocations()
