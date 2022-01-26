@@ -11,7 +11,6 @@ import Lottie from 'react-lottie';
 import animationIconLocation from '../../assets/animations/iconLocation.json'
 import animationWhatsapp from '../../assets/animations/whatsapp.json'
 import animationEmail from '../../assets/animations/email.json'
-import animationPhone from '../../assets/animations/phone.json'
 import animationSend from '../../assets/animations/sendMensage.json'
 
 
