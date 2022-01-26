@@ -205,7 +205,7 @@ function Matriz() {
                     <a href="https://www.google.com.br/maps/dir/''/Itabau/@-22.6786713,-45.7560131,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cc7b9000738dbd:0x2107f48dcf11dcab!2m2!1d-45.685619!2d-22.679151"
                         rel="noreferrer"
                         target='_blank'
-                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}
+                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', textDecoration:'none' }}
                     >
                         <Lottie options={{
                             loop: true,
@@ -229,7 +229,7 @@ function Matriz() {
                 <p>
                     <a href="mailto:contato@itabau.com.br"
 
-                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content' }}
+                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content', textDecoration:'none' }}
                     >
                         <Lottie options={{
                             loop: true,
@@ -244,28 +244,11 @@ function Matriz() {
                     </a>
                 </p>
 
-                <p>
-                    <a href="tel:(12) 3971-1881"
-                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content', marginLeft: -12 }}
-                    >
-                        <Lottie options={{
-                            loop: true,
-                            autoplay: true,
-                            animationData: animationPhone,
-                            rendererSettings: {
-                                preserveAspectRatio: 'xMidYMid slice'
-                            }
-                        }}
-                            height={75}
-                            width={75} /><label style={{ marginLeft: 0, cursor: 'pointer' }}>(12) 3971-1881</label>
-                    </a>
-                </p>
-
                 <p style={{ marginTop: -10 }}>
-                    <a href="https://api.whatsapp.com/send?phone=5512997861414&text=Ol%C3%A1%20Itaba%C3%BA!"
+                    <a href="https://api.whatsapp.com/send?phone=551239711881&text=Ol%C3%A1%20Itaba%C3%BA!"
                         rel="noreferrer"
                         target='_blank'
-                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content', marginLeft: -22 }}
+                        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: 'max-content', marginLeft: -22, textDecoration:'none' }}
                     >
                         <Lottie options={{
                             loop: true,
@@ -276,7 +259,7 @@ function Matriz() {
                             }
                         }}
                             height={100}
-                            width={100} /><label style={{ marginLeft: -15, cursor: 'pointer' }}>(12) 99786-1414</label>
+                            width={100} /><label style={{ marginLeft: -15, cursor: 'pointer' }}>(12) 3971-1881</label>
                     </a>
                 </p>
             </div>
