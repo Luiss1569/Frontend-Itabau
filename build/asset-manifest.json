@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.2d6ecf34.chunk.css",
-    "main.js": "/static/js/main.2639bd95.chunk.js",
-    "main.js.map": "/static/js/main.2639bd95.chunk.js.map",
+    "main.js": "/static/js/main.7ac43641.chunk.js",
+    "main.js.map": "/static/js/main.7ac43641.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.aef01254.js",
     "runtime-main.js.map": "/static/js/runtime-main.aef01254.js.map",
     "static/css/2.e8f04df1.chunk.css": "/static/css/2.e8f04df1.chunk.css",
-    "static/js/2.012d7b68.chunk.js": "/static/js/2.012d7b68.chunk.js",
-    "static/js/2.012d7b68.chunk.js.map": "/static/js/2.012d7b68.chunk.js.map",
+    "static/js/2.e7ee78b9.chunk.js": "/static/js/2.e7ee78b9.chunk.js",
+    "static/js/2.e7ee78b9.chunk.js.map": "/static/js/2.e7ee78b9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.e8f04df1.chunk.css.map": "/static/css/2.e8f04df1.chunk.css.map",
     "static/css/main.2d6ecf34.chunk.css.map": "/static/css/main.2d6ecf34.chunk.css.map",
-    "static/js/2.012d7b68.chunk.js.LICENSE.txt": "/static/js/2.012d7b68.chunk.js.LICENSE.txt",
+    "static/js/2.e7ee78b9.chunk.js.LICENSE.txt": "/static/js/2.e7ee78b9.chunk.js.LICENSE.txt",
     "static/media/style.css": "/static/media/b2.84703936.jpg",
     "static/media/styles.css": "/static/media/mapa.adb546cd.jpg",
     "static/media/logo-itabau-picole.be31bb2c.png": "/static/media/logo-itabau-picole.be31bb2c.png",
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.aef01254.js",
     "static/css/2.e8f04df1.chunk.css",
-    "static/js/2.012d7b68.chunk.js",
+    "static/js/2.e7ee78b9.chunk.js",
     "static/css/main.2d6ecf34.chunk.css",
-    "static/js/main.2639bd95.chunk.js"
+    "static/js/main.7ac43641.chunk.js"
   ]
 }
